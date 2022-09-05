@@ -1676,6 +1676,44 @@ button {
   height: 23px;
 }
 
+.feedback {
+  width: 100%;
+}
+.feedback--success {
+  background: rgb(173, 216, 173);
+  text-align: center;
+  padding: 15px;
+}
+.feedback--error {
+  background: #d63737;
+  color: white;
+  font-weight: 500;
+  margin: 0px 0 20px 0;
+  text-align: center;
+  padding: 15px;
+}
+.feedback--warning {
+  background: rgb(204, 120, 24);
+  color: white;
+  font-weight: 500;
+  margin: 20px 0 20px 0;
+  text-align: center;
+  padding: 15px;
+}
+
+.error {
+  color: rgb(223, 0, 0);
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+#image-error,
+#title-error,
+#price-error,
+#description-error {
+  display: none;
+}
+
 /*** *** *** THEMES/ADMIN SECTION *** *** ***/
 .admin-menu {
   padding: 0 15px;

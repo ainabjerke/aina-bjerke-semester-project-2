@@ -1,0 +1,27 @@
+.feedback {
+  width: 100%;
+
+  &--success {
+    background: rgb(173, 216, 173);
+    text-align: center;
+    padding: 15px;
+  }
+
+  &--error {
+    background: #d63737;
+    color: white;
+    font-weight: 500;
+    margin: 0px 0 20px 0;
+    text-align: center;
+    padding: 15px;
+  }
+
+  &--warning {
+    background: rgb(204, 120, 24);
+    color: white;
+    font-weight: 500;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    padding: 15px;
+  }
+}
