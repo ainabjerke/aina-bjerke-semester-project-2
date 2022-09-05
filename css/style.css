@@ -1811,15 +1811,15 @@ button {
 }
 
 .btn-secondary {
-  color: #000;
-  background-color: #707070;
-  border-color: #707070;
+  color: rgb(12, 12, 12);
+  background-color: #ffffff;
+  border-color: #ffffff;
   margin-top: 5px;
 }
 .btn-secondary:hover {
-  color: #000;
-  background-color: #303030;
-  border-color: #303030;
+  color: rgb(12, 12, 12);
+  background-color: #ffffff;
+  border-color: rgb(12, 12, 12);
 }
 
 .form-login {

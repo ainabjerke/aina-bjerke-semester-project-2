@@ -88,14 +88,14 @@
 }
 
 .btn-secondary {
-  color: #000;
-  background-color: colors(grey);
-  border-color: colors(grey);
+  color: $primary-color;
+  background-color: $white-color;
+  border-color: $white-color;
   margin-top: 5px;
 
   &:hover {
-    color: #000;
-    background-color: colors(grey, dark);
-    border-color: colors(grey, dark);
+    color: $primary-color;
+    background-color: $white-color;
+    border-color: $primary-color;
   }
 }
