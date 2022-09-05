@@ -1,0 +1,42 @@
+/*** *** *** COLOR PALETTE:  *** *** ***/
+//*** COLOR VARIABLES SECTION:
+$primary-color: rgb(12, 12, 12);
+$secondary-color: rgb(184, 161, 136);
+$tertiary-color: rgb(24, 110, 117);
+$grey-color: #707070;
+$white-color: #ffffff;
+$off-white-color: #efedea;
+$lighten-color: 10;
+$darken-color: 25;
+
+//*** COLOR MAP SECTION:
+$colors: (
+  primary: (
+    base: $primary-color,
+    light: lighten($primary-color, $lighten-color),
+    dark: darken($primary-color, $darken-color),
+  ),
+  secondary: (
+    base: $secondary-color,
+    light: lighten($secondary-color, $lighten-color),
+    dark: darken($secondary-color, $darken-color),
+  ),
+  tertiary: (
+    base: $tertiary-color,
+    light: lighten($tertiary-color, $lighten-color),
+    dark: darken($tertiary-color, $darken-color),
+  ),
+  grey: (
+    base: $grey-color,
+    light: lighten($grey-color, $lighten-color),
+    dark: darken($grey-color, $darken-color),
+  ),
+);
+
+//*** COLOR FUNCTION SECTION:
+@function colors($base, $shade: base) {
+  $color: map-get(map-get($colors, $base), $shade);
+
+  @return $color;
+}
+/* ---------------------------------------------- */

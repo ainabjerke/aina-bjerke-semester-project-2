@@ -1,0 +1,243 @@
+.ads {
+  position: relative;
+
+  // men section
+  &__main-event {
+    background: url("/graphical-items/images/collage_img_01_resize.jpeg");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+
+    &--dark-overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    & a:hover {
+      color: colors(secondary);
+    }
+
+    @media screen and (max-width: 567px) {
+      height: 300px;
+      background-position: 100% 0%;
+    }
+
+    // men section
+    &__content {
+      // padding: 250px 10px;
+      max-width: 380px;
+      color: $white-color;
+      text-align: center;
+
+      @media screen and (max-width: 567px) {
+        padding: 213px 10px;
+        margin-left: -113px;
+      }
+
+      @media screen and (min-width: 568px) and (max-width: 991px) {
+        margin-left: -90px;
+        padding: 493px 30px;
+      }
+
+      @media screen and (min-width: 992px) {
+        padding: 522px 0px;
+        margin-left: -83px;
+      }
+
+      // & a:hover {
+      //   color: colors(secondary);
+      // }
+    }
+  }
+
+  // wommen section
+  &__news {
+    background: url("/graphical-items/images/collage_img_02_resize.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 290px;
+
+    &--dark-overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    & a:hover {
+      color: colors(secondary);
+    }
+
+    @media screen and (max-width: 567px) {
+      height: 300px;
+    }
+
+    // wommen section
+    &__content {
+      color: $white-color;
+      padding-top: 130px;
+
+      @media screen and (max-width: 567px) {
+        padding-top: 210px;
+        margin-left: 10px;
+      }
+
+      @media screen and (min-width: 568px) and (max-width: 991px) {
+        padding: 205px 0 0 40px;
+        margin-left: -2px;
+      }
+
+      @media screen and (min-width: 992px) {
+        padding: 200px 0 0 40px;
+        margin-left: -9px;
+      }
+
+      // & a {
+      //   margin-top: 15px;
+      // }
+    }
+  }
+
+  // sport section
+  &__ideas {
+    background: url("/graphical-items/images/collage_img_03_resize.jpeg");
+    background-position: 0% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 290px;
+
+    &--dark-overlay {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    & a:hover {
+      color: colors(secondary);
+    }
+
+    @media screen and (max-width: 567px) {
+      height: 300px;
+    }
+
+    &__content {
+      text-align: center;
+      padding-top: 30px;
+      color: $white-color;
+
+      @media screen and (max-width: 567px) {
+        padding-top: 215px;
+        // margin-left: -59%;
+        text-align: left;
+        margin-left: 17px;
+      }
+
+      @media screen and (min-width: 568px) and (max-width: 991px) {
+        padding-top: 209px;
+        margin-left: 49px;
+        text-align: left;
+      }
+
+      @media screen and (min-width: 992px) {
+        padding-top: 210px;
+        margin-left: -45px;
+      }
+
+      // & a {
+      //   margin-top: 15px;
+      // }
+    }
+  }
+
+  // sale section
+  &__newsletter {
+    background: url("/graphical-items//images/collage_img_04_resize.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 290px;
+
+    & a:hover {
+      color: colors(secondary);
+    }
+
+    @media screen and (max-width: 567px) {
+      height: 300px;
+      padding: 10px;
+    }
+
+    &__content {
+      color: $white-color;
+      text-align: center;
+      padding-top: 30px;
+
+      @media screen and (max-width: 567px) {
+        padding-top: 215px;
+        // margin-left: -59%;
+        text-align: left;
+        margin-left: 6px;
+      }
+
+      @media screen and (min-width: 568px) and (max-width: 991px) {
+        padding-top: 205px;
+        // margin-left: -50%;
+        text-align: left;
+        margin-left: 40px;
+      }
+
+      @media screen and (min-width: 992px) {
+        padding-top: 209px;
+        margin-left: -90px;
+      }
+
+      // & a {
+      //   margin-top: 15px;
+      // }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ads__main-event,
+  .ads__news,
+  .ads__ideas,
+  .ads__newsletter {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ads__main-event,
+  .ads__news {
+    margin-bottom: 20px;
+  }
+
+  .ads__ideas {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ads__main-event {
+    margin-right: 20px;
+  }
+
+  .ads__news {
+    margin-bottom: 20px;
+  }
+
+  .ads__ideas {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,37 @@
+/**** *** *** ABSTRACT SECTION *** *** ***/
+@import "./abstract/maps";
+
+/*** *** *** BASE SECTION *** *** ***/
+@import "./base/reset";
+@import "./base/typography";
+
+/*** *** *** COMPONENTS SECTION *** *** ***/
+@import "./components/buttons";
+
+/*** *** *** LAYOUT SECTION *** *** ***/
+@import "./layout/footer";
+@import "./layout/navigation";
+@import "./layout/nav-icon-menu";
+@import "./layout/search";
+@import "./layout/breadcrumb";
+
+/*** *** *** PEAGES SECTION *** *** ***/
+@import "./pages/home-ads";
+@import "./pages/home-hero-banner";
+@import "./pages/home-loyalty";
+@import "./pages/home-newsletter";
+@import "./pages/home-info-bar";
+@import "./pages/home-product-card";
+@import "./pages/home-product-layout";
+@import "./pages/products-about";
+@import "./pages/details";
+@import "./pages/cart";
+
+/*** *** *** THEMES/ADMIN SECTION *** *** ***/
+@import "./themes/admin/adminMenu";
+@import "./themes/admin/edit";
+@import "./themes/admin/login";
+@import "./themes/admin/productMenu";
+
+/*** *** *** THEMES/DEFAULTTHEMES SECTION *** *** ***/
+@import "./themes/defaultThemes/reset-admin";

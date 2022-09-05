@@ -1,0 +1,55 @@
+.featured {
+  background-color: white;
+  &__title {
+    text-align: center;
+    padding: 20px;
+  }
+}
+.product {
+  text-align: center;
+  max-width: 250px;
+  margin: 30px 0;
+  padding: 10px;
+  transition: 0.25s ease-in-out;
+
+  //   background-color: white;
+  @media screen and (min-width: 568px) and (max-width: 991px) {
+    padding: 10px 20px;
+  }
+
+  &__image {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 10px;
+  }
+
+  &__title {
+    font-size: clamp(15px, 50vw, 18px);
+  }
+
+  &__desc {
+    margin: 0;
+  }
+
+  &__price {
+    // font-weight: 700;
+    // margin-top: 15px;
+    // font-size: clamp(15px, 50vw, 18px);
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 19px;
+    margin-bottom: 28px;
+    width: 100%;
+  }
+
+  &__button {
+    margin: 0 !important;
+    width: 100%;
+  }
+}

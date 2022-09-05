@@ -1,0 +1,71 @@
+/* TYPOGRAPHY: ---------------------------------- */
+h1 {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 58px;
+  text-transform: none;
+  font-size: clamp(40px, 5vw, 50px);
+  margin-top: 60px;
+  // margin-bottom: 13px;
+  @media screen and (max-width: 767px) {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    line-height: 46px;
+  }
+}
+
+h2 {
+  font-family: "Nanum Myeongjo", serif;
+  // letter-spacing: 1px;
+  font-weight: 400;
+  // font-size: 40px;
+  letter-spacing: 1.6px;
+  line-height: 50px;
+  font-size: clamp(30px, 5vw, 40px);
+  // text-transform: uppercase;
+}
+
+h3 {
+  //   font-family: ff-ernestine-pro, serif;
+  font-weight: 350;
+  font-size: clamp(40px, 4vw, 30px);
+  text-transform: uppercase;
+}
+
+h4 {
+  //   font-family: montserrat, sans-serif;
+
+  font-weight: 500;
+  font-size: clamp(20px, 4vw, 30px);
+  text-transform: uppercase;
+}
+
+h5 {
+  //   font-family: gaultier, sans-serif;
+  font-family: "Nanum Myeongjo", serif;
+  // font-size: 40px;
+  letter-spacing: 1.6px;
+  line-height: 50px;
+  font-size: clamp(40px, 5vw, 40px);
+  font-weight: 600;
+  // font-size: clamp(17px, 2vw, 20px);
+  // text-transform: uppercase;
+}
+
+h6 {
+  //   font-family: montserrat, sans-serif;
+  font-weight: 800;
+  font-size: clamp(12px, 2vw, 12px);
+  text-transform: uppercase;
+}
+
+body,
+button {
+  //   font-family: montserrat, sans-serif;
+  //   font-weight: 400;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  color: black;
+}
+/* ---------------------------------------------- */

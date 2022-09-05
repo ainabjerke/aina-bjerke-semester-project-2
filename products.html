@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO SECTION: -->
+    <meta
+      name="description"
+      content="Aina Bjerke Frontend developer porfolio page"
+    />
+    <meta
+      name="keywords"
+      content="Fronend, UX, UI, design, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Aina Bjerke" />
+
+    <!-- GOOGLE FONT SECTION: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+JP:wght@100;300;400;700&family=Noto+Sans+Lao:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME SECTION: -->
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP SECTION: -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- FAVE ICON SECTION: -->
+
+    <!-- CSS SECTION: -->
+    <link rel="stylesheet" href="./css/style.css" />
+    
+    <!-- TITLE SECTION: -->
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navigation: -->
+      <nav class="nav">
+        <div class="container">
+          <!-- Top of the Navigation: -->
+          <div class="nav__top row">
+            <!-- Hamburger Icon: -->
+            <!-- <div class="nav__menu-icon col">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> -->
+
+            <!-- Logo: -->
+            <div class="nav__brand col">
+              <a href="./index.html">
+                <img
+                  src="./graphical-items/logo/gg_optic_favicon_01_resize.png"
+                  alt="GG optic Logo"
+                  class="nav__logo"
+                />
+              </a>
+            </div>
+
+            <!-- Large Viewport Searchbar: -->
+            <form class="form-inline search search--lg col">
+              <input
+                class="form-control search__input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="./products.html" class="btn btn--primary search__btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </form>
+
+            <!-- Shopping Icons: -->
+            <!-- nav__icons: is used as classname in scss and js, change this name  -->
+            <div class="nav__icons col">
+              <div class="cart__icon">
+                <div class="cart__icon-quantity">0</div>
+                <a href="./cart.html">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <!-- <div class="cart__icon-quantity">0</div> -->
+              </div>
+            </div>
+
+            <!-- Hamburger Icon: -->
+            <div class="ap-header-menu__hamburger-wrapper"></div>
+            <div class="nav__menu-icon col">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- Small Viewport Searchbar: -->
+          <form class="form-inline search search--sm col">
+            <input
+              class="form-control search__input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <a
+              href="./products.html"
+              class="btn btn--primary search__btn"
+              type="submit"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </form>
+
+          <!-- Menu: -->
+          <!--change this name .nav__menu-->
+          >
+          <div class="nav__menu col-lg-12">
+            <ul class="nav__menu__list">
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Otical glasses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Sun glasses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Sport glasses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Lenses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Accessories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main container">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="./products.html">Products</a>
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Header: -->
+        <header class="header container">
+          <h1 class="header__title">Products</h1>
+          <p class="header__text">
+            What do Audrey Hepburn, Jackie Onassis, John Lennon and Bono have in
+            common? Iconic sunglasses.
+          </p>
+          <p>So travel with style and protect your eyes from damage.</p>
+        </header>
+
+        <!-- Products: -->
+        <section class="products row">
+          <!-- Loader: -->
+          <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </section>
+
+        <!-- ABOUT OUR SUNGLASSES SECTION  : -->
+        <section class="about">
+          <section class="about__heading">
+            <h2>About our sunglasses</h2>
+          </section>
+          <section class="about__text">
+            <div>
+              <p>
+                Putting on a new pair of glasses or sunglasses is a simple way
+                to completely transform your look. Just likea new hairstyle.
+              </p>
+              <p>
+                But the most important benefit of weaing sunglasses is that they
+                protect your eyes from ultraviolet (UV) light, UV light can have
+                harmful effects on the eyelid, cornea, lens and retina.
+              </p>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <!-- LOIALITY SECTION: -->
+    <section class="loyalty-program">
+      <section class="loyalty-program__img"></section>
+      <section class="loyalty-program--dark-overlay">
+        <div class="loyalty-program__content">
+          <h5 class="loyalty-program__heading">Join our loyiality program</h5>
+          <p>Discover GG Optics world and let us surprise you.</p>
+          <p>Welcomegift if waiting for you!</p>
+
+          <p class="loyalty-program__btn">
+            <a href="index.html" class="btn btn--secondary btn--cta">
+              Join us now
+            </a>
+          </p>
+        </div>
+
+        <!-- </div> -->
+      </section>
+    </section>
+
+    <!-- NEWSLETTER SECTION: -->
+
+    <section class="newsletter">
+      <section class="newsletter__img"></section>
+      <section class="newsletter--dark-overlay">
+        <div class="newsletter__content">
+          <h5>Keep your self updated</h5>
+          <p>
+            Registrer now to get our newsletter and exlusive offer from GG Optic
+          </p>
+          <div>
+            <input
+              type="text"
+              name="newsLetterBar"
+              id="newsLetterBar"
+              placeholder="Enter email adress"
+              class="newsletter__input"
+            />
+          </div>
+          <button class="newsletter__btn">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+        </div>
+      </section>
+    </section>
+
+    <!--home page product icon bar service-->
+    <section>
+      <div class="info-bar">
+        <p>
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Fast delivery</span>
+          <span class="info-bar__text">(1-3) days</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-credit-card"></i>
+          <span>Free delivery</span>
+          <span class="info-bar__text">Domestic</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-thumbs-up"></i>
+          <span>Free return</span>
+          <span class="info-bar__text">Domestic</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- </main>
+    </div> -->
+
+    <footer class="footer">
+      <div class="footer-l container-fluid">
+        <div class="footer-l__content row">
+          <div class="col-md-4">
+            <div class="footer-l__logo">
+              <a href="index.html">
+                <img
+                  src="./graphical-items/logo/gg_optic_favicon_01_resize.png"
+                  alt="GG Optic logo"
+                  class="footer-l__logo-image"
+                />
+              </a>
+            </div>
+            <section class="footer-l__image">
+              <div>
+                <img
+                  src="./graphical-items/images/footer_img_01_resize.jpeg"
+                  alt=""
+                  class="footer-l__image1"
+                />
+              </div>
+              <div>
+                <img
+                  src="./graphical-items/images/footer_img_02_resize.jpeg"
+                  alt=""
+                  class="footer-l__image2"
+                />
+              </div>
+            </section>
+          </div>
+          <div class="footer-r col-md-8">
+            <div class="footer-r__content">
+              <h4 class="footer-r__heading">GG Optics</h4>
+              <!-- <div class="footer__containerR--list"> -->
+              <ul class="footer-r__list">
+                <li class="footer-r__item">
+                  <a href="./products.html" class="nav__link">Otical glasses</a>
+                </li>
+                <li class="footer-r__item">
+                  <a href="./products.html" class="nav__link">Sun glasses</a>
+                </li>
+                <li class="footer-r__item">
+                  <a href="./products.html" class="nav__link">Sport glasses</a>
+                </li>
+                <li class="footer-r__item">
+                  <a href="./products.html" class="nav__link">Lenses</a>
+                </li>
+                <li class="footer-r__item">
+                  <a href="./products.html" class="nav__link">Accessories</a>
+                </li>
+              </ul>
+              <!-- </div> -->
+              <!-- Follow us on social media -->
+              <div class="footer-r__smedia">
+                <h4 class="footer-r__smedia--heading">
+                  Follow us on social media
+                </h4>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-youtube-square"></i></a>
+              </div>
+              <!-- Copyright information -->
+              <div class="footer-r__copyright">
+                <p>&copy; 2022 GG Optic | Designed and coded by Aina Bjerke</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JAVA SCRIPT SECTION: -->
+    <script src="./js/products.js" type="module"></script>
+    <!-- BOOTSTRAP SECTION: -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

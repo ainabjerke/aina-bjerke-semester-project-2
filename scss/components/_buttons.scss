@@ -1,0 +1,112 @@
+.btn {
+  //margin-top: 20px;
+  text-transform: uppercase;
+  // transition: .15s ease-in-out;
+  border-radius: 0;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 20px rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    cursor: pointer;
+    // background-color: black;
+  }
+
+  &--primary {
+    background: colors(primary);
+    color: white;
+    font-weight: 500;
+
+    &:hover {
+      background: colors(primary, light);
+      color: white;
+    }
+  }
+
+  &--secondary {
+    background: colors(secondary);
+    color: $primary-color;
+    font-weight: 500;
+
+    &:hover {
+      background: colors(secondary, light);
+      color: $primary-color;
+    }
+  }
+
+  &--tertiary {
+    background: colors(secondary);
+    color: black;
+    font-weight: 700;
+
+    &:hover {
+      background: colors(secondary, light);
+      color: black;
+    }
+  }
+
+  &--warning {
+    background: rgb(189, 0, 0);
+    color: white;
+
+    &:hover {
+      background: rgb(112, 13, 0);
+      color: white;
+    }
+  }
+
+  // &--loyalty {
+  //   background: rgb(189, 0, 0);
+  //   color: white;
+
+  //   &:hover {
+  //     background: rgb(112, 13, 0);
+  //     color: white;
+  //   }
+  // }
+
+  &--lg {
+    padding: 20px 60px;
+    font-weight: 700;
+  }
+
+  &--md {
+    padding: 20px 40px;
+    font-weight: 700;
+  }
+
+  &--sm {
+    letter-spacing: 2px;
+    line-height: 1.2;
+    padding: 14px 20px;
+    font-size: 12px;
+  }
+
+  &--xs {
+    // padding: 8px 10px;
+    // font-weight: 600;
+    // font-size: 12px;
+    padding: 12px 27px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: -13px;
+  }
+
+  &--cta {
+    // padding: 20px 60px;
+    // font-weight: 700;
+    // font-weight: lighter;
+    // font-size: clamp(18px, 5vw, 20px);
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    min-width: 220px;
+    max-width: 280px;
+    padding: 14px 20px;
+    font-weight: 600;
+  }
+
+  &--input {
+    padding: 3px 6px;
+    font-size: 14px;
+  }
+}

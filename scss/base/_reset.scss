@@ -1,0 +1,74 @@
+/* STICKY FOOTER: ------------------------------- */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  background-color: $off-white-color;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+/* ---------------------------------------------- */
+
+/* RESETTING MARGIN & PADDING: ------------------ */
+nav,
+footer,
+header,
+main,
+div,
+section,
+article,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+a,
+input,
+textarea,
+section,
+option,
+label,
+ul,
+ol,
+li,
+form,
+img,
+iframe {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------- */
+
+// .bold {
+//   font-weight: 700;
+// }
+
+.section {
+  margin: 100px 0px;
+
+  @media screen and (max-width: 567px) {
+    margin: 50px 0px;
+  }
+}
+
+// Override row margin
+.row--fix {
+  margin: 0;
+  padding: 0;
+}

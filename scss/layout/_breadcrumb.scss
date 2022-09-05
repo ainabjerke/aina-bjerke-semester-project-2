@@ -1,0 +1,6 @@
+.breadcrumb {
+  background: $off-white-color;
+  &-item a {
+    color: colors(primary);
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- DEFAULT SECTION: -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONT SECTION: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+JP:wght@100;300;400;700&family=Noto+Sans+Lao:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME SECTION: -->
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BOOTSTRAP SECTION: -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- FAVE ICON SECTION: -->
+    <!-- <link
+      rel="icon"
+      href="../graphics/logo/icon-primary.svg"
+      type="image/gif"
+      sizes="16x16"
+    /> -->
+
+    <!-- CSS SECTION: -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- PAGE TITLE SECITON: -->
+    <title>Admin Login</title>
+  </head>
+
+  <body class="admin__body">
+    <div class="form-login__container container">
+      <!-- Logo: -->
+      <div class="form-login__brand">
+        <a href="../index.html">
+          <img
+            class="form-login__logo"
+            src="../graphical-items/logo/gg_optic_favicon_01_resize.png"
+            alt="gg optic logo"
+          />
+        </a>
+      </div>
+
+      <!-- Title: -->
+      <h1 class="form-login__title">Admin Login</h1>
+
+      <!-- Form: -->
+      <form class="form-login">
+        <div class="feedback"></div>
+
+        <!-- Username: -->
+        <div class="form-input__content">
+          <label class="form-login__label" for="username">Username</label>
+          <input
+            class="form-login__input"
+            type="text"
+            id="username"
+            placeholder="Enter username"
+          />
+        </div>
+
+        <!-- Password -->
+        <div class="form-input__content">
+          <label
+            class="form-login__label form-login__label--padding"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="form-login__input"
+            placeholder="Enter password"
+            id="password"
+            type="password"
+          />
+        </div>
+
+        <button type="submit" class="form-login__btn btn btn--secondary col">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <!-- JAVASCRIPT SECTION: -->
+    <script src="../js/admin/index.js" type="module"></script>
+
+    <!-- BOOTSTRAP SECTION: -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
