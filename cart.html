@@ -14,7 +14,7 @@
       content="Fronend, UX, UI, design, HTML, CSS, JavaScript"
     />
     <meta name="author" content="Aina Bjerke" />
-    
+
     <!-- GOOGLE FONT SECTION: -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,13 +22,13 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+JP:wght@100;300;400;700&family=Noto+Sans+Lao:wght@100;200;300;400;600&display=swap"
       rel="stylesheet"
     />
-    
+
     <!-- FONT AWESOME SECTION: -->
     <script
       src="https://kit.fontawesome.com/c084a66896.js"
       crossorigin="anonymous"
     ></script>
-    
+
     <!-- BOOTSTRAP SECTION: -->
     <link
       rel="stylesheet"
@@ -36,302 +36,277 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    
-    <!-- FAVE ICON SECTION: -->
 
+    <!-- FAVE ICON SECTION: -->
 
     <!-- CSS SECTION: -->
     <link rel="stylesheet" href="./css/style.css" />
-    
+
     <!-- TITLE SECTION: -->
     <title>Shopping cart</title>
   </head>
   <body>
-
     <div class="wrapper">
-
-  <!-- Navigation: -->
-  <nav class="nav">
-    <div class="container">
-      <!-- Top of the Navigation: -->
-      <div class="nav__top row">
-        <!-- Hamburger Icon: -->
-        <!-- <div class="nav__menu-icon col">
+      <!-- Navigation: -->
+      <nav class="nav">
+        <div class="container">
+          <!-- Top of the Navigation: -->
+          <div class="nav__top row">
+            <!-- Hamburger Icon: -->
+            <!-- <div class="nav__menu-icon col">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div> -->
 
-        <!-- Logo: -->
-        <div class="nav__brand col">
-          <a href="./index.html">
-            <img
-              src="./graphical-items/logo/gg_optic_favicon_01_resize.png"
-              alt="GG optic Logo"
-              class="nav__logo"
-            />
-          </a>
-        </div>
+            <!-- Logo: -->
+            <div class="nav__brand col">
+              <a href="./index.html">
+                <img
+                  src="./graphical-items/logo/gg_optic_favicon_01_resize.png"
+                  alt="GG optic Logo"
+                  class="nav__logo"
+                />
+              </a>
+            </div>
 
-        <!-- Large Viewport Searchbar: -->
-        <form class="form-inline search search--lg col">
-          <input
-            class="form-control search__input"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <a href="./products.html" class="btn btn--primary search__btn">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </a>
-        </form>
+            <!-- Large Viewport Searchbar: -->
+            <form class="form-inline search search--lg col">
+              <input
+                class="form-control search__input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <a href="./products.html" class="btn btn--primary search__btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </form>
 
-        <!-- Shopping Icons: -->
-                 <!-- nav__icons: is used as classname in scss and js, change this name  -->
-        <div class="nav__icons col">
-          <div class="cart__icon">
-            <div class="cart__icon-quantity">0</div>
-            <a href="./cart.html">
-              <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-            <!-- <div class="cart__icon-quantity">0</div> -->
+            <!-- Shopping Icons: -->
+            <!-- nav__icons: is used as classname in scss and js, change this name  -->
+            <div class="nav__icons col">
+              <div class="cart__icon">
+                <div class="cart__icon-quantity">0</div>
+                <a href="./cart.html">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <!-- <div class="cart__icon-quantity">0</div> -->
+              </div>
+            </div>
+
+            <!-- Hamburger Icon: -->
+            <div class="ap-header-menu__hamburger-wrapper"></div>
+            <div class="nav__menu-icon col">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-        </div>
 
-        <!-- Hamburger Icon: -->
-        <div class="ap-header-menu__hamburger-wrapper"></div>
-        <div class="nav__menu-icon col">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
+          <!-- Small Viewport Searchbar: -->
+          <form class="form-inline search search--sm col">
+            <input
+              class="form-control search__input"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <a href="./products.html" class="btn btn--primary search__btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </form>
 
-      <!-- Small Viewport Searchbar: -->
-      <form class="form-inline search search--sm col">
-        <input
-          class="form-control search__input"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <a
-          href="./products.html"
-          class="btn btn--primary search__btn"
-          type="submit"
-        >
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </a>
-      </form>
-
-      <!-- Menu: -->
-      <!--change this name .nav__menu-->
-      <div class="nav__menu col-lg-12">
-        <ul class="nav__menu__list">
-          <li class="nav__menu__item">
-            <a href="./products.html" class="nav__link">Otical glasses</a>
-          </li>
-          <li class="nav__menu__item">
-            <a href="./products.html" class="nav__link">Sun glasses</a>
-          </li>
-          <li class="nav__menu__item">
-            <a href="./products.html" class="nav__link">Sport glasses</a>
-          </li>
-          <li class="nav__menu__item">
-            <a href="./products.html" class="nav__link">Lenses</a>
-          </li>
-          <li class="nav__menu__item">
-            <a href="./products.html" class="nav__link">Accessories</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-    
-      <!-- <main> -->
- <!-- Header: -->
- <header class="header container cart-header__container">
-  <h4 class="header__title cart-header__title">
-      Shopping Cart 
-      <span class="cart__total-items">(0)</span>
-  </h4>
-</header>
-
-<main class="cart container">
-  <div class="row row--fix">
-  
-
-      <!-- Products: -->
-      <section class="cart__section cart__section--products col-sm-12 col-lg-8 clearfix">
-          <div class="cart__products col-12 clearfix"></div>
-      </section>
-
-      <!-- Information: -->
-      <section class="cart__section cart__section--info col-sm-12  col-lg-4">
-            <h5 class="cart__heading">Summary</h5>
-            <div class="col-12">
-            <ul class="cart__benefits">
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Delivery 2-3 working days
+          <!-- Menu: -->
+          <!--change this name .nav__menu-->
+          <div class="nav__menu col-lg-12">
+            <ul class="nav__menu__list">
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Otical glasses</a>
               </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Free return
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Sun glasses</a>
               </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Free shipping
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Sport glasses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Lenses</a>
+              </li>
+              <li class="nav__menu__item">
+                <a href="./products.html" class="nav__link">Accessories</a>
               </li>
             </ul>
           </div>
+        </div>
+      </nav>
 
-          <!-- Total Price -->
-          <div class="cart__total col-12 row">
-      
+      <!-- <main> -->
+      <!-- Header: -->
+      <header class="header container cart-header__container">
+        <h4 class="header__title cart-header__title">
+          Shopping Cart
+          <span class="cart__total-items">(0)</span>
+        </h4>
+      </header>
+
+      <main class="cart container">
+        <div class="row row--fix">
+          <!-- Products: -->
+          <section
+            class="cart__section cart__section--products col-sm-12 col-lg-8 clearfix"
+          >
+            <div class="cart__products col-12 clearfix"></div>
+          </section>
+
+          <!-- Information: -->
+          <section class="cart__section cart__section--info col-sm-12 col-lg-4">
+            <h5 class="cart__heading">Summary</h5>
+            <div class="col-12">
+              <ul class="cart__benefits">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Delivery 2-3 working days
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Free return
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Free shipping
+                </li>
+              </ul>
+            </div>
+
+            <!-- Total Price -->
+            <div class="cart__total col-12 row">
               <p class="cart__total__text col-6">Totalt price</p>
               <p class="cart__total__price col-6">0 NOK</p>
             </div>
 
-          <!-- Checkout Button: -->
-          <button class="btn btn--primary btn--sm col-12">
+            <!-- Checkout Button: -->
+            <button class="btn btn--primary btn--sm col-12">
               Go to checkout
-          </button>
-     
-          <!-- Benefits Lits: -->
-          <div class="cart__checkout col-12">
-            <p class="cart__checkout"><i class="fa-solid fa-unlock-keyhole"></i> safe checkout</p>
-            
+            </button>
+
+            <!-- Benefits Lits: -->
+            <div class="cart__checkout col-12">
+              <p class="cart__checkout">
+                <i class="fa-solid fa-unlock-keyhole"></i>
+                safe checkout
+              </p>
+
               <!-- <ul class="details__benefits">
                   <li><i class="fal fa-check"></i> Free shipping</li>
                   <li><i class="fal fa-check"></i> Fast Delivery</li>
                   <li><i class="fal fa-check"></i> Free payment deferral</li>
               </ul> -->
-          </div>
-      
-      </section>
+            </div>
+          </section>
+        </div>
 
-  </div>
+        <!-- </main> -->
 
-<!-- </main> -->
+        <!-- Featured Products: -->
+        <div class="container">
+          <section class="section featured">
+            <h2 class="featured__title featured__title--cart">
+              Popular products
+            </h2>
 
-<!-- Featured Products: -->
-<div class="container">
+            <div class="featured__line"></div>
 
-  <section class="section featured">
-      
-      <h2 class="featured__title featured__title--cart">
-          Popular products
-      </h2>
-          
-      <div class="featured__line"></div>
-      
-      
-      <div class="featured__products products row">
-      
-          <div class="loader">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
-      
-      </div>
-  
-  </section>
-</div>
-</div>
-
-
-<!-- </div>
+            <div class="featured__products products row">
+              <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <!-- </div>
 
 </main> -->
 
+    <!-- LOIALITY SECTION: -->
+    <section class="loyalty-program">
+      <section class="loyalty-program__img"></section>
+      <section class="loyalty-program--dark-overlay">
+        <div class="loyalty-program__content">
+          <h5 class="loyalty-program__heading">Join our loyiality program</h5>
+          <p>Discover GG Optics world and let us surprise you.</p>
+          <p>Welcomegift if waiting for you!</p>
 
+          <p class="loyalty-program__btn">
+            <a href="index.html" class="btn btn--secondary btn--cta">
+              Join us now
+            </a>
+          </p>
+        </div>
+      </section>
+    </section>
 
-        <!-- LOIALITY SECTION: -->
-        <section class="loyalty-program">
-          <section class="loyalty-program__img"></section>
-          <section class="loyalty-program--dark-overlay">
-            <div class="loyalty-program__content">
-              <h5 class="loyalty-program__heading">
-                Join our loyiality program
-              </h5>
-              <p>Discover GG Optics world and let us surprise you.</p>
-              <p>Welcomegift if waiting for you!</p>
+    <!-- NEWSLETTER SECTION: -->
 
-              <p class="loyalty-program__btn">
-                <a href="index.html" class="btn btn--secondary btn--cta">
-                  Join us now
-                </a>
-              </p>
-            </div>
-          </section>
-        </section>
-
-        <!-- NEWSLETTER SECTION: -->
-
-        <section class="newsletter">
-          <section class="newsletter__img"></section>
-          <section class="newsletter--dark-overlay">
-            <div class="newsletter__content">
-              <h5>Keep your self updated</h5>
-              <p>
-                Registrer now to get our newsletter and exlusive offer from GG
-                Optic
-              </p>
-              <div>
-                <input
-                  type="text"
-                  name="newsLetterBar"
-                  id="newsLetterBar"
-                  placeholder="Enter email adress"
-                  class="newsletter__input"
-                />
-              </div>
-              <button class="newsletter__btn">
-                <i class="fa-solid fa-envelope"></i>
-              </button>
-            </div>
-          </section>
-        </section>
-
-        <!--home page product icon bar service-->
-        <section>
-          <div class="info-bar">
-            <p>
-              <i class="fa-solid fa-truck-fast"></i>
-              <span>Fast delivery</span>
-              <span class="info-bar__text">(1-3) days</span>
-            </p>
-            <p>
-              <i class="fa-solid fa-credit-card"></i>
-              <span>Free delivery</span>
-              <span class="info-bar__text">Domestic</span>
-            </p>
-            <p>
-              <i class="fa-solid fa-thumbs-up"></i>
-              <span>Free return</span>
-              <span class="info-bar__text">Domestic</span>
-            </p>
+    <section class="newsletter">
+      <section class="newsletter__img"></section>
+      <section class="newsletter--dark-overlay">
+        <div class="newsletter__content">
+          <h5>Keep your self updated</h5>
+          <p>
+            Registrer now to get our newsletter and exlusive offer from GG Optic
+          </p>
+          <div>
+            <input
+              type="text"
+              name="newsLetterBar"
+              id="newsLetterBar"
+              placeholder="Enter email adress"
+              class="newsletter__input"
+            />
           </div>
-        </section>
+          <button class="newsletter__btn">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+        </div>
+      </section>
+    </section>
 
-
-
-
-      </main>
-    </div>
+    <!--home page product icon bar service-->
+    <section>
+      <div class="info-bar">
+        <p>
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Fast delivery</span>
+          <span class="info-bar__text">(1-3) days</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-credit-card"></i>
+          <span>Free delivery</span>
+          <span class="info-bar__text">Domestic</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-thumbs-up"></i>
+          <span>Free return</span>
+          <span class="info-bar__text">Domestic</span>
+        </p>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-l container-fluid">
