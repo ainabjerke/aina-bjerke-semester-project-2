@@ -1,4 +1,6 @@
-/* STICKY FOOTER: ------------------------------- */
+/*** *** *** RESET PAGE SETTINGS:  *** *** ***/
+
+//--- --- HTML BODY LAYOUT RESET: --- ---//
 html,
 body {
   height: 100%;
@@ -18,9 +20,8 @@ body {
 .wrapper {
   flex: 1 0 auto;
 }
-/* ---------------------------------------------- */
 
-/* RESETTING MARGIN & PADDING: ------------------ */
+//--- --- MARGIN MARGIN PADDING AND BOX SIZING: --- ---//
 nav,
 footer,
 header,
@@ -52,12 +53,8 @@ iframe {
   padding: 0;
   box-sizing: border-box;
 }
-/* ---------------------------------------------- */
 
-// .bold {
-//   font-weight: 700;
-// }
-
+//--- --- RESET SECTION MARGIN: --- ---//
 .section {
   margin: 100px 0px;
 
@@ -66,8 +63,19 @@ iframe {
   }
 }
 
-// Override row margin
+//--- --- RESET ROW MARGIN: --- ---//
 .row--fix {
   margin: 0;
   padding: 0;
+}
+
+//--- --- RESET CONTAINER MAX WIDTH: --- ---//
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  @media (min-width: 1200px) {
+    max-width: 1134px;
+  }
 }

@@ -1,6 +1,6 @@
 .edit {
   &__container {
-    margin-left: clamp(0px, 1vw, 300px);
+    // margin-left: clamp(0px, 1vw, 300px);
     max-width: 630px;
     margin-bottom: 50px;
 
@@ -14,16 +14,20 @@
     }
   }
 
-  &__title {
-    font-size: clamp(25px, 5vw, 35px);
-    margin-bottom: clamp(10px, 5vw, 20px);
-    margin-top: clamp(15px, 5vw, 20px);
+  &__heading {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    // font-size: clamp(25px, 5vw, 35px);
+    // margin-bottom: clamp(10px, 5vw, 20px);
+    // margin-top: clamp(15px, 5vw, 20px);
   }
 
   &__form {
     &__label {
       width: 100%;
-      margin-top: clamp(15px, 5vw, 25px);
+      margin-top: 25px;
+      // margin-top: clamp(15px, 5vw, 25px);
       font-weight: 500;
     }
 
@@ -59,8 +63,9 @@
   }
 
   &__advanced-option {
-    width: clamp(200px, 90vw, 600px);
+    // width: clamp(200px, 90vw, 600px);
     margin-bottom: 80px;
+    width: 100%;
 
     & .card-header {
       padding: 0;
@@ -68,7 +73,8 @@
     }
 
     & .card-body {
-      padding: clamp(15px, 5vw, 20px);
+      // padding: clamp(15px, 5vw, 20px);
+      padding: 20px;
     }
   }
 }

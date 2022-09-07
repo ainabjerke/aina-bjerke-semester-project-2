@@ -52,21 +52,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- Navigation: -->
+      <!-- NAVIGATION SECTION: -->
       <nav class="nav">
         <div class="container">
-          <!-- Top of the Navigation: -->
+          <!-- TOP NAV SECTION: -->
           <div class="nav__top row">
-            <!-- Hamburger Icon: -->
-            <!-- <div class="nav__menu-icon col">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div> -->
-
-            <!-- Logo: -->
-            <div class="nav__brand col">
+            <!-- LOGO NAV SECTION: -->
+            <div class="nav__trademark col">
               <a href="./index.html">
                 <img
                   src="./graphical-items/logo/gg_optic_logo_01_resize.png"
@@ -76,7 +68,7 @@
               </a>
             </div>
 
-            <!-- Large Viewport Searchbar: -->
+            <!-- SEARCBAR LARGE DEVICE SECTION -->
             <form class="form-inline search search--lg col">
               <input
                 class="form-control search__input"
@@ -89,20 +81,18 @@
               </a>
             </form>
 
-            <!-- Shopping Icons: -->
-            <!-- nav__icons: is used as classname in scss and js, change this name  -->
+            <!-- SHOPPING CART AND ICON SECTION: -->
             <div class="nav__icons col">
-              <div class="cart__icon">
-                <div class="cart__icon-quantity">0</div>
+              <div class="nav__icon cart__icon">
+                <div class="nav__icon-quantity cart__icon-quantity">0</div>
                 <a href="./cart.html">
                   <i class="fa-solid fa-bag-shopping"></i>
                 </a>
-                <!-- <div class="cart__icon-quantity">0</div> -->
               </div>
             </div>
 
-            <!-- Hamburger Icon: -->
-            <div class="ap-header-menu__hamburger-wrapper"></div>
+            <!-- HAMBURGER ICON SECTION: -->
+            <div class="nav__menu__vertical-line"></div>
             <div class="nav__menu-icon col">
               <span></span>
               <span></span>
@@ -111,7 +101,7 @@
             </div>
           </div>
 
-          <!-- Small Viewport Searchbar: -->
+          <!-- SEARCH BAR SMALL DEVICE SECTION: -->
           <form class="form-inline search search--sm col">
             <input
               class="form-control search__input"
@@ -124,8 +114,7 @@
             </a>
           </form>
 
-          <!-- Menu: -->
-          <!--change this name .nav__menu-->
+          <!-- MENU LIST SECTION: -->
           >
           <div class="nav__menu col-lg-12">
             <ul class="nav__menu__list">
@@ -153,7 +142,8 @@
       <header class="hero">
         <div class="hero__content">
           <div class="hero__content--dark-overlay">
-            <h1 class="hero__headline">Find every shape & shade of you!</h1>
+            <h1 class="hero__heading">Find every shape & shade of you!</h1>
+            <!-- <h1 class="hero__subheading">Stop dreaming</h1> -->
             <p class="hero__text">
               Step into our world of sun and explore our exclusive style.
             </p>
@@ -171,64 +161,64 @@
         </div>
       </header>
 
-      <!-- Main Content: -->
+      <!-- MAIN CONTENT SECTION: -->
       <main class="main container">
-        <!-- ADS-BANNER: -->
-        <section class="section ads row">
-          <div class="ads__main-event col-sm-12 col-lg">
-            <div class="ads__main-event--dark-overlay">
+        <!-- COLLAGE SECTION: -->
+        <section class="section collage row">
+          <!-- COLLAGE MEN SECTION: -->
+          <div class="collage__men col-sm-12 col-lg">
+            <div class="collage__men--dark-overlay">
               <a href="./products.html">
-                <div class="ads__main-event__content">
+                <div class="collage__men__content">
                   <h3>
                     Men
                     <i class="fa-solid fa-chevron-right"></i>
                   </h3>
-                  <!-- <a href="#" class="btn btn--christmas btn--md">order now</a> -->
                 </div>
               </a>
             </div>
           </div>
 
+          <!-- COLLAGE WOMEN SECTION-->
           <div class="col-sm-12 col-lg">
             <div class="row">
-              <div class="ads__news col-sm-12">
-                <div class="ads__news--dark-overlay">
+              <div class="collage__women col-sm-12">
+                <div class="collage__women--dark-overlay">
                   <a href="./products.html">
-                    <div class="ads__news__content">
+                    <div class="collage__women__content">
                       <h3>
                         Women
                         <i class="fa-solid fa-chevron-right"></i>
                       </h3>
-                      <!-- <a href="#" class="btn btn--primary btn--sm">shop now</a> -->
                     </div>
                   </a>
                 </div>
               </div>
             </div>
 
+            <!-- COLLAGE SPORT SECTION-->
             <div class="row">
-              <div class="ads__ideas col-sm-12 col-md">
-                <div class="ads__ideas--dark-overlay">
+              <div class="collage__sport col-sm-12 col-md">
+                <div class="collage__sport--dark-overlay">
                   <a href="./products.html">
-                    <div class="ads__ideas__content">
+                    <div class="collage__sport__content">
                       <h3>
                         Sport
                         <i class="fa-solid fa-chevron-right"></i>
                       </h3>
-                      <!-- <a href="#" class="btn btn--christmas btn--sm">Explore</a> -->
                     </div>
                   </a>
                 </div>
               </div>
 
-              <div class="ads__newsletter col-sm-12 col-md">
+              <!-- COLLAGE SALE SECTION-->
+              <div class="collage__sale col-sm-12 col-md">
                 <a href="./products.html">
-                  <div class="ads__newsletter__content">
+                  <div class="collage__sale__content">
                     <h3>
                       Sale
                       <i class="fa-solid fa-chevron-right"></i>
                     </h3>
-                    <!-- <a href="#" class="btn btn--secondary btn--sm">sign up</a> -->
                   </div>
                 </a>
               </div>
@@ -236,17 +226,13 @@
           </div>
         </section>
 
-        <!-- Featured Products: -->
-        <section class="section featured">
-          <!-- Page Title: -->
-          <h2 class="featured__title featured__title--best-selling">
-            Featured products
-          </h2>
-          <div class="featured__line"></div>
+        <!-- FEATURED PRODUCT SECTION-->
+        <section class="featured section">
+          <h2 class="featured__title">Featured products</h2>
 
-          <!-- Dynamic Product List here: -->
+          <!-- DYNAMIC PRODUCT SECTION: -->
           <div class="featured__products products row">
-            <!-- Loader: -->
+            <!-- LOADER SECTION: -->
             <div class="loader">
               <div></div>
               <div></div>
@@ -263,9 +249,9 @@
             </div>
           </div>
         </section>
-        <!-- </div> -->
       </main>
     </div>
+
     <!-- LOIALITY SECTION: -->
     <section class="loyalty-program">
       <section class="loyalty-program__img"></section>
@@ -281,13 +267,10 @@
             </a>
           </p>
         </div>
-
-        <!-- </div> -->
       </section>
     </section>
 
     <!-- NEWSLETTER SECTION: -->
-
     <section class="newsletter">
       <section class="newsletter__img"></section>
       <section class="newsletter--dark-overlay">
@@ -313,7 +296,7 @@
       </section>
     </section>
 
-    <!--home page product icon bar service-->
+    <!--INFO BAR SECTION-->
     <section>
       <div class="info-bar">
         <p>
@@ -333,10 +316,10 @@
         </p>
       </div>
     </section>
-    <!-- </main> -->
 
-    <!--footer-->
+    <!--FOOTER SECTION-->
     <footer class="footer">
+      <!--FOOTER LEFT SECTION-->
       <div class="footer-l container-fluid">
         <div class="footer-l__content row">
           <div class="col-md-4">
@@ -366,10 +349,12 @@
               </div>
             </section>
           </div>
+
+          <!--FOOTER RIGHT SECTION-->
           <div class="footer-r col-md-8">
             <div class="footer-r__content">
               <h4 class="footer-r__heading">GG Optic</h4>
-              <!-- <div class="footer__containerR--list"> -->
+
               <ul class="footer-r__list">
                 <li class="footer-r__item">
                   <a href="./products.html" class="nav__link">Eyeglasses</a>
@@ -387,8 +372,8 @@
                   <a href="./products.html" class="nav__link">Accessories</a>
                 </li>
               </ul>
-              <!-- </div> -->
-              <!-- Follow us on social media -->
+
+              <!-- SOCIAL MEDIA SECTION -->
               <div class="footer-r__smedia">
                 <h4 class="footer-r__smedia--heading">
                   Follow us on social media
@@ -398,7 +383,7 @@
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
                 <a href="#"><i class="fab fa-youtube-square"></i></a>
               </div>
-              <!-- Copyright information -->
+              <!-- COPY RIGHT SECTION -->
               <div class="footer-r__copyright">
                 <p>
                   &copy; 2022 GG Optic | Designed and coded by Aina Bjerke and
@@ -410,77 +395,6 @@
         </div>
       </div>
     </footer>
-
-    <!--footer-->
-    <!-- <footer class="footer">
-  <div class="footer__containerL container-fluid">
-    <div class="footer__containerL--content row">
-      <div class="col-md-4"> -->
-    <!-- <div class="footer__containerL--logo"> -->
-    <!-- <a href="index.html">
-          <img
-            src="./graphical-items/logo/gg_optic_favicon_01_resize.png"
-            alt="GG Optic logo" class="footer__containerL--logo"
-          />
-        </a> -->
-    <!-- </div> -->
-    <!-- <section class="footer__containerL--image">
-          <div>
-            <img src="./graphical-items/images/footer_img_01_resize.jpeg" alt=""
-            class="footer__containerL--image1">
-          </div>
-         <div>
-            <img src="./graphical-items/images/footer_img_02_resize.jpeg" alt=""
-            class="footer__containerL--image2">
-          </div>
-        </section>
-      </div> -->
-    <!-- <div class="footer__containerR col-md-8"  >
-        <div class="footer__containerR--content">
-          <h2 class="footer__containerR--heading">GG Optics</h2> -->
-    <!-- <div class="footer__containerR--list"> -->
-    <!-- <ul class="footer__containerR--list">
-              <li class="footer__containerR--item">
-                <a href="./products.html" class="nav__link">Otical glasses</a>
-              </li>
-              <li class="footer__containerR--item">
-                <a href="./products.html" class="nav__link">Sun glasses</a>
-              </li>
-              <li class="footer__containerR--item">
-                <a href="./products.html" class="nav__link">Sport glasses</a>
-              </li>
-              <li class="footer__containerR--item">
-                <a href="./products.html" class="nav__link">Lenses</a>
-              </li>
-              <li class="footer__containerR--item">
-                <a href="./products.html" class="nav__link">Accessories</a>
-              </li>
-            </ul> -->
-    <!-- </div> -->
-    <!-- Follow us on social media -->
-    <!-- <div class="footer__containerR--smedia">
-            <h2 class="footer__containerR--smedia-heading">Follow us on social media</h2>
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-youtube-square"></i></a>
-          </div> -->
-    <!-- Copyright information -->
-    <!-- <div class="footer__containerR--copyright">
-            <h3>
-              &copy; 2022 Adventure Trail Hikes | Designed and coded by Aina
-              Bjerke
-            </h3>
-          </div>
-        </div>
-      
-      
-      
-      
-      </div>
-    </div>
-  </div>
-</footer> -->
 
     <!-- JAVA SCRIPT SECTION: -->
     <script src="./js/index.js" type="module"></script>

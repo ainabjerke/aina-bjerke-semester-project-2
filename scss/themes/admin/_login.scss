@@ -12,8 +12,9 @@
     transform: translate(-50%, -10%);
   }
 
-  &__brand {
-    width: clamp(180px, 30vw, 200px);
+  &__trademark {
+    // width: clamp(180px, 30vw, 200px);
+    width: 180px;
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -22,7 +23,7 @@
     width: 100%;
   }
 
-  &__title {
+  &__heading {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -41,7 +42,7 @@
     padding: 0px 0px 0px 0px;
     max-width: 300px;
 
-    &--padding {
+    &--password {
       padding-top: 20px;
     }
   }

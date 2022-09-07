@@ -1,8 +1,11 @@
-.ads {
+/*** *** *** HOME COLLAGE:  *** *** ***/
+
+//--- --- COLLAGE STYLE: --- ---//
+.collage {
   position: relative;
 
-  // men section
-  &__main-event {
+  //--- --- MEN SECTION: --- ---//
+  &__men {
     background: url("/graphical-items/images/collage_img_01_resize.jpeg");
     background-position: 0% 0%;
     background-size: cover;
@@ -27,9 +30,7 @@
       background-position: 100% 0%;
     }
 
-    // men section
     &__content {
-      // padding: 250px 10px;
       max-width: 380px;
       color: $white-color;
       text-align: center;
@@ -48,15 +49,11 @@
         padding: 522px 0px;
         margin-left: -83px;
       }
-
-      // & a:hover {
-      //   color: colors(secondary);
-      // }
     }
   }
 
-  // wommen section
-  &__news {
+  //--- --- WOMEN SECTION: --- ---//
+  &__women {
     background: url("/graphical-items/images/collage_img_02_resize.jpeg");
     background-position: center;
     background-size: cover;
@@ -80,7 +77,6 @@
       height: 300px;
     }
 
-    // wommen section
     &__content {
       color: $white-color;
       padding-top: 130px;
@@ -99,15 +95,11 @@
         padding: 200px 0 0 40px;
         margin-left: -9px;
       }
-
-      // & a {
-      //   margin-top: 15px;
-      // }
     }
   }
 
-  // sport section
-  &__ideas {
+//--- --- SPORT SECTION: --- ---//
+  &__sport {
     background: url("/graphical-items/images/collage_img_03_resize.jpeg");
     background-position: 0% 70%;
     background-size: cover;
@@ -138,7 +130,6 @@
 
       @media screen and (max-width: 567px) {
         padding-top: 215px;
-        // margin-left: -59%;
         text-align: left;
         margin-left: 17px;
       }
@@ -153,15 +144,11 @@
         padding-top: 210px;
         margin-left: -45px;
       }
-
-      // & a {
-      //   margin-top: 15px;
-      // }
     }
   }
 
-  // sale section
-  &__newsletter {
+//--- --- SALE SECTION: --- ---//
+  &__sale {
     background: url("/graphical-items//images/collage_img_04_resize.jpeg");
     background-position: center;
     background-size: cover;
@@ -184,14 +171,12 @@
 
       @media screen and (max-width: 567px) {
         padding-top: 215px;
-        // margin-left: -59%;
         text-align: left;
         margin-left: 6px;
       }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
         padding-top: 205px;
-        // margin-left: -50%;
         text-align: left;
         margin-left: 40px;
       }
@@ -200,44 +185,41 @@
         padding-top: 209px;
         margin-left: -90px;
       }
-
-      // & a {
-      //   margin-top: 15px;
-      // }
     }
   }
 }
 
+//--- --- GENERAL COLLAGE STYLE: --- ---//
 @media screen and (max-width: 767px) {
-  .ads__main-event,
-  .ads__news,
-  .ads__ideas,
-  .ads__newsletter {
+  .collage__men,
+  .collage__women,
+  .collage__sport,
+  .collage__sale {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .ads__main-event,
-  .ads__news {
+  .collage__men,
+  .collage__women {
     margin-bottom: 20px;
   }
 
-  .ads__ideas {
+  .collage__sport {
     margin-right: 20px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .ads__main-event {
+  .collage__men {
     margin-right: 20px;
   }
 
-  .ads__news {
+  .collage__women {
     margin-bottom: 20px;
   }
 
-  .ads__ideas {
+  .collage__sport {
     margin-right: 20px;
   }
 }

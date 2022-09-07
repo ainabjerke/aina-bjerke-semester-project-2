@@ -1,3 +1,6 @@
+/*** *** *** PRODUCT CART:  *** *** ***/
+
+//--- --- PRODUCT CART STYLE: --- ---//
 .featured {
   background-color: white;
   &__title {
@@ -28,7 +31,7 @@
   }
 
   &__title {
-    font-size: clamp(15px, 50vw, 18px);
+    font-size: 18px;
   }
 
   &__desc {
@@ -36,9 +39,6 @@
   }
 
   &__price {
-    // font-weight: 700;
-    // margin-top: 15px;
-    // font-size: clamp(15px, 50vw, 18px);
     font-weight: 600;
     margin-top: 15px;
     font-size: 16px;

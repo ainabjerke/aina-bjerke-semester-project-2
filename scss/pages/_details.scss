@@ -1,5 +1,8 @@
+/*** *** *** DETAILS:  *** *** ***/
+
+//--- --- CART DETAILS STYLE: --- ---//
 .details {
-  background-color: white;
+  background-color: $white-color;
   max-width: 1105px;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +42,7 @@
       margin-top: 55px;
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
-        max-width: 288px;
+        // max-width: 288px;
         margin-top: 103px;
       }
       @media screen and (max-width: 567px) {
@@ -50,7 +53,8 @@
 
   &__content {
     margin-left: 180px;
-    padding-top: clamp(0px, 3vw, 30px);
+    padding-top: 30px;
+    // padding-top: clamp(0px, 3vw, 30px);
     text-align: center;
 
     @media screen and (max-width: 567px) {
@@ -78,8 +82,10 @@
     // text-align: center;
   }
   &__title {
-    font-size: clamp(20px, 4vw, 30px);
-    margin-bottom: clamp(10px, 3vw, 20px);
+    font-size: 30px;
+    margin-bottom: 20px;
+    // font-size: clamp(20px, 4vw, 30px);
+    // margin-bottom: clamp(10px, 3vw, 20px);
   }
 
   &__price {
@@ -101,15 +107,34 @@
     }
   }
 
-  &__benefits {
+  &__advantage {
     list-style: none;
     margin-top: 20px;
-    font-size: clamp(12px, 1vw, 14px);
+    font-size: 12px;
+    // font-size: clamp(12px, 1vw, 14px);
     text-align: left;
-    margin-left: 100px;
-    @media screen and (min-width: 568px) and (max-width: 991px) {
-      margin-left: 63px;
+    margin-left: 26%;
+    @media screen and (min-width: 576px) and (max-width: 768px) {
+      margin-left: 37px;
     }
+
+    // & li {
+    //   @media screen and (min-width: 1198px) {
+    //     margin: 5px 0;
+    //   }
+    //   @media screen and (min-width: 992px) and (max-width: 1197px) {
+    //     margin: 5px -25px;
+    //   }
+    //   @media screen and (min-width: 767px) and (max-width: 991px) {
+    //     margin: 5px -0px;
+    //   }
+    //   @media screen and (min-width: 576px) and (max-width: 766px) {
+    //     margin: 5px -30px;
+    //   }
+    //   @media screen and (min-width: 400px) and (max-width: 499px) {
+    //     margin: 5px 16px;
+    //   }
+    // }
 
     & li {
       margin: 5px 0;
@@ -129,6 +154,7 @@
   }
 }
 
+//--- --- CART ACCORDION STYLE: --- ---//
 .accordion {
   & .card {
     border: 0;
@@ -155,11 +181,13 @@
     text-align: left;
     border: 0;
     background: $secondary-color;
-    font-size: clamp(14px, 3vw, 18px);
+    font-size: 1.2rem;
+    // font-size: clamp(14px, 3vw, 18px);
     text-transform: uppercase;
     font-weight: 600;
     border-bottom: 1px solid black;
     border-style: hidden;
+    // background-color: red;
 
     &:focus {
       outline: 0;
@@ -174,8 +202,11 @@
     @media screen and (min-width: 768px) and (max-width: 991px) {
       margin-left: 73%;
     }
-    @media screen and (max-width: 767px) {
-      margin-left: 60%;
+    @media screen and (min-width: 500px) and (max-width: 767px) {
+      margin-left: 57%;
+    }
+    @media screen and (max-width: 499px) {
+      margin-left: 40%;
     }
   }
 }

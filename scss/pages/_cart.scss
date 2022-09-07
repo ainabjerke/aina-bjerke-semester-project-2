@@ -1,6 +1,9 @@
+/*** *** *** CART:  *** *** ***/
+
+//--- --- CART STYLE: --- ---//
 .cart-header__container {
   background-color: $off-white-color;
-  margin-top: 30px;
+  margin-top: -40px;
 }
 
 .cart {
@@ -30,13 +33,13 @@
       margin-left: 15px;
     }
 
-    @media screen and (min-width: 992px) {
-      //   padding: 0px 20px 0 0;
-      padding-left: 30px;
-    }
+    // @media screen and (min-width: 992px) {
+    //     padding: 0px 20px 0 0;
+    //   padding-left: 30px;
+    // }
 
     &--info {
-      margin-left: -14px;
+      // margin-left: -14px;
       padding: 20px;
       background-color: $white-color;
       margin-bottom: 9px;
@@ -51,7 +54,7 @@
     }
   }
 
-  &__benefits {
+  &__advantage {
     list-style-type: none;
     margin-top: 10px;
     margin-bottom: 18px;
@@ -110,7 +113,7 @@
     @media screen and (min-width: 568px) and (max-width: 991px) {
       padding: 15px;
     }
-
+  //--- --- SHOPPING CART IMAGE STYLE: --- ---//
     &__image {
       padding: 0;
 
@@ -130,7 +133,7 @@
         margin: 0 15px;
       }
     }
-
+  //--- --- SHOPPING CART CONTENT STYLE: --- ---//
     &__content {
       padding: 0px;
       display: flex;
@@ -147,7 +150,7 @@
         padding: 15px;
       }
     }
-
+    //--- --- SHOPPING CART PRODUCT TITLE STYLE: --- ---//
     &__title {
       padding: 0 0 7px 0;
       max-height: 30px;
@@ -168,14 +171,15 @@
         max-height: 25px;
       }
     }
-
+    //--- --- SHOPPING CART PRODUCT PRICE STYLE: --- ---//
     &__price {
-      font-weight: 700;
+      font-weight: 600;
 
       @media screen and (max-width: 567px) {
         font-size: 13px;
         padding: 0;
         margin-bottom: 3px;
+        font-weight: 700;
       }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
@@ -192,9 +196,11 @@
       }
     }
 
+    //--- --- SHOPPING CART LINK STYLE: --- ---//
     &__link {
       margin-top: auto;
-      font-size: clamp(13px, 2vw, 16px);
+      font-size: 13px;
+      // font-size: clamp(13px, 2vw, 16px);
       color: $tertiary-color;
       &:hover {
         color: $tertiary-color;
@@ -207,7 +213,7 @@
     // }
   }
 
-  // Total Price:
+  //--- ---SHOPPING CART TOTAL PRICE STYLE: --- ---//
 
   &__total {
     padding: 0;
@@ -217,7 +223,8 @@
     padding-bottom: 5px;
 
     &__text {
-      font-size: clamp(13px, 1.5vw, 20px);
+      // font-size: clamp(13px, 1.5vw, 20px);
+      font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
       padding: 0;
@@ -225,39 +232,41 @@
 
     &__price {
       padding: 0;
-      font-size: clamp(13px, 1.5vw, 20px);
+      // font-size: clamp(13px, 1.5vw, 20px);
+      font-size: 13px;
       font-weight: 700;
       text-align: right;
     }
   }
 
-  // Checkout Button:
+  //--- --- SHOPPING CART CHECKOUT BUTTON STYLE: --- ---//
   &__checkout-btn {
     margin: 20px 0;
   }
 
-  // Navigation Icon
-  &__icon {
-    position: relative;
-    color: black;
+  //--- --- NAVIGATION ICON STYLE: --- ---//
+  // &__icon {
+  //   position: relative;
+  //   color: black;
 
-    & a {
-      color: black;
-    }
+  //   & a {
+  //     color: black;
+  //     background-color: RED;
+  //   }
 
-    &-quantity {
-      position: absolute;
-      top: -18px;
-      right: -8px;
-      border-radius: 100%;
-      background: colors(primary);
-      font-size: 15px;
-      text-align: center;
-      padding: 2px;
-      font-weight: 600;
-      color: $secondary-color;
-      width: 23px;
-      height: 23px;
-    }
-  }
+  //   &-quantity {
+  //     position: absolute;
+  //     top: -18px;
+  //     right: -8px;
+  //     border-radius: 100%;
+  //     background: colors(primary);
+  //     font-size: 15px;
+  //     text-align: center;
+  //     padding: 2px;
+  //     font-weight: 600;
+  //     color: $secondary-color;
+  //     width: 23px;
+  //     height: 23px;
+  //   }
+  // }
 }

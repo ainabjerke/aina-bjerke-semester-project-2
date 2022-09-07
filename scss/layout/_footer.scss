@@ -1,6 +1,8 @@
+/*** *** *** FOOTER SECTION:  *** *** ***/
 .footer {
   background-color: $primary-color;
 
+  //--- --- FOOTER LEFT STYLE: --- ---//
   .footer-l {
     // background-color: $primary-color;
     max-width: 1125px;
@@ -26,6 +28,7 @@
     }
   }
 
+  //--- --- FOOTER RIGHT STYLE: --- ---//
   .footer-r {
     &__content {
       margin-top: 40px;

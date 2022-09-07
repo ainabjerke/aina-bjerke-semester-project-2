@@ -53,21 +53,13 @@
 
   <body>
     <div class="wrapper">
-      <!-- Navigation: -->
+      <!-- NAVIGATION SECTION: -->
       <nav class="nav">
         <div class="container">
-          <!-- Top of the Navigation: -->
+          <!-- TOP NAV SECTION: -->
           <div class="nav__top row">
-            <!-- Hamburger Icon: -->
-            <!-- <div class="nav__menu-icon col">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div> -->
-
-            <!-- Logo: -->
-            <div class="nav__brand col">
+            <!-- LOGO NAV SECTION: -->
+            <div class="nav__trademark col">
               <a href="./index.html">
                 <img
                   src="./graphical-items/logo/gg_optic_logo_01_resize.png"
@@ -77,7 +69,7 @@
               </a>
             </div>
 
-            <!-- Large Viewport Searchbar: -->
+            <!-- SEARCBAR LARGE DEVICE SECTION -->
             <form class="form-inline search search--lg col">
               <input
                 class="form-control search__input"
@@ -90,20 +82,18 @@
               </a>
             </form>
 
-            <!-- Shopping Icons: -->
-            <!-- nav__icons: is used as classname in scss and js, change this name  -->
+            <!-- SHOPPING CART AND ICON SECTION: -->
             <div class="nav__icons col">
-              <div class="cart__icon">
-                <div class="cart__icon-quantity">0</div>
+              <div class="nav__icon cart__icon">
+                <div class="nav__icon-quantity cart__icon-quantity">0</div>
                 <a href="./cart.html">
                   <i class="fa-solid fa-bag-shopping"></i>
                 </a>
-                <!-- <div class="cart__icon-quantity">0</div> -->
               </div>
             </div>
 
-            <!-- Hamburger Icon: -->
-            <div class="ap-header-menu__hamburger-wrapper"></div>
+            <!-- HAMBURGER ICON SECTION: -->
+            <div class="nav__menu__vertical-line"></div>
             <div class="nav__menu-icon col">
               <span></span>
               <span></span>
@@ -112,7 +102,7 @@
             </div>
           </div>
 
-          <!-- Small Viewport Searchbar: -->
+          <!-- SEARCH BAR SMALL DEVICE SECTION: -->
           <form class="form-inline search search--sm col">
             <input
               class="form-control search__input"
@@ -125,8 +115,7 @@
             </a>
           </form>
 
-          <!-- Menu: -->
-          <!--change this name .nav__menu-->
+          <!-- MENU LIST SECTION: -->
           >
           <div class="nav__menu col-lg-12">
             <ul class="nav__menu__list">
@@ -151,8 +140,7 @@
       </nav>
 
       <main class="main container">
-        <!-- Breadcrumb -->
-        <!-- <section class="container"> -->
+        <!-- BREDCRUMB SECTION-->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
@@ -166,21 +154,20 @@
           </ol>
         </nav>
 
-        <!-- Header: -->
+        <!-- HEADER SECTION: -->
         <header class="header container">
           <h1 class="header__title">Products detail</h1>
         </header>
 
-        <!-- </section> -->
+        <!-- DETAIL DYNAMIC PRODUCT SECTION: -->
         <section class="details row">
           <div class="details__content-container col-12 row">
-            <!-- Image: -->
+            <!-- DETAIL DYNAMIC IMAGE SECTION: -->
             <div class="details__images col-sm col-lg-5">
-              <img src="#" alt="Product Title" />
+              <img src="#" alt="Product image Title" />
             </div>
 
-            <!-- Content: -->
-
+            <!-- DETAIL CONTENT SECTION: -->
             <div class="details__content col">
               <div class="details__icon">
                 <svg
@@ -202,11 +189,16 @@
                 </svg>
                 <span class="details__item">Love what you see</span>
               </div>
+              <!-- DETAIL DYNAMIC SECTION (TITLE, PRICE AND A-HREF): -->
               <h5 class="details__title"></h5>
 
               <p class="details__price"></p>
 
-              <a
+              <a href="#" class="btn btn--primary btn--sm details__btn">
+                add to cart
+              </a>
+
+              <!-- <a
                 href="#"
                 class="btn btn--primary btn--sm details__btn"
                 data-id="test"
@@ -217,9 +209,9 @@
                 data-url="test"
               >
                 add to cart
-              </a>
+              </a> -->
 
-              <ul class="details__benefits">
+              <ul class="details__advantage">
                 <li>
                   <i class="fa-solid fa-check"></i>
                   Delivery 2-3 working days
@@ -236,36 +228,37 @@
             </div>
           </div>
 
-          <div class="details__desc col-12">
-            <div class="accordion" id="accordionExample">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button
-                      class="accordion__title"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Description
-                      <i class="fa-solid fa-chevron-down"></i>
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseOne"
-                  class="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body details__description">
-                    <!-- Dynamic Text here -->
-                  </div>
-                </div>
+          <!-- DETAIL ACCORDION SECTION: -->
+          <!-- <div class="details__desc col-12"> -->
+          <div class="accordion col 12" id="accordionExample">
+            <!-- <div class="details__desc col-12"> -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="accordion__title"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Description
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <!-- DETAIL ACCORDION DESCRIPTION SECTION: -->
+                <div class="card-body details__description"></div>
               </div>
             </div>
+            <!-- </div> -->
           </div>
         </section>
       </main>
@@ -290,7 +283,6 @@
     </section>
 
     <!-- NEWSLETTER SECTION: -->
-
     <section class="newsletter">
       <section class="newsletter__img"></section>
       <section class="newsletter--dark-overlay">
@@ -316,7 +308,7 @@
       </section>
     </section>
 
-    <!--home page product icon bar service-->
+    <!--INFO BAR SECTION-->
     <section>
       <div class="info-bar">
         <p>
@@ -336,10 +328,10 @@
         </p>
       </div>
     </section>
-    <!-- </main>
-    </div> -->
 
+    <!--FOOTER SECTION-->
     <footer class="footer">
+      <!--FOOTER LEFT SECTION-->
       <div class="footer-l container-fluid">
         <div class="footer-l__content row">
           <div class="col-md-4">
@@ -369,10 +361,12 @@
               </div>
             </section>
           </div>
+
+          <!--FOOTER RIGHT SECTION-->
           <div class="footer-r col-md-8">
             <div class="footer-r__content">
-              <h4 class="footer-r__heading">GG Optics</h4>
-              <!-- <div class="footer__containerR--list"> -->
+              <h4 class="footer-r__heading">GG Optic</h4>
+
               <ul class="footer-r__list">
                 <li class="footer-r__item">
                   <a href="./products.html" class="nav__link">Eyeglasses</a>
@@ -390,8 +384,8 @@
                   <a href="./products.html" class="nav__link">Accessories</a>
                 </li>
               </ul>
-              <!-- </div> -->
-              <!-- Follow us on social media -->
+
+              <!-- SOCIAL MEDIA SECTION -->
               <div class="footer-r__smedia">
                 <h4 class="footer-r__smedia--heading">
                   Follow us on social media
@@ -401,15 +395,19 @@
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
                 <a href="#"><i class="fab fa-youtube-square"></i></a>
               </div>
-              <!-- Copyright information -->
+              <!-- COPY RIGHT SECTION -->
               <div class="footer-r__copyright">
-                <p>&copy; 2022 GG Optic | Designed and coded by Aina Bjerke</p>
+                <p>
+                  &copy; 2022 GG Optic | Designed and coded by Aina Bjerke and
+                  all rights reserved.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
     <!-- JAVA SCRIPT SECTION: -->
     <script src="./js/details.js" type="module"></script>
     <!-- BOOTSTRAP SECTION: -->

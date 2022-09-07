@@ -1,3 +1,6 @@
+/*** *** *** NAV MENU:  *** *** ***/
+
+//--- --- NAV MENU STYLE: --- ---//
 .nav {
   background-color: $primary-color;
 
@@ -18,7 +21,7 @@
     }
   }
 
-  &__brand {
+  &__trademark {
     width: 100%;
   }
 
@@ -27,10 +30,10 @@
     height: 95px;
     padding: 10px;
 
-    @media screen and (max-width: 991px) {
-      padding-left: clamp(10px, 2vw, 20px);
-      height: clamp(65px, 10vw, 80px);
-    }
+    // @media screen and (max-width: 991px) {
+    //   padding-left: clamp(10px, 2vw, 20px);
+    //   height: clamp(65px, 10vw, 80px);
+    // }
 
     &:hover {
       cursor: pointer;
@@ -65,7 +68,7 @@
     align-items: center;
 
     @media screen and (max-width: 991px) {
-      margin-right: 22px;
+      margin-right: 15px;
     }
 
     & i:last-child {
@@ -73,19 +76,46 @@
     }
 
     // @media screen and (min-width: 992px) {
-    // & i:last-child {
-    //   margin-left: 15px;
-    // }
-
-    // @media (max-width: 991px) {
     //   & i:last-child {
-    //     margin-left: -93px;
+    //     margin-left: 15px;
+    //   }
+
+    //   @media (max-width: 991px) {
+    //     & i:last-child {
+    //       margin-left: -93px;
+    //     }
     //   }
     // }
 
     & i:hover {
       cursor: pointer;
       color: colors(secondary);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    color: black;
+
+    // & i:last-child {
+    //   color: red;
+    //   background-color: RED;
+    // }
+
+    &-quantity {
+      position: absolute;
+      top: -18px;
+      right: -8px;
+      border-radius: 100%;
+      background: colors(primary);
+      font-size: 15px;
+      text-align: center;
+      padding: 2px;
+      font-weight: 600;
+      color: $secondary-color;
+      width: 23px;
+      height: 23px;
+      // background-color: red;
     }
   }
 
@@ -111,6 +141,7 @@
       width: 40px;
       padding: 0;
       height: 100%;
+
       @media (min-width: 992px) {
         display: none;
       }
@@ -138,7 +169,8 @@
     }
 
     &__item {
-      font-size: clamp(13px, 1vw, 13px);
+      font-size: 13px;
+      // font-size: clamp(13px, 1vw, 13px);
       font-weight: 300;
       letter-spacing: 1.5px;
 
@@ -167,9 +199,8 @@
     }
   }
 }
-/*** *** *** ----------------------------- ***  ***  ***/
 
-/***  ***  *** MOBILE AND TABLET STYLE SECTION : ***  ***  ***/
+//--- --- BURGER MENU OPEN STYLE: --- ---//
 @media (max-width: 991px) {
   .open-menu {
     left: 0px;
@@ -179,9 +210,8 @@
     position: fixed;
   }
 
-  .ap-header-menu__hamburger-wrapper {
+  .nav__menu__vertical-line {
     padding: 28px 20px;
     box-shadow: -2px 0 0 -0.7px #b8a188;
   }
 }
-/*** *** ***  ----------------------------- ***  ***  ***/

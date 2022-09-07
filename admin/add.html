@@ -41,9 +41,9 @@
     <title>Add Product</title>
   </head>
   <body>
-    <!-- Admin Menu: -->
+    <!-- ADMIN MENU SECTION: -->
     <nav class="admin-menu">
-      <!-- Mobile Menu Icon: -->
+      <!-- MOBILE MENU ICON SECTION: -->
       <div class="admin-menu__icon">
         <div class="nav__menu-icon admin-icon__reset col">
           <span></span>
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-      <!-- Breadcrumb big viewport: -->
+      <!-- BREADCRUMB LARGE DEVICE SECTION: -->
       <a
         href="../index.html"
         class="admin-menu__breadcrumb admin-menu__breadcrumb--lg link"
@@ -62,15 +62,15 @@
         <!-- <i class="fal fa-angle-right"></i> -->
       </a>
 
-      <!-- Add Product Button -->
+      <!-- GO TO EDIT PRODUCT SECTION -->
       <a class="admin-menu__add-product-button" href="./edit.html">
         <button class="btn btn--tertiary btn--xs">Go to edit product</button>
       </a>
     </nav>
 
-    <!-- Product Menu: -->
+    <!-- PRODUCT MENU SECTION: -->
     <nav class="product-menu">
-      <!-- Logo -->
+      <!-- PRODUCT MENU LOGO SECTION -->
       <div class="product-menu__brand">
         <a href="../index.html">
           <img
@@ -81,12 +81,12 @@
         </a>
       </div>
 
-      <!-- Dynamic Menu: -->
+      <!-- PRODUCT MENU DYNAMIC PRODUCT LIST SECTION: -->
       <ul class="product-menu__list">
-        <!-- Products here: -->
+        <!-- DYNAMIC PRODUCT HERE: -->
       </ul>
 
-      <!-- Logout Button: -->
+      <!-- PRODUCT MENU LOGOUT BUTTON SECTION: -->
       <button
         class="product-menu__button btn btn--secondary btn--sm"
         id="logout"
@@ -96,7 +96,7 @@
     </nav>
 
     <div class="container edit__container">
-      <!-- Breadcrumb small viewport: -->
+      <!-- BREADCRUMB SMALL DEVICE SECTION: -->
       <a
         href="../index.html"
         class="admin-menu__breadcrumb admin-menu__breadcrumb--sm link"
@@ -105,14 +105,15 @@
         <!-- <i class="fa-solid fa-house"></i> -->
       </a>
 
-      <!-- Title: -->
-      <h1 class="edit__title">Add new Product</h1>
+      <!-- EDIT PRODUCT HEADING: -->
+      <h1 class="edit__heading">Add new Product</h1>
 
-      <!-- Form: -->
+      <!-- FORM SECTION: -->
       <form class="edit__form">
+        <!-- FORM FEEDBACK SECTION: -->
         <div class="feedback"></div>
 
-        <!-- Image: -->
+        <!-- FORM IMAGE URL SECTION: -->
         <section class="edit__form__section">
           <label for="image" class="edit__form__label">Image URL</label>
           <input
@@ -129,7 +130,7 @@
           </div>
         </section>
 
-        <!-- Title -->
+        <!-- FORM TITLE: -->
         <section class="edit__form__section">
           <label for="title" class="edit__form__label">Title</label>
           <input
@@ -143,7 +144,7 @@
           </div>
         </section>
 
-        <!-- Price -->
+        <!-- FORM PRICE SECTION: -->
         <section class="edit__form__section">
           <label for="price" class="edit__form__label">Price</label>
           <input
@@ -157,7 +158,7 @@
           </div>
         </section>
 
-        <!-- Description -->
+        <!-- FORM DESCRIPTION SECTION: -->
         <section class="edit__form__section">
           <label for="description" class="edit__form__label">Description</label>
           <textarea
@@ -171,11 +172,11 @@
           </div>
         </section>
 
-        <!-- Featured: -->
+        <!-- FORM FEATURED BUTTON SECTION: -->
         <section class="edit__form__section edit__form__featured">
           <label class="edit__form__label">Featured</label>
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <!-- False: -->
+            <!-- FALSE FEATURED BUTTON SECTION: -->
             <label
               class="btn btn-secondary featured__false active"
               for="featured__false"
@@ -189,7 +190,7 @@
               />
               no
             </label>
-            <!-- True: -->
+            <!-- TRUE FEATURED BUTTON SECTION: -->
             <label
               class="btn btn-secondary featured__true"
               for="featured__true"
@@ -204,9 +205,10 @@
             </label>
           </div>
         </section>
-
+        <!-- HIDE ID INPUT SECTION: -->
         <input id="id" type="hidden" />
 
+        <!-- UPDATE PRODUCT SECTION: -->
         <section class="edit__form__section">
           <button
             id="update"

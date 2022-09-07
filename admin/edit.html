@@ -35,17 +35,17 @@
       href="./graphical-items/logo/gg_optic_favicon_02.png"
     />
 
-    <!-- CSS: -->
+    <!-- CSS SECTION: -->
     <link rel="stylesheet" href="../css/style.css" />
 
-    <!-- Page Title: -->
+    <!-- PAGE TITLE SECTION: -->
     <title>Edit Products</title>
   </head>
 
   <body>
-    <!-- Admin Menu: -->
+    <!-- ADMIN MENU SECTION: -->
     <nav class="admin-menu">
-      <!-- Mobile Menu Icon: -->
+      <!-- MOBILE MENU ICON SECTION: -->
       <div class="admin-menu__icon admin-icon__reset">
         <div class="nav__menu-icon col">
           <span></span>
@@ -55,7 +55,7 @@
         </div>
       </div>
 
-      <!-- Breadcrumb big viewport: -->
+      <!-- BREADCRUMB LARGE DEVICE SECTION: -->
       <a
         href="../index.html"
         class="admin-menu__breadcrumb admin-menu__breadcrumb--lg link"
@@ -64,15 +64,15 @@
         <!-- <i class="fal fa-angle-right"></i> -->
       </a>
 
-      <!-- Add Product Button -->
+      <!-- GO TO ADD PRODUCT SECTION -->
       <a class="admin-menu__add-product-button" href="./add.html">
         <button class="btn btn--tertiary btn--xs">Go to add product</button>
       </a>
     </nav>
 
-    <!-- Product Menu: -->
+    <!-- PRODUCT MENU SECTION: -->
     <nav class="product-menu">
-      <!-- Logo -->
+      <!-- PRODUCT MENU LOGO SECTION -->
       <div class="product-menu__brand">
         <a href="../index.html">
           <img
@@ -83,12 +83,12 @@
         </a>
       </div>
 
-      <!-- Dynamic Menu: -->
+      <!-- PRODUCT MENU DYNAMIC PRODUCT LIST SECTION: -->
       <ul class="product-menu__list">
-        <!-- Products here: -->
+        <!-- DYNAMIC PRODUCT HERE: -->
       </ul>
 
-      <!-- Logout Button: -->
+      <!-- PRODUCT MENU LOGOUT BUTTON SECTION: -->
       <button
         class="product-menu__button btn btn--secondary btn--sm"
         id="logout"
@@ -98,7 +98,7 @@
     </nav>
 
     <div class="container edit__container">
-      <!-- Breadcrumb small viewport: -->
+      <!-- BREADCRUMB SMALL DEVICE SECTION: -->
       <a
         href="../index.html"
         class="admin-menu__breadcrumb admin-menu__breadcrumb--sm link"
@@ -107,10 +107,10 @@
         <!-- <i class="fal fa-angle-right"></i> -->
       </a>
 
-      <!-- Title: -->
-      <h1 class="edit__title">Edit Product</h1>
+      <!-- EDIT PRODUCT HEADING: -->
+      <h1 class="edit__heading">Edit Product</h1>
 
-      <!-- Loader: -->
+      <!-- LOADER SECTION: -->
       <div class="loader">
         <div></div>
         <div></div>
@@ -126,11 +126,12 @@
         <div></div>
       </div>
 
-      <!-- Form: -->
+      <!-- FORM SECTION: -->
       <form class="edit__form">
+        <!-- FORM FEEDBACK SECTION: -->
         <div class="feedback"></div>
 
-        <!-- Image: -->
+        <!-- FORM IMAGE URL SECTION: -->
         <section class="edit__form__section">
           <label for="image" class="edit__form__label">Image URL</label>
           <input
@@ -146,7 +147,7 @@
           </div>
         </section>
 
-        <!-- Title -->
+        <!-- FORM TITLE: -->
         <section class="edit__form__section">
           <label for="title" class="edit__form__label">Title</label>
           <input id="title" class="edit__form__input" />
@@ -156,7 +157,7 @@
           </div>
         </section>
 
-        <!-- Price -->
+        <!-- FORM PRICE SECTION: -->
         <section class="edit__form__section">
           <label for="price" class="edit__form__label">Price</label>
           <input id="price" class="edit__form__input" />
@@ -166,7 +167,7 @@
           </div>
         </section>
 
-        <!-- Description -->
+        <!-- FORM DESCRIPTION SECTION: -->
         <section class="edit__form__section">
           <label for="description" class="edit__form__label">Description</label>
           <textarea id="description" class="edit__form__textarea"></textarea>
@@ -176,11 +177,11 @@
           </div>
         </section>
 
-        <!-- Featured: -->
+        <!-- FORM FEATURED BUTTON SECTION: -->
         <section class="edit__form__section edit__form__featured">
           <label class="edit__form__label">Featured</label>
           <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <!-- False: -->
+            <!-- FALSE FEATURED BUTTON SECTION: -->
             <label
               class="btn btn-secondary featured__false"
               for="featured__false"
@@ -193,7 +194,7 @@
               />
               no
             </label>
-            <!-- True: -->
+            <!-- TRUE FEATURED BUTTON SECTION: -->
             <label
               class="btn btn-secondary featured__true"
               for="featured__true"
@@ -209,8 +210,10 @@
           </div>
         </section>
 
+        <!-- HIDE ID INPUT SECTION: -->
         <input id="id" type="hidden" />
 
+        <!-- UPDATE PRODUCT SECTION: -->
         <section class="edit__form__section">
           <button
             id="update"
@@ -222,7 +225,7 @@
         </section>
       </form>
 
-      <!-- Advanced Option: -->
+      <!-- ACCORDION ADVANCE SECTION: -->
       <div class="accordion edit__advanced-option" id="advanced-option">
         <div class="card accordion-admin__card">
           <div
@@ -250,7 +253,7 @@
             data-parent="#advanced-option"
           >
             <div class="card-body">
-              <!-- Delete Button: -->
+              <!-- DELETE BUTTON: -->
               <button class="btn btn--warning btn--sm edit__delete-button">
                 delete product
               </button>

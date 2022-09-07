@@ -52,21 +52,13 @@
   </head>
   <body>
     <div class="wrapper">
-      <!-- Navigation: -->
+      <!-- NAVIGATION SECTION: -->
       <nav class="nav">
         <div class="container">
-          <!-- Top of the Navigation: -->
+          <!-- TOP NAV SECTION: -->
           <div class="nav__top row">
-            <!-- Hamburger Icon: -->
-            <!-- <div class="nav__menu-icon col">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div> -->
-
-            <!-- Logo: -->
-            <div class="nav__brand col">
+            <!-- LOGO NAV SECTION: -->
+            <div class="nav__trademark col">
               <a href="./index.html">
                 <img
                   src="./graphical-items/logo/gg_optic_logo_01_resize.png"
@@ -76,7 +68,7 @@
               </a>
             </div>
 
-            <!-- Large Viewport Searchbar: -->
+            <!-- SEARCBAR LARGE DEVICE SECTION -->
             <form class="form-inline search search--lg col">
               <input
                 class="form-control search__input"
@@ -89,20 +81,18 @@
               </a>
             </form>
 
-            <!-- Shopping Icons: -->
-            <!-- nav__icons: is used as classname in scss and js, change this name  -->
-            <div class="nav__icons col">
-              <div class="cart__icon">
-                <div class="cart__icon-quantity">0</div>
+            <!-- SHOPPING CART AND ICON SECTION: -->
+              <div class="nav__icons col">
+              <div class="nav__icon cart__icon">
+                <div class="nav__icon-quantity cart__icon-quantity">0</div>
                 <a href="./cart.html">
                   <i class="fa-solid fa-bag-shopping"></i>
                 </a>
-                <!-- <div class="cart__icon-quantity">0</div> -->
               </div>
             </div>
 
-            <!-- Hamburger Icon: -->
-            <div class="ap-header-menu__hamburger-wrapper"></div>
+            <!-- HAMBURGER ICON SECTION: -->
+            <div class="nav__menu__vertical-line"></div>
             <div class="nav__menu-icon col">
               <span></span>
               <span></span>
@@ -111,7 +101,7 @@
             </div>
           </div>
 
-          <!-- Small Viewport Searchbar: -->
+          <!-- SEARCH BAR SMALL DEVICE SECTION: -->
           <form class="form-inline search search--sm col">
             <input
               class="form-control search__input"
@@ -124,8 +114,8 @@
             </a>
           </form>
 
-          <!-- Menu: -->
-          <!--change this name .nav__menu-->
+          <!-- MENU LIST SECTION: -->
+          >
           <div class="nav__menu col-lg-12">
             <ul class="nav__menu__list">
               <li class="nav__menu__item">
@@ -148,8 +138,21 @@
         </div>
       </nav>
 
-      <!-- <main> -->
-      <!-- Header: -->
+      <main class="main container">
+       <!-- BREDCRUMB SECTION-->
+       <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item">
+            <a href="./products.html">Product</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="./cart.html">Cart</a>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- DYNAMIC HEADER SECTION: -->
       <header class="header container cart-header__container">
         <h1 class="header__title cart-header__title">
           Shopping Cart
@@ -159,18 +162,20 @@
 
       <main class="cart container">
         <div class="row row--fix">
-          <!-- Products: -->
+          
+          <!-- DYNAMIC PRODUCT SECTION: -->
           <section
             class="cart__section cart__section--products col-sm-12 col-lg-8 clearfix"
           >
+             <!-- DYNAMIC PRODUCT IMAGE, TITLE, PRICE, LINK SECTION: -->
             <div class="cart__products col-12 clearfix"></div>
           </section>
 
-          <!-- Information: -->
+          <!-- CART SUMMARY SECTION: -->
           <section class="cart__section cart__section--info col-sm-12 col-lg-4">
             <h5 class="cart__heading">Summary</h5>
             <div class="col-12">
-              <ul class="cart__benefits">
+              <ul class="cart__advantage">
                 <li>
                   <i class="fa-solid fa-check"></i>
                   Delivery 2-3 working days
@@ -186,37 +191,30 @@
               </ul>
             </div>
 
-            <!-- Total Price -->
+            <!-- CART DYNAMIC TOTAL PRICE SECTION: -->
             <div class="cart__total col-12 row">
               <p class="cart__total__text col-6">Totalt price</p>
               <p class="cart__total__price col-6">0 NOK</p>
             </div>
 
-            <!-- Checkout Button: -->
+            <!-- CART CHECKOUT BUTTON SECTION: -->
             <button class="btn btn--primary btn--sm col-12">
               Go to checkout
             </button>
 
-            <!-- Benefits Lits: -->
+             <!-- CART SAFE CHECKOUT SECTION: -->
             <div class="cart__checkout col-12">
               <p class="cart__checkout">
                 <i class="fa-solid fa-unlock-keyhole"></i>
                 safe checkout
               </p>
-
-              <!-- <ul class="details__benefits">
-                  <li><i class="fal fa-check"></i> Free shipping</li>
-                  <li><i class="fal fa-check"></i> Fast Delivery</li>
-                  <li><i class="fal fa-check"></i> Free payment deferral</li>
-              </ul> -->
             </div>
           </section>
         </div>
 
-        <!-- </main> -->
+   
 
-        <!-- Featured Products: -->
-        <div class="container">
+        <!-- FEATURED/POPULAR PRODUCT SECTION: -->
           <section class="section featured">
             <h2 class="featured__title featured__title--cart">
               Popular products
@@ -225,6 +223,7 @@
             <div class="featured__line"></div>
 
             <div class="featured__products products row">
+                <!-- LOADER SECTION: -->
               <div class="loader">
                 <div></div>
                 <div></div>
@@ -241,12 +240,9 @@
               </div>
             </div>
           </section>
-        </div>
+      
       </main>
     </div>
-    <!-- </div>
-
-</main> -->
 
     <!-- LOIALITY SECTION: -->
     <section class="loyalty-program">
@@ -267,7 +263,6 @@
     </section>
 
     <!-- NEWSLETTER SECTION: -->
-
     <section class="newsletter">
       <section class="newsletter__img"></section>
       <section class="newsletter--dark-overlay">
@@ -293,7 +288,7 @@
       </section>
     </section>
 
-    <!--home page product icon bar service-->
+    <!--INFO BAR SECTION-->
     <section>
       <div class="info-bar">
         <p>
@@ -314,7 +309,9 @@
       </div>
     </section>
 
+    <!--FOOTER SECTION-->
     <footer class="footer">
+      <!--FOOTER LEFT SECTION-->
       <div class="footer-l container-fluid">
         <div class="footer-l__content row">
           <div class="col-md-4">
@@ -344,10 +341,12 @@
               </div>
             </section>
           </div>
+
+          <!--FOOTER RIGHT SECTION-->
           <div class="footer-r col-md-8">
             <div class="footer-r__content">
-              <h4 class="footer-r__heading">GG Optics</h4>
-              <!-- <div class="footer__containerR--list"> -->
+              <h4 class="footer-r__heading">GG Optic</h4>
+
               <ul class="footer-r__list">
                 <li class="footer-r__item">
                   <a href="./products.html" class="nav__link">Eyeglasses</a>
@@ -365,8 +364,8 @@
                   <a href="./products.html" class="nav__link">Accessories</a>
                 </li>
               </ul>
-              <!-- </div> -->
-              <!-- Follow us on social media -->
+
+              <!-- SOCIAL MEDIA SECTION -->
               <div class="footer-r__smedia">
                 <h4 class="footer-r__smedia--heading">
                   Follow us on social media
@@ -376,15 +375,19 @@
                 <a href="#"><i class="fab fa-twitter-square"></i></a>
                 <a href="#"><i class="fab fa-youtube-square"></i></a>
               </div>
-              <!-- Copyright information -->
+              <!-- COPY RIGHT SECTION -->
               <div class="footer-r__copyright">
-                <p>&copy; 2022 GG Optic | Designed and coded by Aina Bjerke</p>
+                <p>
+                  &copy; 2022 GG Optic | Designed and coded by Aina Bjerke and
+                  all rights reserved.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
     <!-- JAVA SCRIPT SECTION: -->
     <script src="./js/cart.js" type="module"></script>
     <!-- BOOTSTRAP SECTION: -->

@@ -1,7 +1,6 @@
-/**** *** *** ABSTRACT SECTION *** *** ***/ /*** *** *** COLOR PALETTE:  *** *** ***/
-/* ---------------------------------------------- */
+/**** *** *** ABSTRACT SECTION *** *** ***/ /*** *** *** COLOR PALETTE SECTION:  *** *** ***/
 /*** *** *** BASE SECTION *** *** ***/
-/* STICKY FOOTER: ------------------------------- */
+/*** *** *** RESET PAGE SETTINGS:  *** *** ***/
 html,
 body {
   height: 100%;
@@ -22,8 +21,6 @@ body {
   flex: 1 0 auto;
 }
 
-/* ---------------------------------------------- */
-/* RESETTING MARGIN & PADDING: ------------------ */
 nav,
 footer,
 header,
@@ -56,7 +53,6 @@ iframe {
   box-sizing: border-box;
 }
 
-/* ---------------------------------------------- */
 .section {
   margin: 100px 0px;
 }
@@ -71,14 +67,24 @@ iframe {
   padding: 0;
 }
 
-/* TYPOGRAPHY: ---------------------------------- */
+@media (min-width: 1200px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1134px;
+  }
+}
+
+/*** *** *** TYPOGRAPHY SECTION:  *** *** ***/
 h1 {
   font-family: "Nanum Myeongjo", serif;
   font-weight: 500;
   letter-spacing: 2px;
   line-height: 58px;
   text-transform: none;
-  font-size: clamp(40px, 5vw, 50px);
+  font-size: 50px;
   margin-top: 60px;
 }
 @media screen and (max-width: 767px) {
@@ -94,18 +100,19 @@ h2 {
   font-weight: 400;
   letter-spacing: 1.6px;
   line-height: 50px;
-  font-size: clamp(30px, 5vw, 40px);
+  font-size: 40px;
 }
 
 h3 {
   font-weight: 350;
-  font-size: clamp(40px, 4vw, 30px);
+  font-size: 40px;
   text-transform: uppercase;
 }
 
 h4 {
-  font-weight: 500;
-  font-size: clamp(20px, 4vw, 30px);
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -113,25 +120,18 @@ h5 {
   font-family: "Nanum Myeongjo", serif;
   letter-spacing: 1.6px;
   line-height: 50px;
-  font-size: clamp(40px, 5vw, 40px);
+  font-size: 40px;
   font-weight: 600;
 }
 
 h6 {
   font-weight: 800;
-  font-size: clamp(12px, 2vw, 12px);
+  font-size: 12px;
   text-transform: uppercase;
 }
 
-body,
-button {
-  font-weight: 400;
-  font-size: clamp(14px, 2vw, 17px);
-  color: black;
-}
-
-/* ---------------------------------------------- */
 /*** *** *** COMPONENTS SECTION *** *** ***/
+/*** *** *** BUTTON SECTION:  *** *** ***/
 .btn {
   text-transform: uppercase;
   border-radius: 0;
@@ -142,12 +142,12 @@ button {
 }
 .btn--primary {
   background: rgb(12, 12, 12);
-  color: white;
+  color: #ffffff;
   font-weight: 500;
 }
 .btn--primary:hover {
   background: #262626;
-  color: white;
+  color: #ffffff;
 }
 .btn--secondary {
   background: rgb(184, 161, 136);
@@ -160,12 +160,12 @@ button {
 }
 .btn--tertiary {
   background: rgb(184, 161, 136);
-  color: black;
+  color: rgb(12, 12, 12);
   font-weight: 700;
 }
 .btn--tertiary:hover {
   background: #cbbaa8;
-  color: black;
+  color: rgb(12, 12, 12);
 }
 .btn--warning {
   background: rgb(189, 0, 0);
@@ -210,6 +210,7 @@ button {
 }
 
 /*** *** *** LAYOUT SECTION *** *** ***/
+/*** *** *** FOOTER SECTION:  *** *** ***/
 .footer {
   background-color: rgb(12, 12, 12);
 }
@@ -308,6 +309,7 @@ button {
 /********************************************************************************************/
 /*************************** Responsive mobile footer style  *********************************/
 /********************************************************************************************/
+/*** *** *** NAV MENU:  *** *** ***/
 .nav {
   background-color: rgb(12, 12, 12);
 }
@@ -327,19 +329,13 @@ button {
     border-bottom: 1px solid rgb(184, 161, 136);
   }
 }
-.nav__brand {
+.nav__trademark {
   width: 100%;
 }
 .nav__logo {
   width: auto;
   height: 95px;
   padding: 10px;
-}
-@media screen and (max-width: 991px) {
-  .nav__logo {
-    padding-left: clamp(10px, 2vw, 20px);
-    height: clamp(65px, 10vw, 80px);
-  }
 }
 .nav__logo:hover {
   cursor: pointer;
@@ -355,7 +351,7 @@ button {
 }
 @media screen and (max-width: 991px) {
   .nav__icons {
-    margin-right: 22px;
+    margin-right: 15px;
   }
 }
 .nav__icons i:last-child {
@@ -364,6 +360,24 @@ button {
 .nav__icons i:hover {
   cursor: pointer;
   color: rgb(184, 161, 136);
+}
+.nav__icon {
+  position: relative;
+  color: black;
+}
+.nav__icon-quantity {
+  position: absolute;
+  top: -18px;
+  right: -8px;
+  border-radius: 100%;
+  background: rgb(12, 12, 12);
+  font-size: 15px;
+  text-align: center;
+  padding: 2px;
+  font-weight: 600;
+  color: rgb(184, 161, 136);
+  width: 23px;
+  height: 23px;
 }
 @media (max-width: 991px) {
   .nav__menu {
@@ -416,7 +430,7 @@ button {
   }
 }
 .nav__menu__item {
-  font-size: clamp(13px, 1vw, 13px);
+  font-size: 13px;
   font-weight: 300;
   letter-spacing: 1.5px;
 }
@@ -445,8 +459,6 @@ button {
   text-decoration: none;
 }
 
-/*** *** *** ----------------------------- ***  ***  ***/
-/***  ***  *** MOBILE AND TABLET STYLE SECTION : ***  ***  ***/
 @media (max-width: 991px) {
   .open-menu {
     left: 0px;
@@ -454,12 +466,12 @@ button {
   .fixed {
     position: fixed;
   }
-  .ap-header-menu__hamburger-wrapper {
+  .nav__menu__vertical-line {
     padding: 28px 20px;
     box-shadow: -2px 0 0 -0.7px #b8a188;
   }
 }
-/*** *** ***  ----------------------------- ***  ***  ***/
+/*** *** *** NAV MENU ICON:  *** *** ***/
 .nav__menu-icon {
   z-index: 999;
   max-width: 40px;
@@ -554,6 +566,7 @@ button {
   left: 50%;
 }
 
+/*** *** *** SEARCH:  *** *** ***/
 .search {
   text-align: center;
 }
@@ -607,6 +620,7 @@ button {
   color: rgb(184, 161, 136);
 }
 
+/*** *** *** BREDCRUMB SECTION:  *** *** ***/
 .breadcrumb {
   background: #efedea;
 }
@@ -615,17 +629,18 @@ button {
 }
 
 /*** *** *** PEAGES SECTION *** *** ***/
-.ads {
+/*** *** *** HOME COLLAGE:  *** *** ***/
+.collage {
   position: relative;
 }
-.ads__main-event {
+.collage__men {
   background: url("/graphical-items/images/collage_img_01_resize.jpeg");
   background-position: 0% 0%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
 }
-.ads__main-event--dark-overlay {
+.collage__men--dark-overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.25);
@@ -633,46 +648,46 @@ button {
   top: 0;
   left: 0;
 }
-.ads__main-event a:hover {
+.collage__men a:hover {
   color: rgb(184, 161, 136);
 }
 @media screen and (max-width: 567px) {
-  .ads__main-event {
+  .collage__men {
     height: 300px;
     background-position: 100% 0%;
   }
 }
-.ads__main-event__content {
+.collage__men__content {
   max-width: 380px;
   color: #ffffff;
   text-align: center;
 }
 @media screen and (max-width: 567px) {
-  .ads__main-event__content {
+  .collage__men__content {
     padding: 213px 10px;
     margin-left: -113px;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
-  .ads__main-event__content {
+  .collage__men__content {
     margin-left: -90px;
     padding: 493px 30px;
   }
 }
 @media screen and (min-width: 992px) {
-  .ads__main-event__content {
+  .collage__men__content {
     padding: 522px 0px;
     margin-left: -83px;
   }
 }
-.ads__news {
+.collage__women {
   background: url("/graphical-items/images/collage_img_02_resize.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
 }
-.ads__news--dark-overlay {
+.collage__women--dark-overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.25);
@@ -680,44 +695,44 @@ button {
   top: 0;
   left: 0;
 }
-.ads__news a:hover {
+.collage__women a:hover {
   color: rgb(184, 161, 136);
 }
 @media screen and (max-width: 567px) {
-  .ads__news {
+  .collage__women {
     height: 300px;
   }
 }
-.ads__news__content {
+.collage__women__content {
   color: #ffffff;
   padding-top: 130px;
 }
 @media screen and (max-width: 567px) {
-  .ads__news__content {
+  .collage__women__content {
     padding-top: 210px;
     margin-left: 10px;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
-  .ads__news__content {
+  .collage__women__content {
     padding: 205px 0 0 40px;
     margin-left: -2px;
   }
 }
 @media screen and (min-width: 992px) {
-  .ads__news__content {
+  .collage__women__content {
     padding: 200px 0 0 40px;
     margin-left: -9px;
   }
 }
-.ads__ideas {
+.collage__sport {
   background: url("/graphical-items/images/collage_img_03_resize.jpeg");
   background-position: 0% 70%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
 }
-.ads__ideas--dark-overlay {
+.collage__sport--dark-overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.25);
@@ -725,109 +740,110 @@ button {
   top: 0;
   left: 0;
 }
-.ads__ideas a:hover {
+.collage__sport a:hover {
   color: rgb(184, 161, 136);
 }
 @media screen and (max-width: 567px) {
-  .ads__ideas {
+  .collage__sport {
     height: 300px;
   }
 }
-.ads__ideas__content {
+.collage__sport__content {
   text-align: center;
   padding-top: 30px;
   color: #ffffff;
 }
 @media screen and (max-width: 567px) {
-  .ads__ideas__content {
+  .collage__sport__content {
     padding-top: 215px;
     text-align: left;
     margin-left: 17px;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
-  .ads__ideas__content {
+  .collage__sport__content {
     padding-top: 209px;
     margin-left: 49px;
     text-align: left;
   }
 }
 @media screen and (min-width: 992px) {
-  .ads__ideas__content {
+  .collage__sport__content {
     padding-top: 210px;
     margin-left: -45px;
   }
 }
-.ads__newsletter {
+.collage__sale {
   background: url("/graphical-items//images/collage_img_04_resize.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
 }
-.ads__newsletter a:hover {
+.collage__sale a:hover {
   color: rgb(184, 161, 136);
 }
 @media screen and (max-width: 567px) {
-  .ads__newsletter {
+  .collage__sale {
     height: 300px;
     padding: 10px;
   }
 }
-.ads__newsletter__content {
+.collage__sale__content {
   color: #ffffff;
   text-align: center;
   padding-top: 30px;
 }
 @media screen and (max-width: 567px) {
-  .ads__newsletter__content {
+  .collage__sale__content {
     padding-top: 215px;
     text-align: left;
     margin-left: 6px;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
-  .ads__newsletter__content {
+  .collage__sale__content {
     padding-top: 205px;
     text-align: left;
     margin-left: 40px;
   }
 }
 @media screen and (min-width: 992px) {
-  .ads__newsletter__content {
+  .collage__sale__content {
     padding-top: 209px;
     margin-left: -90px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .ads__main-event,
-.ads__news,
-.ads__ideas,
-.ads__newsletter {
+  .collage__men,
+.collage__women,
+.collage__sport,
+.collage__sale {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .ads__main-event,
-.ads__news {
+  .collage__men,
+.collage__women {
     margin-bottom: 20px;
   }
-  .ads__ideas {
+  .collage__sport {
     margin-right: 20px;
   }
 }
 @media screen and (min-width: 992px) {
-  .ads__main-event {
+  .collage__men {
     margin-right: 20px;
   }
-  .ads__news {
+  .collage__women {
     margin-bottom: 20px;
   }
-  .ads__ideas {
+  .collage__sport {
     margin-right: 20px;
   }
 }
+/*** *** *** HOME HERO BANNER:  *** *** ***/
 .hero {
   position: relative;
 }
@@ -843,13 +859,23 @@ button {
   position: absolute;
   color: white;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 449px) {
   .hero__content {
     position: absolute;
     top: 50%;
-    left: 50%;
+    margin-left: 50%;
     transform: translate(-50%, -50%);
-    padding: clamp(13px, 2vw, 20px);
+    padding: 13px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 767px) {
+  .hero__content {
+    position: absolute;
+    top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 13px;
     width: 100%;
   }
 }
@@ -859,7 +885,6 @@ button {
     top: 50%;
     left: 60%;
     transform: translate(-5%, -50%);
-    max-width: clamp(400px, 50vw, 550px);
   }
 }
 @media screen and (min-width: 1221px) and (max-width: 1500px) {
@@ -884,7 +909,6 @@ button {
 .hero__content--dark-overlay {
   background: rgba(0, 0, 0, 0.5);
   height: 601px;
-  width: 424px;
   padding: 29px;
 }
 @media screen and (max-width: 767px) {
@@ -907,8 +931,15 @@ button {
   margin-top: 15px;
   letter-spacing: 0.5px;
 }
+@media screen and (max-width: 449px) {
+  .hero__text {
+    font-size: 1em;
+    margin-top: 15px;
+    letter-spacing: 0.3px;
+  }
+}
 .hero__button {
-  margin-top: clamp(15px, 5vw, 20px);
+  margin-top: 20px;
 }
 .hero__banner {
   background-position: 60% 0% !important;
@@ -926,6 +957,7 @@ button {
   }
 }
 
+/*** *** *** LOYALTY:  *** *** ***/
 @media screen and (min-width: 1200px) {
   .loyalty-program--dark-overlay {
     width: 1100px;
@@ -984,6 +1016,7 @@ button {
   margin-top: 13px;
 }
 
+/*** *** *** NEWSLETTER:  *** *** ***/
 @media screen and (min-width: 1200px) {
   .newsletter--dark-overlay {
     width: 1100px;
@@ -1108,6 +1141,7 @@ button {
   background: #cbbaa8;
 }
 
+/*** *** *** INFO BAR:  *** *** ***/
 .info-bar {
   background-color: #ffffff;
   margin-top: 27px;
@@ -1147,6 +1181,7 @@ button {
   font-size: 12px;
 }
 
+/*** *** *** PRODUCT CART:  *** *** ***/
 .featured {
   background-color: white;
 }
@@ -1176,7 +1211,7 @@ button {
   padding: 10px;
 }
 .product__title {
-  font-size: clamp(15px, 50vw, 18px);
+  font-size: 18px;
 }
 .product__desc {
   margin: 0;
@@ -1195,6 +1230,7 @@ button {
   width: 100%;
 }
 
+/*** *** *** PRODUCT LAYOUT:  *** *** ***/
 .header {
   background-color: white;
   text-align: center;
@@ -1233,6 +1269,7 @@ button {
   justify-content: flex-end;
 }
 
+/*** *** *** ABOUT:  *** *** ***/
 .about {
   margin-bottom: 23px;
   margin-right: auto;
@@ -1251,8 +1288,9 @@ button {
   padding: 10px;
 }
 
+/*** *** *** DETAILS:  *** *** ***/
 .details {
-  background-color: white;
+  background-color: #ffffff;
   max-width: 1105px;
   margin-left: auto;
   margin-right: auto;
@@ -1301,7 +1339,6 @@ button {
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
   .details__images img {
-    max-width: 288px;
     margin-top: 103px;
   }
 }
@@ -1312,7 +1349,7 @@ button {
 }
 .details__content {
   margin-left: 180px;
-  padding-top: clamp(0px, 3vw, 30px);
+  padding-top: 30px;
   text-align: center;
 }
 @media screen and (max-width: 567px) {
@@ -1337,8 +1374,8 @@ button {
   display: block;
 }
 .details__title {
-  font-size: clamp(20px, 4vw, 30px);
-  margin-bottom: clamp(10px, 3vw, 20px);
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 .details__price {
   font-weight: 600;
@@ -1356,22 +1393,22 @@ button {
     width: 71%;
   }
 }
-.details__benefits {
+.details__advantage {
   list-style: none;
   margin-top: 20px;
-  font-size: clamp(12px, 1vw, 14px);
+  font-size: 12px;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 26%;
 }
-@media screen and (min-width: 568px) and (max-width: 991px) {
-  .details__benefits {
-    margin-left: 63px;
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .details__advantage {
+    margin-left: 37px;
   }
 }
-.details__benefits li {
+.details__advantage li {
   margin: 5px 0;
 }
-.details__benefits i {
+.details__advantage i {
   margin-right: 5px;
   color: rgb(184, 161, 136);
   font-size: 13px;
@@ -1405,7 +1442,7 @@ button {
   text-align: left;
   border: 0;
   background: rgb(184, 161, 136);
-  font-size: clamp(14px, 3vw, 18px);
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
   border-bottom: 1px solid black;
@@ -1425,15 +1462,21 @@ button {
     margin-left: 73%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 500px) and (max-width: 767px) {
   .accordion i {
-    margin-left: 60%;
+    margin-left: 57%;
+  }
+}
+@media screen and (max-width: 499px) {
+  .accordion i {
+    margin-left: 40%;
   }
 }
 
+/*** *** *** CART:  *** *** ***/
 .cart-header__container {
   background-color: #efedea;
-  margin-top: 30px;
+  margin-top: -40px;
 }
 
 .cart {
@@ -1466,13 +1509,7 @@ button {
     margin-left: 15px;
   }
 }
-@media screen and (min-width: 992px) {
-  .cart__section {
-    padding-left: 30px;
-  }
-}
 .cart__section--info {
-  margin-left: -14px;
   padding: 20px;
   background-color: #ffffff;
   margin-bottom: 9px;
@@ -1484,12 +1521,12 @@ button {
     margin-left: 0px;
   }
 }
-.cart__benefits {
+.cart__advantage {
   list-style-type: none;
   margin-top: 10px;
   margin-bottom: 18px;
 }
-.cart__benefits i {
+.cart__advantage i {
   margin-right: 5px;
   color: rgb(184, 161, 136);
   font-size: 13px;
@@ -1602,13 +1639,14 @@ button {
   }
 }
 .cart__product-card__price {
-  font-weight: 700;
+  font-weight: 600;
 }
 @media screen and (max-width: 567px) {
   .cart__product-card__price {
     font-size: 13px;
     padding: 0;
     margin-bottom: 3px;
+    font-weight: 700;
   }
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
@@ -1626,7 +1664,7 @@ button {
 }
 .cart__product-card__link {
   margin-top: auto;
-  font-size: clamp(13px, 2vw, 16px);
+  font-size: 13px;
   color: rgb(24, 110, 117);
 }
 .cart__product-card__link:hover {
@@ -1640,42 +1678,22 @@ button {
   padding-bottom: 5px;
 }
 .cart__total__text {
-  font-size: clamp(13px, 1.5vw, 20px);
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 0;
 }
 .cart__total__price {
   padding: 0;
-  font-size: clamp(13px, 1.5vw, 20px);
+  font-size: 13px;
   font-weight: 700;
   text-align: right;
 }
 .cart__checkout-btn {
   margin: 20px 0;
 }
-.cart__icon {
-  position: relative;
-  color: black;
-}
-.cart__icon a {
-  color: black;
-}
-.cart__icon-quantity {
-  position: absolute;
-  top: -18px;
-  right: -8px;
-  border-radius: 100%;
-  background: rgb(12, 12, 12);
-  font-size: 15px;
-  text-align: center;
-  padding: 2px;
-  font-weight: 600;
-  color: rgb(184, 161, 136);
-  width: 23px;
-  height: 23px;
-}
 
+/*** *** *** FEEDBACK:  *** *** ***/
 .feedback {
   width: 100%;
 }
@@ -1701,6 +1719,7 @@ button {
   padding: 15px;
 }
 
+/*** *** *** FORM VALIDATION:  *** *** ***/
 .error {
   color: rgb(223, 0, 0);
   font-weight: 500;
@@ -1745,7 +1764,7 @@ button {
 }
 .admin-menu__breadcrumb--lg {
   text-align: left;
-  margin: auto 0;
+  margin: auto 0px;
   display: block;
   font-size: 18px;
 }
@@ -1774,7 +1793,6 @@ button {
 }
 
 .edit__container {
-  margin-left: clamp(0px, 1vw, 300px);
   max-width: 630px;
   margin-bottom: 50px;
 }
@@ -1789,14 +1807,14 @@ button {
     margin-left: 300px;
   }
 }
-.edit__title {
-  font-size: clamp(25px, 5vw, 35px);
-  margin-bottom: clamp(10px, 5vw, 20px);
-  margin-top: clamp(15px, 5vw, 20px);
+.edit__heading {
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .edit__form__label {
   width: 100%;
-  margin-top: clamp(15px, 5vw, 25px);
+  margin-top: 25px;
   font-weight: 500;
 }
 .edit__form__input, .edit__form__textarea {
@@ -1823,15 +1841,15 @@ button {
   margin-bottom: 50px;
 }
 .edit__advanced-option {
-  width: clamp(200px, 90vw, 600px);
   margin-bottom: 80px;
+  width: 100%;
 }
 .edit__advanced-option .card-header {
   padding: 0;
   margin-top: 30px;
 }
 .edit__advanced-option .card-body {
-  padding: clamp(15px, 5vw, 20px);
+  padding: 20px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
@@ -1873,15 +1891,15 @@ button {
   left: 50%;
   transform: translate(-50%, -10%);
 }
-.form-login__brand {
-  width: clamp(180px, 30vw, 200px);
+.form-login__trademark {
+  width: 180px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 .form-login__logo {
   width: 100%;
 }
-.form-login__title {
+.form-login__heading {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -1898,7 +1916,7 @@ button {
   padding: 0px 0px 0px 0px;
   max-width: 300px;
 }
-.form-login__label--padding {
+.form-login__label--password {
   padding-top: 20px;
 }
 .form-login__input {
@@ -1990,17 +2008,36 @@ button {
   margin-top: 17px;
 }
 
+.accordion > .card {
+  overflow: visible;
+}
+
 .accordion-admin__card,
 .accordion-admin__header {
   background-color: #efedea !important;
 }
 
 .accordion-admin-chevron__reset i {
-  margin-left: 470px;
+  margin-left: 80%;
 }
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 752px) and (max-width: 991px) {
   .accordion-admin-chevron__reset i {
-    margin-left: 73%;
+    margin-left: 86%;
+  }
+}
+@media screen and (min-width: 596px) and (max-width: 751px) {
+  .accordion-admin-chevron__reset i {
+    margin-left: 82%;
+  }
+}
+@media screen and (min-width: 446px) and (max-width: 595px) {
+  .accordion-admin-chevron__reset i {
+    margin-left: 75%;
+  }
+}
+@media screen and (max-width: 445px) {
+  .accordion-admin-chevron__reset i {
+    margin-left: 66%;
   }
 }
 

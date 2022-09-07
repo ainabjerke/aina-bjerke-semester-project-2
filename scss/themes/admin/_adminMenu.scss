@@ -34,7 +34,7 @@
     }
     &--lg {
       text-align: left;
-      margin: auto 0;
+      margin: auto 0px;
       display: block;
       font-size: 18px;
 
@@ -46,6 +46,7 @@
     &--sm {
       display: block;
       padding-top: 15px;
+      // margin: auto -29px;
 
       @media screen and (min-width: 992px) {
         display: none;

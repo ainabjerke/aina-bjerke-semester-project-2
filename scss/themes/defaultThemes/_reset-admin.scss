@@ -7,16 +7,29 @@
   margin-top: 17px;
 }
 
+.accordion > .card {
+  overflow: visible;
+}
+
 .accordion-admin__card,
 .accordion-admin__header {
   background-color: $off-white-color !important;
 }
 
 .accordion-admin-chevron__reset i {
-  margin-left: 470px;
+  margin-left: 80%;
   // color: red;
-  @media screen and (max-width: 640px) {
-    margin-left: 73%;
+  @media screen and (min-width: 752px) and (max-width: 991px) {
+    margin-left: 86%;
+  }
+  @media screen and (min-width: 596px) and (max-width: 751px) {
+    margin-left: 82%;
+  }
+  @media screen and (min-width: 446px) and (max-width: 595px) {
+    margin-left: 75%;
+  }
+  @media screen and (max-width: 445px) {
+    margin-left: 66%;
   }
 }
 
