@@ -1430,6 +1430,7 @@ h6 {
 .accordion .card-header {
   background: #ffffff;
   border: 0;
+  color: rgb(12, 12, 12);
 }
 .accordion .card-body {
   border: 0;
@@ -1458,6 +1459,7 @@ h6 {
   cursor: pointer;
 }
 .accordion i {
+  color: rgb(12, 12, 12);
   margin-left: 80%;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
