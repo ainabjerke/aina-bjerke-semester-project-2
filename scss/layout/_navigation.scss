@@ -3,6 +3,8 @@
 //--- --- NAV MENU STYLE: --- ---//
 .nav {
   background-color: $primary-color;
+  z-index: 1;
+  position: relative;
 
   & .container {
     @media screen and (max-width: 991px) {
@@ -122,7 +124,8 @@
   //change this css nanme
   &__menu {
     @media (max-width: 991px) {
-      position: absolute;
+      // position: absolute;
+      position: fixed;
       top: 0;
       left: -100%;
       z-index: 888;
