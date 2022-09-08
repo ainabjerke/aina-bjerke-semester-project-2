@@ -208,8 +208,11 @@
     @media screen and (min-width: 500px) and (max-width: 767px) {
       margin-left: 57%;
     }
-    @media screen and (max-width: 499px) {
+    @media screen and (min-width: 372px) and (max-width: 499px) {
       margin-left: 40%;
+    }
+    @media screen and (max-width: 371px) {
+      margin-left: 33%;
     }
   }
 }
