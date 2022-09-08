@@ -54,7 +54,15 @@
     }
   }
 
-  &__add-product-button {
+  &__go-to-add-product-btn {
+    margin: 15px 0 15px auto;
+    padding: 0;
+
+    @media screen and (max-width: 991px) {
+      margin: 10px 10px 10px auto;
+    }
+  }
+  &__go-to-edit-product-btn {
     margin: 15px 0 15px auto;
     padding: 0;
 

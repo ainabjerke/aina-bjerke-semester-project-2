@@ -1782,12 +1782,21 @@ h6 {
     display: none;
   }
 }
-.admin-menu__add-product-button {
+.admin-menu__go-to-add-product-btn {
   margin: 15px 0 15px auto;
   padding: 0;
 }
 @media screen and (max-width: 991px) {
-  .admin-menu__add-product-button {
+  .admin-menu__go-to-add-product-btn {
+    margin: 10px 10px 10px auto;
+  }
+}
+.admin-menu__go-to-edit-product-btn {
+  margin: 15px 0 15px auto;
+  padding: 0;
+}
+@media screen and (max-width: 991px) {
+  .admin-menu__go-to-edit-product-btn {
     margin: 10px 10px 10px auto;
   }
 }
