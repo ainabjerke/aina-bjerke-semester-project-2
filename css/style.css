@@ -1452,7 +1452,7 @@ h6 {
   border-bottom: 1px solid black;
   border-style: hidden;
 }
-@media screen and (min-width: 372px) and (max-width: 499px) {
+@media screen and (max-width: 499px) {
   .accordion__title {
     font-size: 1rem;
   }
@@ -1479,7 +1479,7 @@ h6 {
 }
 @media screen and (min-width: 372px) and (max-width: 499px) {
   .accordion i {
-    margin-left: 40%;
+    margin-left: 52%;
   }
 }
 @media screen and (max-width: 371px) {
