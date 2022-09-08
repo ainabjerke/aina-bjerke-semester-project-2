@@ -150,6 +150,9 @@
       background: colors(secondary, light);
       // color: white;
     }
+    & i {
+      color: $primary-color;
+    }
   }
 }
 

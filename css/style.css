@@ -1140,6 +1140,9 @@ h6 {
 .newsletter__btn:hover {
   background: #cbbaa8;
 }
+.newsletter__btn i {
+  color: rgb(12, 12, 12);
+}
 
 /*** *** *** INFO BAR:  *** *** ***/
 .info-bar {
