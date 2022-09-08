@@ -1430,7 +1430,6 @@ h6 {
 .accordion .card-header {
   background: #ffffff;
   border: 0;
-  color: rgb(12, 12, 12);
 }
 .accordion .card-body {
   border: 0;
@@ -1446,6 +1445,7 @@ h6 {
   text-align: left;
   border: 0;
   background: rgb(184, 161, 136);
+  color: rgb(12, 12, 12);
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;

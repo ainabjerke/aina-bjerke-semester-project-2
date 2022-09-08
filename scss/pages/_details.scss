@@ -162,7 +162,7 @@
     &-header {
       background: $white-color;
       border: 0;
-      color: $primary-color;
+      // color: $primary-color;
     }
 
     &-body {
@@ -182,6 +182,7 @@
     text-align: left;
     border: 0;
     background: $secondary-color;
+    color: $primary-color;
     font-size: 1.2rem;
     // font-size: clamp(14px, 3vw, 18px);
     text-transform: uppercase;
