@@ -190,7 +190,9 @@
     border-bottom: 1px solid black;
     border-style: hidden;
     // background-color: red;
-
+    @media screen and (min-width: 372px) and (max-width: 499px) {
+      font-size: 1rem;
+    }
     &:focus {
       outline: 0;
     }

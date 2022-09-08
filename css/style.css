@@ -1452,6 +1452,11 @@ h6 {
   border-bottom: 1px solid black;
   border-style: hidden;
 }
+@media screen and (min-width: 372px) and (max-width: 499px) {
+  .accordion__title {
+    font-size: 1rem;
+  }
+}
 .accordion__title:focus {
   outline: 0;
 }
