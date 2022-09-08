@@ -13,7 +13,7 @@ export function submitLogin(event) {
   if (usernameValue.length === 0 || passwordValue.length === 0) {
     return displayMessage(
       "feedback feedback--error",
-      "Please insert a password or a username",
+      "Please insert username or password",
       ".feedback"
     );
   }

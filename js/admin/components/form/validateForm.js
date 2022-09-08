@@ -40,8 +40,17 @@ export function validateForm() {
 
   // Price
   const priceValue = price.value;
+  console.log("priceValue", priceValue);
 
   if (validateLength(priceValue, 1) === true) {
+    priceError.style.display = "none";
+    priceHasError = false;
+  } else {
+    priceError.style.display = "block";
+    priceHasError = true;
+  }
+
+  if (isNumeric(priceValue) === true) {
     priceError.style.display = "none";
     priceHasError = false;
   } else {
@@ -76,6 +85,11 @@ export function validateForm() {
     return true;
   }
 }
+
+function isNumeric(value) {
+  return /^-?\d+$/.test(value);
+}
+console.log(isNumeric("1"));
 
 function validateLength(value, lenghtToCheck) {
   const trimmedValue = value.trim();
