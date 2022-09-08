@@ -191,7 +191,7 @@
     border-style: hidden;
     // background-color: red;
     @media screen and (max-width: 499px) {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     &:focus {
       outline: 0;
@@ -210,11 +210,11 @@
     @media screen and (min-width: 500px) and (max-width: 767px) {
       margin-left: 57%;
     }
-    @media screen and (min-width: 372px) and (max-width: 499px) {
+    @media screen and (min-width: 400px) and (max-width: 499px) {
       margin-left: 52%;
     }
-    @media screen and (max-width: 371px) {
-      margin-left: 28%;
+    @media screen and (max-width: 399px) {
+      margin-left: 43%;
     }
   }
 }

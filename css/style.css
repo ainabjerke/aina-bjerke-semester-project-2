@@ -1454,7 +1454,7 @@ h6 {
 }
 @media screen and (max-width: 499px) {
   .accordion__title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .accordion__title:focus {
@@ -1477,14 +1477,14 @@ h6 {
     margin-left: 57%;
   }
 }
-@media screen and (min-width: 372px) and (max-width: 499px) {
+@media screen and (min-width: 400px) and (max-width: 499px) {
   .accordion i {
     margin-left: 52%;
   }
 }
-@media screen and (max-width: 371px) {
+@media screen and (max-width: 399px) {
   .accordion i {
-    margin-left: 28%;
+    margin-left: 43%;
   }
 }
 
