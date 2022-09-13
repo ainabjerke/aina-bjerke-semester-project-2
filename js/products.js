@@ -3,9 +3,13 @@ import { createProduct } from "./components/html/createProduct.js";
 import { fetchAPI } from "./components/constance/fetchApi.js";
 import countStorage from "./components/storage/countStorage.js";
 import mobileMenu from "./components/html/mobileMenu.js";
-import { searchProducts } from "./components/search/searchProducts.js";
+import {
+  searchProductsBoxLarge,
+  searchProductsBoxSmall,
+} from "./components/search/searchProducts.js";
 
 fetchAPI(createProduct, productsURL);
 countStorage();
-fetchAPI(searchProducts, productsURL);
+fetchAPI(searchProductsBoxLarge, productsURL);
+fetchAPI(searchProductsBoxSmall, productsURL);
 fetchAPI(productsURL);
