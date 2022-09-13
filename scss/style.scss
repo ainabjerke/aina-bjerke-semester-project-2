@@ -7,6 +7,7 @@
 
 /*** *** *** COMPONENTS SECTION *** *** ***/
 @import "./components/buttons";
+@import "./components/feedbackMessage";
 @import "./components/loader";
 
 /*** *** *** LAYOUT SECTION *** *** ***/
@@ -15,26 +16,25 @@
 @import "./layout/nav-icon-menu";
 @import "./layout/search";
 @import "./layout/breadcrumb";
+@import "./layout/info-bar";
+@import "./layout/loyalty";
+@import "./layout/newsletter";
 
 /*** *** *** PEAGES SECTION *** *** ***/
-@import "./pages/home-ads";
+@import "./pages/home-collage";
 @import "./pages/home-hero-banner";
-@import "./pages/home-loyalty";
-@import "./pages/home-newsletter";
-@import "./pages/home-info-bar";
-@import "./pages/home-product-card";
-@import "./pages/home-product-layout";
+@import "./pages/product-card";
+@import "./pages/product-layout";
 @import "./pages/products-about";
 @import "./pages/details";
 @import "./pages/cart";
-@import "./pages/feedbackMessage";
-@import "./pages/form-validation";
 
 /*** *** *** THEMES/ADMIN SECTION *** *** ***/
 @import "./themes/admin/adminMenu";
 @import "./themes/admin/edit";
 @import "./themes/admin/login";
 @import "./themes/admin/productMenu";
+@import "./themes/admin/form-validation";
 
 /*** *** *** THEMES/DEFAULTTHEMES SECTION *** *** ***/
 @import "./themes/defaultThemes/reset-admin";

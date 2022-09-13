@@ -28,6 +28,11 @@
 
   &__content {
     padding: 10px;
+    color: black;
+    &:hover {
+      text-decoration: none;
+      color: $primary-color;
+    }
   }
 
   &__title {
