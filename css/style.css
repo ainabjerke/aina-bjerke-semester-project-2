@@ -1825,29 +1825,29 @@ h6 {
 }
 
 /*** *** *** FEEDBACK:  *** *** ***/
-.feedback {
+.feedbackMessage {
   width: 100%;
 }
-.feedback--success {
-  background: rgb(173, 216, 173);
+.feedbackMessage--success {
+  background: green;
+  color: #ffffff;
   text-align: center;
   padding: 15px;
 }
-.feedback--error {
-  background: #d63737;
-  color: white;
+.feedbackMessage--error {
+  background: rgb(223, 0, 0);
+  color: #ffffff;
   font-weight: 500;
   margin: 0px 0 20px 0;
   text-align: center;
   padding: 15px;
 }
-.feedback--warning {
-  background: rgb(204, 120, 24);
-  color: white;
+.feedbackMessage--warning {
   font-weight: 500;
   margin: 20px 0 20px 0;
   text-align: center;
   padding: 15px;
+  color: black;
 }
 
 /*** *** *** FORM VALIDATION:  *** *** ***/

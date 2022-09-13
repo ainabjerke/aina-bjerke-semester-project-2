@@ -1,18 +1,19 @@
 /*** *** *** FEEDBACK:  *** *** ***/
 
 //--- --- FEEDBACK STYLE: --- ---//
-.feedback {
+.feedbackMessage {
   width: 100%;
 
   &--success {
-    background: rgb(173, 216, 173);
+    background: green;
+    color: $white-color;
     text-align: center;
     padding: 15px;
   }
 
   &--error {
-    background: #d63737;
-    color: white;
+    background: rgb(223, 0, 0);
+    color: $white-color;
     font-weight: 500;
     margin: 0px 0 20px 0;
     text-align: center;
@@ -20,11 +21,12 @@
   }
 
   &--warning {
-    background: rgb(204, 120, 24);
-    color: white;
+    // background: #faa61a;
+    // color: $white-color;
     font-weight: 500;
     margin: 20px 0 20px 0;
     text-align: center;
     padding: 15px;
+    color: black;
   }
 }

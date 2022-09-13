@@ -14,6 +14,6 @@ export const price = document.querySelector("#price");
 export const priceError = document.querySelector("#price-error");
 export const description = document.querySelector("#description");
 export const descriptionError = document.querySelector("#description-error");
-export const feedback = document.querySelector(".feedback");
+export const feedbackMessage = document.querySelector(".feedbackMessage");
 export const username = document.querySelector("#username");
 export const password = document.querySelector("#password");

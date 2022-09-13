@@ -30,18 +30,22 @@ export async function addProduct(image, title, price, description, featured) {
 
     if (json.created_at) {
       displayMessage(
-        "feedback feedback--success",
-        "Product Added",
-        ".feedback"
+        "feedbackMessage feedbackMessage--success",
+        "Product successfully added",
+        ".feedbackMessage"
       );
 
       fetchAPI(productMenu, productsURL);
     }
 
     if (json.error) {
-      displayMessage("feedback feedback--error", json.message, ".feedback");
+      displayMessage(
+        "feedbackMessage feedbackMessage--error",
+        json.message,
+        ".feedbackMessage"
+      );
     }
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 }

@@ -21,7 +21,7 @@ import {
 
 // Redirecting to homepage if they are not logged in
 if (!token) {
-    location.href = "../admin";
+  location.href = "../admin";
 }
 
 // Display Product Menu and Logout button
@@ -46,7 +46,7 @@ const editURL = baseURL + "/products/" + id;
   try {
     const response = await fetch(editURL);
     const details = await response.json();
-
+    console.log(details);
     image.value = details.image_url;
     title.value = details.title;
     price.value = details.price;

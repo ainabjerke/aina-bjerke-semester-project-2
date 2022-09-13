@@ -7,8 +7,8 @@ export function createProduct(products) {
 
   if (products.length === 0) {
     displayMessage(
-      "feedback feedback--error",
-      "No products found",
+      "feedbackMessage feedbackMessage--error",
+      "Sorry, no products found. Please check your search and try again",
       ".products"
     );
   }

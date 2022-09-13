@@ -1,6 +1,6 @@
 import { updateProduct } from "./updateProduct.js";
 import { addProduct } from "./addProduct.js";
-import { feedback, featuredTrue, idInput } from "./formVariables.js";
+import { feedbackMessage, featuredTrue, idInput } from "./formVariables.js";
 import { validateForm } from "./validateForm.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 
@@ -8,7 +8,7 @@ import displayMessage from "../../../components/messages/displayMessage.js";
 export function submitForm(event) {
   event.preventDefault();
 
-  feedback.innerHTML = "";
+  feedbackMessage.innerHTML = "";
 
   const imageValue = image.value;
   const titleValue = title.value.trim();
@@ -27,9 +27,9 @@ export function submitForm(event) {
   // if (validateForm() === false || isNaN(priceValue))
   if (validateForm() === false) {
     return displayMessage(
-      "feedback feedback--error",
+      "feedbackMessage feedbackMessage--error",
       "Please enter proper values",
-      ".feedback"
+      ".feedbackMessage"
     );
   }
 

@@ -10,8 +10,8 @@ export function createShoppingCart() {
 
   if (shoppingCart.length === 0) {
     displayMessage(
-      "feedback feedback--warning",
-      "The cart is empty",
+      "feedbackMessage feedbackMessage--warning",
+      "You have no product in the shopping cart",
       ".cart__products"
     );
   }
