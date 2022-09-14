@@ -35,34 +35,12 @@
     position: absolute;
     color: white;
 
-    @media screen and (max-width: 449px) {
+    @media screen and (min-width: 1501px) {
       position: absolute;
       top: 50%;
-      // left: 50%;
-      margin-left: 50%;
-      transform: translate(-50%, -50%);
-      // padding: clamp(13px, 2vw, 20px);
-      padding: 13px;
-      width: 100%;
-    }
-    @media screen and (min-width: 450px) and (max-width: 767px) {
-      position: absolute;
-      top: 50%;
-      // left: 50%;
-      margin-left: 50%;
-      transform: translate(-50%, -50%);
-      // padding: clamp(13px, 2vw, 20px);
-      padding: 13px;
-      width: 100%;
-      z-index: 0;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1220px) {
-      position: absolute;
-      top: 50%;
-      left: 60%;
-      transform: translate(-5%, -50%);
-      // max-width: clamp(400px, 50vw, 550px);
+      left: 75%;
+      transform: translate(-30%, -50%);
+      align-self: center;
     }
 
     @media screen and (min-width: 1221px) and (max-width: 1500px) {
@@ -74,54 +52,97 @@
       align-self: center;
     }
 
-    @media screen and (min-width: 1501px) {
+    @media screen and (min-width: 768px) and (max-width: 1220px) {
       position: absolute;
       top: 50%;
-      left: 75%;
-      transform: translate(-30%, -50%);
-      align-self: center;
+      left: 60%;
+      transform: translate(-5%, -50%);
     }
+
+    @media screen and (min-width: 450px) and (max-width: 767px) {
+      position: absolute;
+      top: 50%;
+      margin-left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 13px;
+      width: 100%;
+      z-index: 0;
+    }
+
+    @media screen and (max-width: 449px) {
+      position: absolute;
+      top: 50%;
+      margin-left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 13px;
+      width: 100%;
+    }
+
+    // @media screen and (max-width: 449px) {
+    //   position: absolute;
+    //   top: 50%;
+    //   margin-left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   padding: 13px;
+    //   width: 100%;
+    // }
+    // @media screen and (min-width: 450px) and (max-width: 767px) {
+    //   position: absolute;
+    //   top: 50%;
+    //   margin-left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   padding: 13px;
+    //   width: 100%;
+    //   z-index: 0;
+    // }
+
+    // @media screen and (min-width: 768px) and (max-width: 1220px) {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 60%;
+    //   transform: translate(-5%, -50%);
+    // }
+
+    // @media screen and (min-width: 1221px) and (max-width: 1500px) {
+    //   max-width: 550px;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 70%;
+    //   transform: translate(-20%, -50%);
+    //   align-self: center;
+    // }
+
+    // @media screen and (min-width: 1501px) {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 75%;
+    //   transform: translate(-30%, -50%);
+    //   align-self: center;
+    // }
 
     &--dark-overlay {
       background: rgba(0, 0, 0, 0.5);
       height: 601px;
-      // width: 424px;
       padding: 29px;
+      @media screen and (min-width: 768px) and (max-width: 1220px) {
+        padding: 17px;
+        height: 601px;
+        width: 314px;
+      }
       @media screen and (max-width: 767px) {
         background: rgba(0, 0, 0, 0);
         padding: 0px;
         margin-left: 3%;
         margin-top: 551px;
       }
-      @media screen and (min-width: 768px) and (max-width: 1220px) {
-        padding: 17px;
-        height: 601px;
-        width: 314px;
-      }
+      // @media screen and (min-width: 768px) and (max-width: 1220px) {
+      //   padding: 17px;
+      //   height: 601px;
+      //   width: 314px;
+      // }
     }
   }
 
-  //   &__content--dark-overlay {
-  //     background: rgba(0, 0, 0, 0.5);
-  //     height: 601px;
-  //     width: 424px;
-  //     padding: 29px;
-  //     @media screen and (max-width: 767px) {
-  //       padding: 20px;
-  //     }
-  //   }
-
-  // &__heading {
-  //   @media screen and (max-width: 450px) {
-  //     display: none;
-  //   }
-  // }
-
-  // &__subheading {
-  //   @media screen and (min-width: 450px) {
-  //     display: none;
-  //   }
-  // }
   &__text {
     font-size: 16px;
     margin-top: 15px;
@@ -134,11 +155,9 @@
   }
 
   &__button {
-    // margin-top: clamp(15px, 5vw, 20px);
     margin-top: 20px;
   }
 
-  //change ___banner name
   &__banner {
     background-position: 60% 0% !important;
     background-repeat: no-repeat;

@@ -5,7 +5,7 @@ export default function deleteButton(id) {
   const button = document.querySelector(".edit__delete-button");
 
   button.onclick = async function () {
-    const doDelete = confirm("Are you sure you want to delete this?");
+    const doDelete = confirm("Are you sure you want to delete this product?");
 
     if (doDelete) {
       const url = baseURL + "/products/" + id;

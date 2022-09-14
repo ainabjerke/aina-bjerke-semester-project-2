@@ -26,15 +26,7 @@
     & .search__input {
       width: 200px;
       background: $white-color;
-      // & -small {
-      //   width: 200px;
-      //   background: $white-color;
-      // }
     }
-    // & .search__input-small {
-    //   width: 200px;
-    //   background: $white-color;
-    // }
   }
 
   &__input {
@@ -52,7 +44,6 @@
 
   &__btn {
     text-align: center;
-    // background: colors(primary);
     color: $white-color;
     height: 35px;
     width: 35px;
@@ -63,7 +54,6 @@
     font-size: 25px;
 
     &:hover {
-      //   background: colors(primary, light);
       color: $secondary-color;
     }
   }

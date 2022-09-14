@@ -4,7 +4,6 @@
 
   //--- --- FOOTER LEFT STYLE: --- ---//
   .footer-l {
-    // background-color: $primary-color;
     max-width: 1125px;
     &__logo-image {
       height: 5.8em;
@@ -12,7 +11,6 @@
       object-fit: contain;
       width: 100%;
       margin-bottom: 20px;
-      //   background-color: red;
     }
 
     &__image1 {
@@ -33,7 +31,7 @@
     &__content {
       margin-top: 40px;
       margin-left: 85px;
-      color: white;
+      color: $white-color;
       @media screen and (max-width: 769px) {
         margin-left: 0px;
       }
@@ -89,173 +87,3 @@
     }
   }
 }
-
-// .footer {
-//   background-color: $primary-color;
-
-//   &__containerL {
-//     &--logo {
-//       height: 5.8em;
-//       margin-top: 23px;
-//       object-fit: contain;
-//       width: 100%;
-//       margin-bottom: 20px;
-//       //   background-color: red;
-//     }
-//     &--image1 {
-//       width: 100%;
-//       margin-top: -59;
-//       margin-bottom: 30px;
-//     }
-//     &--image2 {
-//       width: 100%;
-//       margin-top: -59;
-//       margin-bottom: 30px;
-//     }
-//   }
-
-//   &__containerR {
-//     // color: black;
-//     // flex: 50%;
-//     &--content {
-//       margin-top: 40px;
-//       margin-left: 85px;
-//       color: white;
-//     }
-//     &--heading {
-//       font-size: 20px;
-//     }
-//     &--list {
-//       column-count: 3;
-//       list-style-type: none;
-//       position: relative;
-//       margin: 0px 22px 37px 0px;
-//       @media screen and (max-width: 769px) {
-//         flex-direction: column;
-//         column-count: 1;
-//       }
-//     }
-
-//     &--smedia a {
-//       color: $secondary-color;
-
-//       &:hover {
-//         color: $white-color;
-//       }
-//     }
-//   }
-// }
-// .container-footer-info {
-//   display: flex;
-//   flex-direction: row;
-//   margin-top: 10px;
-// }
-
-// .left-footer-info,
-// .right-footer-container-info {
-//   background-color: #6c7b86;
-// }
-
-// .left-footer-info {
-//   margin: 0px 0px 4px 0px;
-//   padding: 9.7px;
-// }
-
-// .left-footer-logo img {
-//   height: 5.8em;
-//   margin-top: 23px;
-//   object-fit: contain;
-//   width: 100%;
-// }
-
-// .right-footer-container-info {
-//   flex: 50%;
-//   margin: 0px 0px 4px 3px;
-//   padding: 10px;
-// }
-
-// .right-footer-container-info h2 {
-//   color: #ffffff;
-// }
-
-// .right-footer-nav ul {
-//   column-count: 4;
-//   list-style-type: none;
-//   margin: 0px 60px 37px 0px;
-//   position: relative;
-// }
-
-// .right-footer-nav-style a {
-//   color: #fff;
-//   font-size: 18px;
-//   line-height: 38px;
-//   padding: 2px;
-//   text-decoration: none;
-// }
-
-// .right-footer-nav-style a:hover {
-//   color: #cebfb9;
-//   text-decoration: underline;
-// }
-
-/****************** Footer social media style ***************/
-
-// .right-footer-social-media i {
-//   font-size: 69px;
-//   height: 96px;
-//   width: 76px;
-// }
-
-// .fa-facebook-square,
-// .fa-instagram-square,
-// .fa-twitter-square,
-// .fa-youtube-square {
-//   color: #cebfb9;
-// }
-
-// .fa-facebook-square:hover,
-// .fa-instagram-square:hover,
-// .fa-twitter-square:hover,
-// .fa-youtube-square:hover {
-//   filter: brightness(130%);
-// }
-
-/************** Footer copyrigt style *********************/
-// .right-copyright-info h3 {
-//   color: #fff;
-//   font-size: 11px;
-// }
-
-/*************************** Responsive tablet footer style  *********************************/
-/********************************************************************************************/
-
-// @media screen and (max-width: 1039px) {
-//   .container-footer-info {
-//     flex-direction: column;
-//   }
-
-//   .left-footer-info,
-//   .right-footer-container-info {
-//     margin: 4px 9px 0px 9px;
-//     padding: 60.7px;
-//     text-align: center;
-//   }
-
-//   .right-footer-nav ul {
-//     column-count: 1;
-//   }
-// }
-
-/********************************************************************************************/
-/*************************** Responsive mobile footer style  *********************************/
-/********************************************************************************************/
-
-// @media screen and (max-width: 649px) {
-//   .right-footer-nav ul {
-//     margin-right: 45px;
-//   }
-
-//   .right-footer-container-info h2 {
-//     text-align: center;
-//   }
-// }

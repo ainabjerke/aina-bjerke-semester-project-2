@@ -35,9 +35,9 @@
       color: $white-color;
       text-align: center;
 
-      @media screen and (max-width: 567px) {
-        padding: 213px 10px;
-        margin-left: -113px;
+      @media screen and (min-width: 992px) {
+        padding: 522px 0px;
+        margin-left: -83px;
       }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
@@ -45,10 +45,25 @@
         padding: 493px 30px;
       }
 
-      @media screen and (min-width: 992px) {
-        padding: 522px 0px;
-        margin-left: -83px;
+      @media screen and (max-width: 567px) {
+        padding: 213px 10px;
+        margin-left: -113px;
       }
+
+      // @media screen and (max-width: 567px) {
+      //   padding: 213px 10px;
+      //   margin-left: -113px;
+      // }
+
+      // @media screen and (min-width: 568px) and (max-width: 991px) {
+      //   margin-left: -90px;
+      //   padding: 493px 30px;
+      // }
+
+      // @media screen and (min-width: 992px) {
+      //   padding: 522px 0px;
+      //   margin-left: -83px;
+      // }
     }
   }
 
@@ -81,9 +96,9 @@
       color: $white-color;
       padding-top: 130px;
 
-      @media screen and (max-width: 567px) {
-        padding-top: 210px;
-        margin-left: 10px;
+      @media screen and (min-width: 992px) {
+        padding: 200px 0 0 40px;
+        margin-left: -9px;
       }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
@@ -91,14 +106,29 @@
         margin-left: -2px;
       }
 
-      @media screen and (min-width: 992px) {
-        padding: 200px 0 0 40px;
-        margin-left: -9px;
+      @media screen and (max-width: 567px) {
+        padding-top: 210px;
+        margin-left: 10px;
       }
+
+      // @media screen and (max-width: 567px) {
+      //   padding-top: 210px;
+      //   margin-left: 10px;
+      // }
+
+      // @media screen and (min-width: 568px) and (max-width: 991px) {
+      //   padding: 205px 0 0 40px;
+      //   margin-left: -2px;
+      // }
+
+      // @media screen and (min-width: 992px) {
+      //   padding: 200px 0 0 40px;
+      //   margin-left: -9px;
+      // }
     }
   }
 
-//--- --- SPORT SECTION: --- ---//
+  //--- --- SPORT SECTION: --- ---//
   &__sport {
     background: url("/graphical-items/images/collage_img_03_resize.jpeg");
     background-position: 0% 70%;
@@ -128,10 +158,9 @@
       padding-top: 30px;
       color: $white-color;
 
-      @media screen and (max-width: 567px) {
-        padding-top: 215px;
-        text-align: left;
-        margin-left: 17px;
+      @media screen and (min-width: 992px) {
+        padding-top: 210px;
+        margin-left: -45px;
       }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
@@ -140,14 +169,32 @@
         text-align: left;
       }
 
-      @media screen and (min-width: 992px) {
-        padding-top: 210px;
-        margin-left: -45px;
+      @media screen and (max-width: 567px) {
+        padding-top: 215px;
+        text-align: left;
+        margin-left: 17px;
       }
+
+      // @media screen and (max-width: 567px) {
+      //   padding-top: 215px;
+      //   text-align: left;
+      //   margin-left: 17px;
+      // }
+
+      // @media screen and (min-width: 568px) and (max-width: 991px) {
+      //   padding-top: 209px;
+      //   margin-left: 49px;
+      //   text-align: left;
+      // }
+
+      // @media screen and (min-width: 992px) {
+      //   padding-top: 210px;
+      //   margin-left: -45px;
+      // }
     }
   }
 
-//--- --- SALE SECTION: --- ---//
+  //--- --- SALE SECTION: --- ---//
   &__sale {
     background: url("/graphical-items//images/collage_img_04_resize.jpeg");
     background-position: center;
@@ -168,11 +215,9 @@
       color: $white-color;
       text-align: center;
       padding-top: 30px;
-
-      @media screen and (max-width: 567px) {
-        padding-top: 215px;
-        text-align: left;
-        margin-left: 6px;
+      @media screen and (min-width: 992px) {
+        padding-top: 209px;
+        margin-left: -90px;
       }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
@@ -181,21 +226,44 @@
         margin-left: 40px;
       }
 
-      @media screen and (min-width: 992px) {
-        padding-top: 209px;
-        margin-left: -90px;
+      @media screen and (max-width: 567px) {
+        padding-top: 215px;
+        text-align: left;
+        margin-left: 6px;
       }
+
+      // @media screen and (max-width: 567px) {
+      //   padding-top: 215px;
+      //   text-align: left;
+      //   margin-left: 6px;
+      // }
+
+      // @media screen and (min-width: 568px) and (max-width: 991px) {
+      //   padding-top: 205px;
+      //   text-align: left;
+      //   margin-left: 40px;
+      // }
+
+      // @media screen and (min-width: 992px) {
+      //   padding-top: 209px;
+      //   margin-left: -90px;
+      // }
     }
   }
 }
 
 //--- --- GENERAL COLLAGE STYLE: --- ---//
-@media screen and (max-width: 767px) {
-  .collage__men,
-  .collage__women,
-  .collage__sport,
-  .collage__sale {
+@media screen and (min-width: 992px) {
+  .collage__men {
+    margin-right: 20px;
+  }
+
+  .collage__women {
     margin-bottom: 20px;
+  }
+
+  .collage__sport {
+    margin-right: 20px;
   }
 }
 
@@ -210,16 +278,45 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  .collage__men {
-    margin-right: 20px;
-  }
-
-  .collage__women {
+@media screen and (max-width: 767px) {
+  .collage__men,
+  .collage__women,
+  .collage__sport,
+  .collage__sale {
     margin-bottom: 20px;
   }
-
-  .collage__sport {
-    margin-right: 20px;
-  }
 }
+
+// @media screen and (max-width: 767px) {
+//   .collage__men,
+//   .collage__women,
+//   .collage__sport,
+//   .collage__sale {
+//     margin-bottom: 20px;
+//   }
+// }
+
+// @media screen and (min-width: 768px) and (max-width: 991px) {
+//   .collage__men,
+//   .collage__women {
+//     margin-bottom: 20px;
+//   }
+
+//   .collage__sport {
+//     margin-right: 20px;
+//   }
+// }
+
+// @media screen and (min-width: 992px) {
+//   .collage__men {
+//     margin-right: 20px;
+//   }
+
+//   .collage__women {
+//     margin-bottom: 20px;
+//   }
+
+//   .collage__sport {
+//     margin-right: 20px;
+//   }
+// }

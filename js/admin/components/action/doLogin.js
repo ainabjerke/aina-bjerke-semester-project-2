@@ -27,7 +27,7 @@ export async function doLogin(username, password) {
       saveToken(json.jwt);
       saveUser(json.user);
       // location.href = "./edit.html";
-      location.href = "./edit.html";
+      location.href = "../../admin/edit.html";
     }
 
     if (json.error) {

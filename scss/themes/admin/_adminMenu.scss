@@ -4,6 +4,11 @@
   flex-direction: row;
   line-height: 60px;
 
+  @media screen and (min-width: 992px) {
+    width: 630px;
+    margin-left: 300px;
+    display: flex;
+  }
   @media screen and (max-width: 991px) {
     width: 100%;
     margin: 0;
@@ -11,20 +16,11 @@
     padding: 0;
   }
 
-  @media screen and (min-width: 992px) {
-    width: 630px;
-    margin-left: 300px;
-    display: flex;
-  }
-
-  //   &__icon {
-  //     width: 45px;
-  //     margin: auto 10px auto 0px;
-
-  //     @media screen and (min-width: 992px) {
-  //       display: none;
-  //     }
-  //   }
+  // @media screen and (min-width: 992px) {
+  //   width: 630px;
+  //   margin-left: 300px;
+  //   display: flex;
+  // }
 
   &__breadcrumb {
     color: $primary-color;
@@ -46,7 +42,6 @@
     &--sm {
       display: block;
       padding-top: 15px;
-      // margin: auto -29px;
 
       @media screen and (min-width: 992px) {
         display: none;
@@ -62,6 +57,7 @@
       margin: 10px 10px 10px auto;
     }
   }
+  
   &__go-to-edit-product-btn {
     margin: 15px 0 15px auto;
     padding: 0;

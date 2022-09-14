@@ -2,16 +2,13 @@
 
 //--- --- BUTTON STYLE: --- ---//
 .btn {
-  //margin-top: 20px;
   text-transform: uppercase;
-  // transition: .15s ease-in-out;
   border-radius: 0;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1),
     -5px -5px 20px rgba(255, 255, 255, 0.1);
 
   &:hover {
     cursor: pointer;
-    // background-color: black;
   }
 
   &--primary {
@@ -57,16 +54,6 @@
     }
   }
 
-  // &--loyalty {
-  //   background: rgb(189, 0, 0);
-  //   color: white;
-
-  //   &:hover {
-  //     background: rgb(112, 13, 0);
-  //     color: white;
-  //   }
-  // }
-
   //--- --- BUTTON SIZE: --- ---//
   &--lg {
     padding: 20px 60px;
@@ -86,9 +73,6 @@
   }
 
   &--xs {
-    // padding: 8px 10px;
-    // font-weight: 600;
-    // font-size: 12px;
     padding: 12px 27px;
     font-weight: 600;
     font-size: 13px;
@@ -96,10 +80,6 @@
   }
 
   &--cta {
-    // padding: 20px 60px;
-    // font-weight: 700;
-    // font-weight: lighter;
-    // font-size: clamp(18px, 5vw, 20px);
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 1.2;

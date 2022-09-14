@@ -1,33 +1,32 @@
 .edit {
   &__container {
-    // margin-left: clamp(0px, 1vw, 300px);
     max-width: 630px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 992px) {
+      margin-left: 300px;
+    }
 
     @media screen and (max-width: 991px) {
       margin: 0 auto;
       max-width: 100%;
     }
 
-    @media screen and (min-width: 992px) {
-      margin-left: 300px;
-    }
+    // @media screen and (min-width: 992px) {
+    //   margin-left: 300px;
+    // }
   }
 
   &__heading {
     font-size: 35px;
     margin-top: 20px;
     margin-bottom: 10px;
-    // font-size: clamp(25px, 5vw, 35px);
-    // margin-bottom: clamp(10px, 5vw, 20px);
-    // margin-top: clamp(15px, 5vw, 20px);
   }
 
   &__form {
     &__label {
       width: 100%;
       margin-top: 25px;
-      // margin-top: clamp(15px, 5vw, 25px);
       font-weight: 500;
     }
 
@@ -63,7 +62,6 @@
   }
 
   &__advanced-option {
-    // width: clamp(200px, 90vw, 600px);
     margin-bottom: 80px;
     width: 100%;
 
@@ -73,7 +71,6 @@
     }
 
     & .card-body {
-      // padding: clamp(15px, 5vw, 20px);
       padding: 20px;
     }
   }
@@ -82,13 +79,13 @@
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
-  color: #fff;
+  color: $white-color;
   background-color: colors(primary);
   border-color: colors(primary);
 }
 
 #featured__true:checked ~ .featured__true {
-  color: #fff;
+  color: $white-color;
   background-color: colors(primary);
   border-color: colors(primary);
 }
