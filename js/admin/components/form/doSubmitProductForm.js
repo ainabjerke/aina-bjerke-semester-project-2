@@ -1,11 +1,11 @@
-import { updateProduct } from "./updateProduct.js";
-import { addProduct } from "./addProduct.js";
+import { doUpdateProductForm } from "./doUpdateProductForm.js";
+import { doAddProductForm } from "./doAddProductForm.js";
 import { feedbackMessage, featuredTrue, idInput } from "./formVariables.js";
-import { validateForm } from "./validateForm.js";
+import { doValidateProductForm } from "./doValidateProductForm.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 
-// Submit Form Function
-export function submitForm(event) {
+// SUBMIT PRODUCT FROM FUNCTION:
+export function doSubmitProductForm(event) {
   event.preventDefault();
 
   feedbackMessage.innerHTML = "";
@@ -25,7 +25,7 @@ export function submitForm(event) {
 
   const idValue = idInput.value;
   // if (validateForm() === false || isNaN(priceValue))
-  if (validateForm() === false) {
+  if (doValidateProductForm() === false) {
     return displayMessage(
       "feedbackMessage feedbackMessage--error",
       "Please enter proper values",
@@ -34,7 +34,7 @@ export function submitForm(event) {
   }
 
   if (document.URL.includes("add")) {
-    addProduct(
+    doAddProductForm(
       imageValue,
       titleValue,
       priceValue,
@@ -42,7 +42,7 @@ export function submitForm(event) {
       featuredValue
     );
   } else {
-    updateProduct(
+    doUpdateProductForm(
       imageValue,
       titleValue,
       priceValue,

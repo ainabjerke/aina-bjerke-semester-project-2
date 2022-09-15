@@ -1,15 +1,17 @@
+import toggleHamburgerMenu from "./components/html/hamburgerMenu.js";
 import { productsURL } from "./components/constance/url.js";
-import { createProduct } from "./components/html/createProduct.js";
+import { launchProduct } from "./components/html/launchProduct.js";
 import { fetchAPI } from "./components/constance/fetchApi.js";
-import countStorage from "./components/storage/countStorage.js";
-import mobileMenu from "./components/html/mobileMenu.js";
+import countItemsAddedToCart from "./components/storage/countItemsAddedToCart.js";
+
 import {
   searchProductsBoxLarge,
   searchProductsBoxSmall,
 } from "./components/search/searchProducts.js";
 
-fetchAPI(createProduct, productsURL);
-countStorage();
+fetchAPI(launchProduct, productsURL);
+
+countItemsAddedToCart();
 fetchAPI(searchProductsBoxLarge, productsURL);
 fetchAPI(searchProductsBoxSmall, productsURL);
 fetchAPI(productsURL);

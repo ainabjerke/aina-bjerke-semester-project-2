@@ -1,11 +1,11 @@
-import mobileMenu from "../components/html/mobileMenu.js";
+import hamburgerMenuUser from "./components/html/doHamburgerMenuUser.js";
 import { productsURL } from "../components/constance/url.js";
 import { token } from "../components/storage/localStorage.js";
 import { fetchAPI } from "../components/constance/fetchApi.js";
-import { productMenu } from "./components/html/productMenu.js";
-import logoutButton from "./components/action/logoutButton.js";
+import { doProductMenuUser } from "./components/html/doProductMenuUser.js";
+import doLogoutUserButton from "./components/action/doLogoutUserButton.js";
 import { form } from "./components/form/formVariables.js";
-import { submitForm } from "./components/form/submitForm.js";
+import { doSubmitProductForm } from "./components/form/doSubmitProductForm.js";
 
 // Redirecting to homepage if they are not logged in
 if (!token) {
@@ -13,8 +13,8 @@ if (!token) {
 }
 
 // Display Product Menu
-fetchAPI(productMenu, productsURL);
-logoutButton();
+fetchAPI(doProductMenuUser, productsURL);
+doLogoutUserButton();
 
 // Listen for button click
-form.addEventListener("submit", submitForm);
+form.addEventListener("submit", doSubmitProductForm);

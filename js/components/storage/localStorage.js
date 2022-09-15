@@ -1,4 +1,4 @@
-// Get Shopping Cart
+// GET SHOPPING CART FROM LOCAL STORAGE:
 export function getShoppingCart() {
   const shoppingCart = localStorage.getItem("shoppingcart");
 
@@ -9,28 +9,28 @@ export function getShoppingCart() {
   }
 }
 
-// Admin Variables
+// ADMIN VARIABLES:
 const tokenKey = "token";
 const userKey = "user";
 
-// Save Token
+// SAVE TOKEN:
 export function saveToken(token) {
   saveToStorage(tokenKey, token);
 }
 
-// Get Token
+// GET TOKEN:
 export function getToken() {
   return getFromStorage(tokenKey);
 }
 
 export const token = getToken();
 
-// Save User
+// SAVE USER:
 export function saveUser(user) {
   saveToStorage(userKey, user);
 }
 
-// Get Username
+// GET USERNAME:
 export function getUsername() {
   const user = getFromStorage(userKey);
 
@@ -41,12 +41,12 @@ export function getUsername() {
   return null;
 }
 
-// Save to storage
+// SAVE TOP STORAGE FUNCTION:
 export function saveToStorage(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
-// Get from Storage
+// GET FROM STORAGE FUNCTION:
 function getFromStorage(key) {
   const value = localStorage.getItem(key);
 
@@ -57,7 +57,7 @@ function getFromStorage(key) {
   return JSON.parse(value);
 }
 
-// Clear admin information
+// CLEAR ADNIN FUNCTION:
 export function clearAdmin() {
   localStorage.removeItem("user");
   localStorage.removeItem("token");

@@ -1,18 +1,18 @@
-import { createProduct } from "./createProduct.js";
+import { launchProduct } from "./launchProduct.js";
 
-export function createFeaturedProducts(products) {
+export function launchFeaturedProducts(products) {
   const featuredProductsContainer = document.querySelector(
     ".featured__products"
   );
 
   featuredProductsContainer.innerHTML = "";
 
-  /* Loop through featured = true objects */
+  /*** *** **** FUNCTION LOOPS THROUGH FEATURED AND LOOKS FOR TRUE OBJECTS:*** *** ***/
   const filteredProducts = products.filter(function (product) {
     if (product.featured === true) {
       return true;
     }
   });
 
-  createProduct(filteredProducts);
+  launchProduct(filteredProducts);
 }

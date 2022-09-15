@@ -2,9 +2,9 @@ import { baseURL, productsURL } from "../../../components/constance/url.js";
 import { token } from "../../../components/storage/localStorage.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 import { fetchAPI } from "../../../components/constance/fetchApi.js";
-import { productMenu } from "../../components/html/productMenu.js";
+import { doProductMenuUser } from "../html/doProductMenuUser.js";
 
-export async function updateProduct(
+export async function doUpdateProductForm(
   image,
   title,
   price,
@@ -42,7 +42,7 @@ export async function updateProduct(
         ".feedbackMessage"
       );
 
-      fetchAPI(productMenu, productsURL);
+      fetchAPI(doProductMenuUser, productsURL);
     }
 
     if (json.error) {

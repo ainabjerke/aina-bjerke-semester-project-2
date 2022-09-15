@@ -1,12 +1,12 @@
 import { getShoppingCart } from "../storage/localStorage.js";
 import displayMessage from "../messages/displayMessage.js";
 
-export function createShoppingCart() {
+export function launchShoppingCart() {
   const shoppingCart = getShoppingCart();
 
-  const cartContainer = document.querySelector(".cart__products");
+  const cartProductsContainer = document.querySelector(".cart__products");
 
-  cartContainer.innerHTML = "";
+  cartProductsContainer.innerHTML = "";
 
   if (shoppingCart.length === 0) {
     displayMessage(
@@ -16,9 +16,9 @@ export function createShoppingCart() {
     );
   }
 
-  /* Display products from the localStorage() */
+  /*** *** *** DISPLAY PRODUCT FROM LOCAL STORAGE BY const shoppingCart = getShoppingCart() *** *** ***/
   shoppingCart.forEach(function (product) {
-    cartContainer.innerHTML += `
+    cartProductsContainer.innerHTML += `
             <div class="cart__product-card col-12 row">
                 <img src="${product.image}" alt="${product.title}" class="col cart__product-card__image">
 
@@ -38,7 +38,7 @@ export function createShoppingCart() {
         `;
   });
 
-  /* Total Price: */
+  /*** *** *** TOTAL PRICE: *** *** ***/
   const totalPriceContainer = document.querySelector(".cart__total__price");
 
   let totalPrice = 0;

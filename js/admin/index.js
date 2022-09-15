@@ -1,4 +1,4 @@
 import { formLogin } from "./components/form/formVariables.js";
-import { submitLogin } from "./components/action/submitLogin.js";
+import {  doLoginUser } from "./components/action/doLoginUser.js";
 
-formLogin.addEventListener("submit", submitLogin);
+formLogin.addEventListener("submit",  doLoginUser);

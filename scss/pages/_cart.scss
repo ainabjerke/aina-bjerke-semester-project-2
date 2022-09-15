@@ -9,10 +9,6 @@
 .cart {
   margin: 50px auto;
 
-  // @media screen and (max-width: 567px) {
-  //   margin: 20px auto;
-  // }
-
   @media screen and (min-width: 568px) and (max-width: 991px) {
     width: 100%;
     max-width: 1100px;
@@ -25,11 +21,6 @@
   &__section {
     margin: 0px;
     padding-top: 0;
-
-    // @media screen and (max-width: 567px) {
-    //   padding: 0px;
-    //   margin: 0px;
-    // }
 
     @media screen and (min-width: 568px) and (max-width: 991px) {
       padding: 0px;
@@ -83,10 +74,6 @@
     margin: 0;
     padding: 0;
 
-    // @media screen and (max-width: 567px) {
-    //   padding: 0px;
-    // }
-
     @media screen and (min-width: 568px) and (max-width: 991px) {
       padding: 0px;
       margin: 0px;
@@ -103,16 +90,9 @@
     margin-top: 0;
     background-color: $white-color;
 
-    // background: colors(grey, light);
-
     &:last-child {
       margin-bottom: 0;
     }
-
-    // @media screen and (max-width: 567px) {
-    //   padding: 44px;
-    //   margin-left: 0px;
-    // }
 
     @media screen and (min-width: 568px) and (max-width: 991px) {
       padding: 15px;
@@ -142,22 +122,6 @@
         max-width: 163px;
         max-height: 112px;
       }
-
-      // @media screen and (max-width: 567px) {
-      //   max-width: 163px;
-      //   max-height: 112px;
-      // }
-
-      // @media screen and (min-width: 568px) and (max-width: 991px) {
-      //   max-width: 200px;
-      //   max-height: 200px;
-      // }
-
-      // @media screen and (min-width: 992px) {
-      //   max-width: 223px;
-      //   height: 173px;
-      //   margin: 0 15px;
-      // }
     }
     //--- --- SHOPPING CART CONTENT STYLE: --- ---//
     &__content {
@@ -167,10 +131,6 @@
       margin-left: 42px;
       margin-bottom: 26px;
       margin-top: -20px;
-
-      // @media screen and (max-width: 567px) {
-      //   padding: 0px;
-      // }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
         padding: 15px;
@@ -186,11 +146,6 @@
       max-height: 30px;
       font-size: 33px;
       font-weight: 600;
-
-      // @media screen and (max-width: 567px) {
-      //   font-size: 14px;
-      //   margin-bottom: 22px;
-      // }
 
       @media screen and (min-width: 568px) and (max-width: 991px) {
         font-size: 17px;
@@ -221,24 +176,6 @@
         margin-bottom: 3px;
         font-weight: 700;
       }
-
-      // @media screen and (max-width: 567px) {
-      //   font-size: 13px;
-      //   padding: 0;
-      //   margin-bottom: 3px;
-      //   font-weight: 700;
-      // }
-
-      // @media screen and (min-width: 568px) and (max-width: 991px) {
-      //   font-size: 17px;
-      //   padding: 10px 10px 0 0px;
-      //   max-height: 30px;
-      // }
-
-      // @media screen and (min-width: 992px) {
-      //   margin-left: -13px;
-      //   margin-top: 28px;
-      // }
     }
 
     //--- --- SHOPPING CART LINK STYLE: --- ---//

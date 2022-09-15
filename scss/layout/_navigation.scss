@@ -96,10 +96,6 @@
       width: 250px;
     }
 
-    // @media screen and (min-width: 992px) {
-    //   border-top: 1px solid colors(secondary);
-    // }
-
     &-icon {
       width: 40px;
       padding: 0;
@@ -128,15 +124,6 @@
         text-align: center;
         justify-content: start;
       }
-
-      // @media (min-width: 992px) {
-      //   display: flex;
-      //   flex-direction: row;
-      //   justify-content: space-between;
-      //   line-height: 75px;
-      //   text-align: center;
-      //   justify-content: center;
-      // }
     }
 
     &__item {
@@ -150,10 +137,6 @@
       @media (max-width: 991px) {
         padding: 10px 20px;
       }
-
-      // @media (min-width: 992px) {
-      //   padding: 0px 30px;
-      // }
     }
   }
 

@@ -1,11 +1,12 @@
-export async function fetchAPI(afunction, url) {
+export async function fetchAPI(acutalFunction, url) {
   try {
     const response = await fetch(url);
     const JSON = await response.json();
-    const result = JSON;
-    console.log(result);
-    afunction(result);
+    const getResults = JSON;
+    console.log(getResults);
+    acutalFunction(getResults);
   } catch (error) {
     // console.log(error);
   }
 }
+

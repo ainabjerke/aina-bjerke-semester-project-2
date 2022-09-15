@@ -5,7 +5,7 @@ import {
 } from "../../../components/storage/localStorage.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 
-export async function doLogin(username, password) {
+export async function doConfirmUserLogin(username, password) {
   const url = baseURL + "/auth/local";
 
   const data = JSON.stringify({ identifier: username, password: password });
@@ -33,7 +33,7 @@ export async function doLogin(username, password) {
     if (json.error) {
       displayMessage(
         "feedbackMessage feedbackMessage--error",
-        "Invalid login details",
+        "Login Failed. Invalid username or password",
         ".feedbackMessage"
       );
     }
@@ -41,7 +41,7 @@ export async function doLogin(username, password) {
     console.log(error);
     displayMessage(
       "feedbackMessage feedbackMessage--error",
-      "Invalid login details",
+      "Login Failed. Invalid username or password",
       ".feedbackMessage"
     );
   }

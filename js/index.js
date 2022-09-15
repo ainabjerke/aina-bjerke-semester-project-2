@@ -1,15 +1,22 @@
+import toggleHamburgerMenu from "./components/html/hamburgerMenu.js";
 import { fetchAPI } from "./components/constance/fetchApi.js";
-import { bannerURL, productsURL } from "./components/constance/url.js";
-import { createBanner } from "./components/html/createBanner.js";
-import { createFeaturedProducts } from "./components/html/createFeaturedProducts.js";
-import countTotalItems from "./components/storage/countStorage.js";
-import { searchBarLarge, searchBarSmall, redirectUser } from "./components/search/redirect.js";
-import mobileMenu from "./components/html/mobileMenu.js";
+import { heroBannerURL, productsURL } from "./components/constance/url.js";
+import { launchHeroBanner } from "./components/html/launchHeroBanner.js";
+import { launchFeaturedProducts } from "./components/html/launchFeaturedProducts.js";
+import countItemsAddedToCart from "./components/storage/countItemsAddedToCart.js";
+import {
+  searchBarLarge,
+  searchBarSmall,
+  redirectUser,
+} from "./components/search/redirect.js";
 
-fetchAPI(createBanner, bannerURL);
-fetchAPI(createFeaturedProducts, productsURL);
-countTotalItems();
+fetchAPI(launchHeroBanner, heroBannerURL);
+fetchAPI(launchFeaturedProducts, productsURL);
+
+countItemsAddedToCart();
 searchBarLarge.addEventListener("click", redirectUser);
 searchBarSmall.addEventListener("click", redirectUser);
 
 console.log("hello world!");
+
+

@@ -1,11 +1,11 @@
-import mobileMenu from "../components/html/mobileMenu.js";
+import hamburgerMenuUser from "./components/html/doHamburgerMenuUser.js";
 import { baseURL, productsURL } from "../components/constance/url.js";
 import { token } from "../components/storage/localStorage.js";
-import deleteButton from "./components/action/deleteButton.js";
+import doDeleteProductButton from "./components/action/doDeleteProductButton.js";
 import { fetchAPI } from "../components/constance/fetchApi.js";
-import { productMenu } from "./components/html/productMenu.js";
-import logoutButton from "./components/action/logoutButton.js";
-import { submitForm } from "./components/form/submitForm.js";
+import { doProductMenuUser } from "./components/html/doProductMenuUser.js";
+import doLogoutUserButton from "./components/action/doLogoutUserButton.js";
+import { doSubmitProductForm } from "./components/form/doSubmitProductForm.js";
 import {
   form,
   title,
@@ -19,29 +19,29 @@ import {
   labelTrue,
 } from "./components/form/formVariables.js";
 
-// Redirecting to homepage if they are not logged in
+// REDIRECT TO HOMEPAGE IF USER ARE NOT LOOGED IN:
 if (!token) {
   location.href = "../admin";
 }
 
-// Display Product Menu and Logout button
-fetchAPI(productMenu, productsURL);
-logoutButton();
+// DISPLAY PRODUCT MENU USER AND LOGOUT BUTTON:
+fetchAPI(doProductMenuUser, productsURL);
+doLogoutUserButton();
 
-// Looking for id in URL
+// LOOKING FOR ID IN THE URL:
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-// Redirect to product with id = 1 if url has no id
+// REDIRECT TO PRODUCT WITH ID=1 IF THE URL HAS NO ID:
 if (!id) {
   location.href = "?id=1";
 }
 
-// URL
+// URL:
 const editURL = baseURL + "/products/" + id;
 
-// Fetch API
+// FETCH API:
 (async function () {
   try {
     const response = await fetch(editURL);
@@ -54,7 +54,7 @@ const editURL = baseURL + "/products/" + id;
     featured.value = details.featured;
     idInput.value = details.id;
 
-    deleteButton(details.id);
+    doDeleteProductButton(details.id);
 
     if (details.featured == true) {
       labelTrue.classList.add("active");
@@ -69,5 +69,5 @@ const editURL = baseURL + "/products/" + id;
   }
 })();
 
-// Listen for button
-form.addEventListener("submit", submitForm);
+// DO SUBMIT PRODUCTFORM:
+form.addEventListener("submit", doSubmitProductForm);

@@ -4,4 +4,4 @@
 
 export const baseURL = "https://gg-optic-api.herokuapp.com";
 export const productsURL = baseURL + "/products/";
-export const bannerURL = baseURL + "/home/";
+export const heroBannerURL = baseURL + "/home/";

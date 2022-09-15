@@ -1,10 +1,10 @@
 import { baseURL } from "../../../components/constance/url.js";
 import { token } from "../../../components/storage/localStorage.js";
 
-export default function deleteButton(id) {
-  const button = document.querySelector(".edit__delete-button");
+export default function doDeleteProductButton(id) {
+  const deleteButton = document.querySelector(".delete-button");
 
-  button.onclick = async function () {
+  deleteButton.onclick = async function () {
     const doDelete = confirm("Are you sure you want to delete this product?");
 
     if (doDelete) {

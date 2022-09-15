@@ -1,7 +1,7 @@
-import mobileMenu from "./components/html/mobileMenu.js";
-import countStorage from "./components/storage/countStorage.js";
-import { createShoppingCart } from "./components/html/createShoppingCart.js";
-import { createFeaturedProducts } from "./components/html/createFeaturedProducts.js";
+import toggleHamburgerMenu from "./components/html/hamburgerMenu.js";
+import countItemsAddedToCart from "./components/storage/countItemsAddedToCart.js";
+import { launchShoppingCart } from "./components/html/launchShoppingCart.js";
+import { launchFeaturedProducts } from "./components/html/launchFeaturedProducts.js";
 import { productsURL } from "./components/constance/url.js";
 import { fetchAPI } from "./components/constance/fetchAPI.js";
 import {
@@ -10,8 +10,8 @@ import {
   redirectUser,
 } from "./components/search/redirect.js";
 
-fetchAPI(createFeaturedProducts, productsURL);
-createShoppingCart();
-countStorage();
+fetchAPI(launchFeaturedProducts, productsURL);
+launchShoppingCart();
+countItemsAddedToCart();
 searchBarLarge.addEventListener("click", redirectUser);
 searchBarSmall.addEventListener("click", redirectUser);

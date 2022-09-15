@@ -16,12 +16,6 @@
     padding: 0;
   }
 
-  // @media screen and (min-width: 992px) {
-  //   width: 630px;
-  //   margin-left: 300px;
-  //   display: flex;
-  // }
-
   &__breadcrumb {
     color: $primary-color;
     &:hover {
@@ -57,7 +51,7 @@
       margin: 10px 10px 10px auto;
     }
   }
-  
+
   &__go-to-edit-product-btn {
     margin: 15px 0 15px auto;
     padding: 0;

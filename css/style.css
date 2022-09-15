@@ -650,7 +650,6 @@ h6 {
 @media screen and (max-width: 567px) {
   .nav__menu-icon span {
     height: 3px;
-    left: -8px;
   }
 }
 .nav__menu-icon span:nth-child(1) {
@@ -1356,9 +1355,6 @@ h6 {
 .product__title {
   font-size: 18px;
 }
-.product__desc {
-  margin: 0;
-}
 .product__price {
   font-weight: 600;
   margin-top: 15px;
@@ -1964,15 +1960,15 @@ h6 {
 .edit__form__button--add {
   margin-bottom: 50px;
 }
-.edit__advanced-option {
+.edit__more-option {
   margin-bottom: 80px;
   width: 100%;
 }
-.edit__advanced-option .card-header {
+.edit__more-option .card-header {
   padding: 0;
   margin-top: 30px;
 }
-.edit__advanced-option .card-body {
+.edit__more-option .card-body {
   padding: 20px;
 }
 

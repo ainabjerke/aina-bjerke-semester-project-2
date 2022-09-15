@@ -1,10 +1,10 @@
 import { baseURL, productsURL } from "../../../components/constance/url.js";
 import { token } from "../../../components/storage/localStorage.js";
-import { productMenu } from "../html/productMenu.js";
+import { doProductMenuUser } from "../html/doProductMenuUser.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 import { fetchAPI } from "../../../components/constance/fetchApi.js";
 
-export async function addProduct(image, title, price, description, featured) {
+export async function doAddProductForm(image, title, price, description, featured) {
   const url = baseURL + "/products/";
 
   const data = JSON.stringify({
@@ -35,7 +35,7 @@ export async function addProduct(image, title, price, description, featured) {
         ".feedbackMessage"
       );
 
-      fetchAPI(productMenu, productsURL);
+      fetchAPI(doProductMenuUser, productsURL);
     }
 
     if (json.error) {

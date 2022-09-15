@@ -1,6 +1,6 @@
 import displayMessage from "../messages/displayMessage.js";
 
-export function createProduct(products) {
+export function launchProduct(products) {
   const productsContainer = document.querySelector(".products");
 
   productsContainer.innerHTML = "";
