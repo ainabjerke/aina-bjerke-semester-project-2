@@ -1,4 +1,4 @@
-import { launchProduct } from "../html/launchProduct.js";
+import { launchAllProducts } from "../html/launchAllProducts.js";
 
 //LARGE INPUT FIELD:
 export function searchProductsBoxLarge(products) {
@@ -17,7 +17,7 @@ export function searchProductsBoxLarge(products) {
       }
     });
 
-    launchProduct(filteredProducts);
+    launchAllProducts(filteredProducts);
   };
 }
 
@@ -38,6 +38,6 @@ export function searchProductsBoxSmall(products) {
       }
     });
 
-    launchProduct(filteredProducts);
+    launchAllProducts(filteredProducts);
   };
 }

@@ -1,9 +1,12 @@
 import hamburgerMenuUser from "./components/html/doHamburgerMenuUser.js";
-import { baseURL, productsURL } from "../components/constance/url.js";
-import { token } from "../components/storage/localStorage.js";
-import doDeleteProductButton from "./components/action/doDeleteProductButton.js";
+import { token} from "../components/storage/localStorage.js";
 import { fetchAPI } from "../components/constance/fetchApi.js";
+import { baseURL, productsURL } from "../components/constance/url.js";
 import { doProductMenuUser } from "./components/html/doProductMenuUser.js";
+// import { token} from "../components/storage/localStorage.js";
+import doDeleteProductButton from "./components/action/doDeleteProductButton.js";
+// import { fetchAPI } from "../components/constance/fetchApi.js";
+// import { doProductMenuUser } from "./components/html/doProductMenuUser.js";
 import doLogoutUserButton from "./components/action/doLogoutUserButton.js";
 import { doSubmitProductForm } from "./components/form/doSubmitProductForm.js";
 import {
@@ -20,6 +23,7 @@ import {
 } from "./components/form/formVariables.js";
 
 // REDIRECT TO HOMEPAGE IF USER ARE NOT LOOGED IN:
+
 if (!token) {
   location.href = "../admin";
 }

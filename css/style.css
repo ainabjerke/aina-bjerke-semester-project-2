@@ -168,12 +168,12 @@ h6 {
   color: rgb(12, 12, 12);
 }
 .btn--warning {
-  background: rgb(189, 0, 0);
-  color: white;
+  background: rgb(136, 8, 8);
+  color: #ffffff;
 }
 .btn--warning:hover {
-  background: rgb(112, 13, 0);
-  color: white;
+  filter: brightness(130%);
+  color: #ffffff;
 }
 .btn--lg {
   padding: 20px 60px;
@@ -220,7 +220,7 @@ h6 {
   padding: 15px;
 }
 .feedbackMessage--error {
-  background: rgb(223, 0, 0);
+  background: red;
   color: #ffffff;
   font-weight: 500;
   margin: 0px 0 20px 0;
@@ -1318,7 +1318,7 @@ h6 {
   }
 }
 
-/*** *** *** PRODUCT CART:  *** *** ***/
+/*** *** *** PRODUCT CARD:  *** *** ***/
 .featured {
   background-color: #ffffff;
 }
@@ -1332,7 +1332,6 @@ h6 {
   max-width: 250px;
   margin: 30px 0;
   padding: 10px;
-  transition: 0.25s ease-in-out;
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
   .product {
@@ -1365,7 +1364,6 @@ h6 {
   width: 100%;
 }
 .product__button {
-  margin: 0 !important;
   width: 100%;
 }
 
@@ -1552,12 +1550,6 @@ h6 {
   color: rgb(184, 161, 136);
   font-size: 13px;
 }
-@media screen and (min-width: 568px) and (max-width: 991px) {
-  .details__desc {
-    margin-bottom: 20px;
-    padding: 0;
-  }
-}
 
 .accordion .card {
   border: 0;
@@ -1660,13 +1652,13 @@ h6 {
     margin: 0px;
   }
 }
-.cart__section--info {
+.cart__section--summary {
   padding: 20px;
   background-color: #ffffff;
   margin-bottom: 9px;
 }
 @media screen and (max-width: 991px) {
-  .cart__section--info {
+  .cart__section--summary {
     padding: 10px;
     margin-top: 13px;
     margin-left: 0px;
@@ -2120,7 +2112,7 @@ h6 {
 
 /*** *** *** FORM VALIDATION:  *** *** ***/
 .error {
-  color: rgb(223, 0, 0);
+  color: red;
   font-weight: 500;
   padding-top: 5px;
 }

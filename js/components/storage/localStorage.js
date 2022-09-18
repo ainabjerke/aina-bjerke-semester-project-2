@@ -23,6 +23,7 @@ export function getToken() {
   return getFromStorage(tokenKey);
 }
 
+// TOKEN KEY:
 export const token = getToken();
 
 // SAVE USER:
@@ -41,7 +42,7 @@ export function getUsername() {
   return null;
 }
 
-// SAVE TOP STORAGE FUNCTION:
+// SAVE TO STORAGE FUNCTION:
 export function saveToStorage(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 }
@@ -57,8 +58,9 @@ function getFromStorage(key) {
   return JSON.parse(value);
 }
 
-// CLEAR ADNIN FUNCTION:
+// CLEAR ADMIN FUNCTION:
 export function clearAdmin() {
   localStorage.removeItem("user");
   localStorage.removeItem("token");
+  // localStorage.clear();
 }

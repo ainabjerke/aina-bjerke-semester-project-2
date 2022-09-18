@@ -9,6 +9,7 @@ export default function countItemsAddedToCart() {
 
   if (localStorage["shoppingcart"] && cartPageQuantity) {
     const totalitems = JSON.parse(localStorage["shoppingcart"]).length;
-    cartPageQuantity.innerHTML = `(${totalitems})`;
+    // cartPageQuantity.innerHTML = `(${totalitems})`;
+    cartPageQuantity.innerHTML = totalitems;
   }
 }

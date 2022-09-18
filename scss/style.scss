@@ -13,28 +13,28 @@
 /*** *** *** LAYOUT SECTION *** *** ***/
 @import "./layout/footer";
 @import "./layout/navigation";
-@import "./layout/nav-icon-menu";
+@import "./layout/navIconMenu";
 @import "./layout/search";
 @import "./layout/breadcrumb";
-@import "./layout/info-bar";
+@import "./layout/infoBar";
 @import "./layout/loyalty";
 @import "./layout/newsletter";
 
 /*** *** *** PEAGES SECTION *** *** ***/
-@import "./pages/home-collage";
+@import "./pages/homeCollage";
 @import "./pages/home-hero-banner";
-@import "./pages/product-card";
+@import "./pages/productCard";
 @import "./pages/product-layout";
-@import "./pages/products-about";
+@import "./pages/productsAbout";
 @import "./pages/details";
 @import "./pages/cart";
 
 /*** *** *** THEMES/ADMIN SECTION *** *** ***/
 @import "./themes/admin/adminMenu";
-@import "./themes/admin/edit";
-@import "./themes/admin/login";
-@import "./themes/admin/productMenu";
-@import "./themes/admin/form-validation";
+@import "./themes/admin/adminEdit";
+@import "./themes/admin/adminLogin";
+@import "./themes/admin/adminProductMenu";
+@import "./themes/admin/adminFormValidation";
 
 /*** *** *** THEMES/DEFAULTTHEMES SECTION *** *** ***/
-@import "./themes/defaultThemes/reset-admin";
+@import "./themes/defaultThemes/resetAdmin";

@@ -1,3 +1,4 @@
+//sELECTS ALL THE HTML CLASS AND ID ELEMENT:
 export const featuredTrue = document.querySelector("#featured__true");
 export const idInput = document.querySelector("#id");
 export const form = document.querySelector(".edit__form");

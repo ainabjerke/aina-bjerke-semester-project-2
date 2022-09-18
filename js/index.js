@@ -1,22 +1,32 @@
 import toggleHamburgerMenu from "./components/html/hamburgerMenu.js";
 import { fetchAPI } from "./components/constance/fetchApi.js";
-import { heroBannerURL, productsURL } from "./components/constance/url.js";
 import { launchHeroBanner } from "./components/html/launchHeroBanner.js";
 import { launchFeaturedProducts } from "./components/html/launchFeaturedProducts.js";
-import countItemsAddedToCart from "./components/storage/countItemsAddedToCart.js";
+import { heroBannerURL, productsURL } from "./components/constance/url.js";
+// import { launchHeroBanner } from "./components/html/launchHeroBanner.js";
+// import { launchFeaturedProducts } from "./components/html/launchFeaturedProducts.js";
+// import countItemsAddedToCart from "./components/storage/countItemsAddedToCart.js";
 import {
   searchBarLarge,
   searchBarSmall,
   redirectUser,
 } from "./components/search/redirect.js";
 
+import countItemsAddedToCart from "./components/storage/countItemsAddedToCart.js";
+
+//HERO BANNER:
+//*** FETCHES DATA FROM THE MAIN SEPERATE FUNCTION STORED IN FETCHAPI.JS:***//
 fetchAPI(launchHeroBanner, heroBannerURL);
+
+//FEATURED PRODUCTS:
+//*** FETCHES DATA FROM THE MAIN SEPERATE FUNCTION STORED IN FETCHAPI.JS:***//
 fetchAPI(launchFeaturedProducts, productsURL);
 
-countItemsAddedToCart();
+//SERACHBAR:
+//REDIRECT USER TO PRODUCT.HTML:
 searchBarLarge.addEventListener("click", redirectUser);
 searchBarSmall.addEventListener("click", redirectUser);
 
-console.log("hello world!");
-
-
+// CART ICON AND CART PAGE COUNTER:
+//COUNT ITEM ADDED TO CART:
+countItemsAddedToCart();

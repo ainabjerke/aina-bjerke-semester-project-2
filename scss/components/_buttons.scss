@@ -45,12 +45,12 @@
   }
 
   &--warning {
-    background: rgb(189, 0, 0);
-    color: white;
+    background: rgb(136, 8, 8);
+    color: $white-color;
 
     &:hover {
-      background: rgb(112, 13, 0);
-      color: white;
+      filter: brightness(130%);
+      color: $white-color;
     }
   }
 

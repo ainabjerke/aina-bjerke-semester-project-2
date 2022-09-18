@@ -18,49 +18,50 @@ if (params.has("id")) {
 export const detailsURL = `${productsURL}${id}`;
 
 /*** *** *** FUNCTION LAUNCH PRODUCT DETIALS GETS THE CORRECT PRODUCT PROPERTY AND ID *** *** ***/
-export function launchProductDetails(detail) {
+export function launchProductDetails(productDetail) {
   // Document title!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!skal det stå gg optic fremfor product????
-  document.title = `Product | ${detail.title}`;
+  document.title = `Product | ${productDetail.title}`;
 
   // BREADCRUMB TITLE:
   const detailsBreadcrumb = document.querySelector(".breadcrumb__item--active");
-  detailsBreadcrumb.innerHTML = detail.title;
+  detailsBreadcrumb.innerHTML = productDetail.title;
 
-  // IMAGES:
+  // DISPLAY IMAGES TO HTML:
   const detailsImage = document.querySelector(".details__images img");
-  detailsImage.src = detail.image_url;
-  detailsImage.alt = detail.title;
+  detailsImage.src = productDetail.image_url;
+  detailsImage.alt = productDetail.title;
 
-  // PRODUCT TITLE:
+  // DISPLAY PRODUCT TITLE TO HTML:
   const detailsTitle = document.querySelector(".details__title");
-  detailsTitle.innerHTML = detail.title;
+  detailsTitle.innerHTML = productDetail.title;
 
-  // PRICE:
+  // DISPLAY PRICE TO HTML:
   const detailsPrice = document.querySelector(".details__price");
-  detailsPrice.innerHTML = detail.price + " NOK";
+  detailsPrice.innerHTML = productDetail.price + " NOK";
 
-  // DESCRIPTION:
+  // DISPLAY DESCRIPTION TO HTML:
   const detailsDescription = document.querySelector(".details__description");
-  detailsDescription.innerHTML = detail.description;
+  detailsDescription.innerHTML = productDetail.description;
 
-  // DATA ATTRIBUTES:
+  //DATA ATTRIBUTES THAT GETS THE API DATA AND STORED THIS IN THE DETAILSBTN:
   const detailsBtn = document.querySelector(".details__btn");
-  detailsBtn.dataset.id = detail.id;
-  detailsBtn.dataset.title = detail.title;
-  detailsBtn.dataset.description = detail.description;
-  detailsBtn.dataset.price = detail.price;
-  detailsBtn.dataset.image = detail.image_url;
-  detailsBtn.dataset.url = `./details.html?id=${detail.id}`;
-  detailsBtn.href = `./details.html?id=${detail.id}`;
+  detailsBtn.dataset.id = productDetail.id;
+  detailsBtn.dataset.title = productDetail.title;
+  detailsBtn.dataset.description = productDetail.description;
+  detailsBtn.dataset.price = productDetail.price;
+  detailsBtn.dataset.image = productDetail.image_url;
+  detailsBtn.dataset.url = `./details.html?id=${productDetail.id}`;
+  detailsBtn.href = `./details.html?id=${productDetail.id}`;
 
-  // ADD TO CART BUTTON AND ADD TO LOCAL STORAGE:
-  const buttonAddToCart = document.querySelectorAll(".details__btn");
+  // ADD TO CART BUTTON AND ADD TO LOCAL STORAGE WITH DATA ATTRIBUTES INFO:
+  const buttonAddProductToCart = document.querySelectorAll(".details__btn");
 
-  buttonAddToCart.forEach((button) => {
-    button.addEventListener("click", addToCartButton);
+  buttonAddProductToCart.forEach((button) => {
+    button.addEventListener("click", addProductToCart);
   });
 
-  function addToCartButton() {
+  // ADD TO CART BUTTON AND ADD TO LOCAL STORAGE WITH DATA ATTRIBUTES INFO:
+  function addProductToCart() {
     const id = this.dataset.id;
     const title = this.dataset.title;
     const price = this.dataset.price;
@@ -70,12 +71,12 @@ export function launchProductDetails(detail) {
 
     const currentCart = getShoppingCart();
 
-    const productExists = currentCart.find(function (cart) {
-      return cart.id === id;
+    const productExists = currentCart.find(function (product) {
+      return product.id === id;
     });
 
     if (productExists === undefined) {
-      const product = {
+      const productItem = {
         id: id,
         title: title,
         price: price,
@@ -84,15 +85,15 @@ export function launchProductDetails(detail) {
         url: url,
       };
 
-      currentCart.push(product);
+      currentCart.push(productItem);
       saveFavs(currentCart);
     } else {
-      const newCarts = currentCart.filter((cart) => cart.id !== id);
+      const newCarts = currentCart.filter((product) => product.id !== id);
       saveFavs(newCarts);
     }
   }
 
-  function saveFavs(carts) {
-    localStorage.setItem("shoppingcart", JSON.stringify(carts));
+  function saveFavs(products) {
+    localStorage.setItem("shoppingcart", JSON.stringify(products));
   }
 }

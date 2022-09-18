@@ -38,7 +38,7 @@ export function launchShoppingCart() {
         `;
   });
 
-  /*** *** *** TOTAL PRICE: *** *** ***/
+  /*** *** *** CALCULATE TOTAL PRODUCT PRICE: *** *** ***/
   const totalPriceContainer = document.querySelector(".cart__total__price");
 
   let totalPrice = 0;
