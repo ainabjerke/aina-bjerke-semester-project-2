@@ -1812,7 +1812,7 @@ h6 {
   padding-bottom: 5px;
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #707070;
+  border-top: 1px solid #707070;
 }
 .cart__total__text {
   padding: 0;
