@@ -988,7 +988,7 @@ h6 {
   color: rgb(12, 12, 12);
 }
 
-/*** *** *** PEAGES SECTION *** *** ***/
+/*** *** *** PAGES SECTION *** *** ***/
 /*** *** *** HOME COLLAGE:  *** *** ***/
 .collage {
   position: relative;
@@ -2088,8 +2088,8 @@ h6 {
 
 /*** *** *** FORM VALIDATION:  *** *** ***/
 .error {
-  color: #d2042d;
   font-weight: 500;
+  color: #d2042d;
   padding-top: 5px;
 }
 

@@ -9,7 +9,7 @@ import {
   descriptionError,
 } from "./formVariables.js";
 
-// FUNCTION VALIDATE FORM
+// FUNCTION VALIDATE PRODUCT FORM
 export function doValidateProductForm() {
   let imageHasError;
   let titleHasError;
@@ -30,7 +30,7 @@ export function doValidateProductForm() {
   // TITLE:
   const titleValue = title.value;
 
-  if (validateLength(titleValue, 1) === true) {
+  if (checkLength(titleValue, 1) === true) {
     titleError.style.display = "none";
     titleHasError = false;
   } else {
@@ -42,7 +42,7 @@ export function doValidateProductForm() {
   const priceValue = price.value;
   console.log("priceValue", priceValue);
 
-  if (validateLength(priceValue, 1) === true) {
+  if (checkLength(priceValue, 1) === true) {
     priceError.style.display = "none";
     priceHasError = false;
   } else {
@@ -62,7 +62,7 @@ export function doValidateProductForm() {
   // DESCRIPTION:
   const descriptionValue = description.value;
 
-  if (validateLength(descriptionValue, 5) === true) {
+  if (checkLength(descriptionValue, 5) === true) {
     descriptionError.style.display = "none";
     descriptionHasError = false;
   } else {
@@ -87,14 +87,15 @@ export function doValidateProductForm() {
   }
 }
 
-//FUNCTION CHECKS IF VALUE IS A NUMBER:
+//FUNCTION CHECKS IF INPUTVALUE IS A NUMBER:
+//REFERENCE:https://www.delftstack.com/howto/javascript/check-if-string-is-number-javascript/
 function isNumeric(value) {
   return /^-?\d+$/.test(value);
 }
 console.log(isNumeric("1"));
 
-//FUNCTION CHECKS LENGTH AND REMOVE SPACE ADDED:
-function validateLength(value, lenghtToCheck) {
+//FUNCTION CHECKS INPUTLENGTH AND REMOVE SPACE ADDED:
+function checkLength(value, lenghtToCheck) {
   const trimmedValue = value.trim();
 
   if (trimmedValue.length >= lenghtToCheck) {
@@ -111,9 +112,3 @@ function validateURL(value) {
     value
   );
 }
-
-// function validateURL(value) {
-//   return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(
-//     value
-//   );
-// }

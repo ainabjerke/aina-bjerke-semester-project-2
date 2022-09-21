@@ -4,9 +4,16 @@ import { doProductMenuUser } from "../html/doProductMenuUser.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 import { fetchAPI } from "../../../components/constance/fetchApi.js";
 
-export async function doAddProductForm(image, title, price, description, featured) {
+export async function doAddProductForm(
+  image,
+  title,
+  price,
+  description,
+  featured
+) {
   const url = baseURL + "/products/";
 
+  // CREATE PRODUCT DATA:
   const data = JSON.stringify({
     image_url: image,
     title: title,
@@ -31,7 +38,7 @@ export async function doAddProductForm(image, title, price, description, feature
     if (json.created_at) {
       displayMessage(
         "feedbackMessage feedbackMessage--success",
-        "Product successfully added",
+        "Product successfully added! ",
         ".feedbackMessage"
       );
 

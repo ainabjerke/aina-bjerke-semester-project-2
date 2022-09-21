@@ -17,50 +17,57 @@ if (params.has("id")) {
 
 export const detailsURL = `${productsURL}${id}`;
 
-/*** *** *** FUNCTION LAUNCH PRODUCT DETIALS GETS THE CORRECT PRODUCT PROPERTY AND ID *** *** ***/
+/*** *** *** FUNCTION LAUNCH PRODUCT DETIALS THAT GETS THE CORRECT PRODUCT PROPERTY AND ID *** *** ***/
 export function launchProductDetails(productDetail) {
-  // Document title!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!skal det stå gg optic fremfor product????
+  //DISPLAY DOCUMENT TITLE:
+  //REFERENCE:https://www.w3schools.com/jsref/prop_html_title.asp
   document.title = `Product | ${productDetail.title}`;
 
-  // BREADCRUMB TITLE:
-  const detailsBreadcrumb = document.querySelector(".breadcrumb__item--active");
-  detailsBreadcrumb.innerHTML = productDetail.title;
+  //DISPLAY BREADCRUMB TITLE:
+  const productDetailsBreadcrumb = document.querySelector(".breadcrumb__item--active");
+  //REFERENCE:REFERENCE:hhttps://www.w3schools.com/jsref/prop_html_innerhtml.asp
+  productDetailsBreadcrumb.innerHTML = productDetail.title;
 
-  // DISPLAY IMAGES TO HTML:                                                                               
-  const detailsImage = document.querySelector(".details__images img");
-  detailsImage.src = productDetail.image_url;
-  detailsImage.alt = productDetail.title;
+  // DISPLAY IMAGES TO HTML:
+  //REFERANCE:https://w3collective.com/fetch-display-api-data-javascript/
+  const productDetailsImage = document.querySelector(".details__images img");
+  //REFERENCE:https://www.w3schools.com/jsref/prop_img_src.asp
+  productDetailsImage.src = productDetail.image_url;
+  //REFERENCE:https://www.w3schools.com/jsref/prop_area_alt.asp
+  productDetailsImage.alt = productDetail.title;
 
   // DISPLAY PRODUCT TITLE TO HTML:
-  const detailsTitle = document.querySelector(".details__title");
-  detailsTitle.innerHTML = productDetail.title;
+  const productDetailsTitle = document.querySelector(".details__title");
+  productDetailsTitle.innerHTML = productDetail.title;
 
   // DISPLAY PRICE TO HTML:
-  const detailsPrice = document.querySelector(".details__price");
-  detailsPrice.innerHTML = productDetail.price + " NOK";
+  const productDetailsPrice = document.querySelector(".details__price");
+  productDetailsPrice.innerHTML = productDetail.price + " NOK";
 
   // DISPLAY DESCRIPTION TO HTML:
-  const detailsDescription = document.querySelector(".details__description");
-  detailsDescription.innerHTML = productDetail.description;
+  const productDetailsDescription = document.querySelector(".details__description");
+  productDetailsDescription.innerHTML = productDetail.description;
 
   //DATA ATTRIBUTES THAT GETS THE API DATA AND STORED THIS IN THE DETAILSBTN:
-  const detailsBtn = document.querySelector(".details__btn");
-  detailsBtn.dataset.id = productDetail.id;
-  detailsBtn.dataset.title = productDetail.title;
-  detailsBtn.dataset.description = productDetail.description;
-  detailsBtn.dataset.price = productDetail.price;
-  detailsBtn.dataset.image = productDetail.image_url;
-  detailsBtn.dataset.url = `./details.html?id=${productDetail.id}`;
-  detailsBtn.href = `./details.html?id=${productDetail.id}`;
+  const productDetailsBtn = document.querySelector(".details__btn");
+  //REFERENCE:https://www.educba.com/dataset-javascript/
+  //REFERENCE:https://www.educba.com/dataset-in-html/
+  productDetailsBtn.dataset.id = productDetail.id;
+  productDetailsBtn.dataset.title = productDetail.title;
+  productDetailsBtn.dataset.description = productDetail.description;
+  productDetailsBtn.dataset.price = productDetail.price;
+  productDetailsBtn.dataset.image = productDetail.image_url;
+  productDetailsBtn.dataset.url = `./details.html?id=${productDetail.id}`;
+  productDetailsBtn.href = `./details.html?id=${productDetail.id}`;
 
-  // ADD TO CART BUTTON AND ADD TO LOCAL STORAGE WITH DATA ATTRIBUTES INFO:
+  // ADD TO CART BUTTON AND ADDS DATA ATTRIBUTES TO LOCAL STORAGE:
   const buttonAddProductToCart = document.querySelectorAll(".details__btn");
 
   buttonAddProductToCart.forEach((button) => {
     button.addEventListener("click", addProductToCart);
   });
 
-  // ADD TO CART BUTTON AND ADD TO LOCAL STORAGE WITH DATA ATTRIBUTES INFO:
+  // ADD TO CART BUTTON AND ADDS DATA ATTRIBUTES INFO TO LOCAL STORAGE:
   function addProductToCart() {
     const id = this.dataset.id;
     const title = this.dataset.title;
@@ -71,10 +78,13 @@ export function launchProductDetails(productDetail) {
 
     const currentCart = getShoppingCart();
 
+    //FIND PRODUCT/ITEM IN CURRECTCART
     const productExists = currentCart.find(function (product) {
       return product.id === id;
     });
 
+    //PRODUCT/ITEM IS NOT IN THE PRODUCTEXISTS
+    //ADD IT
     if (productExists === undefined) {
       const productItem = {
         id: id,
@@ -84,11 +94,11 @@ export function launchProductDetails(productDetail) {
         description: description,
         url: url,
       };
-
       currentCart.push(productItem);
       saveFavs(currentCart);
     } else {
       const newCarts = currentCart.filter((product) => product.id !== id);
+      //SAVES THE PRODUCT/ITEM THAT HAS NOT THE SAME ID IN NEWCARTS
       saveFavs(newCarts);
     }
   }

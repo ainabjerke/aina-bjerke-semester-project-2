@@ -1,7 +1,8 @@
 import displayMessage from "../../../components/messages/displayMessage.js";
-import { doConfirmUserLogin} from "./doConfirmUserLogin.js";
+import { doConfirmUserLogin } from "./doConfirmUserLogin.js";
 import { username, password, feedbackMessage } from "../form/formVariables.js";
 
+//FUNCTION LOGIN USER:
 export function doLoginUser(event) {
   event.preventDefault();
 

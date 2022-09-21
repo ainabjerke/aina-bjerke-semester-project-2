@@ -3,9 +3,6 @@ import { fetchAPI } from "./components/constance/fetchApi.js";
 import { launchHeroBanner } from "./components/html/launchHeroBanner.js";
 import { launchFeaturedProducts } from "./components/html/launchFeaturedProducts.js";
 import { heroBannerURL, productsURL } from "./components/constance/url.js";
-// import { launchHeroBanner } from "./components/html/launchHeroBanner.js";
-// import { launchFeaturedProducts } from "./components/html/launchFeaturedProducts.js";
-// import countItemsAddedToCart from "./components/storage/countItemsAddedToCart.js";
 import {
   searchBarLarge,
   searchBarSmall,
@@ -23,10 +20,10 @@ fetchAPI(launchHeroBanner, heroBannerURL);
 fetchAPI(launchFeaturedProducts, productsURL);
 
 //SERACHBAR:
-//REDIRECT USER TO PRODUCT.HTML:
+//REDIRECT USER TO PRODUCTS.HTML:
 searchBarLarge.addEventListener("click", redirectUser);
 searchBarSmall.addEventListener("click", redirectUser);
 
-// CART ICON AND CART PAGE COUNTER:
+//CART ICON AND CART PAGE COUNTER:
 //COUNT ITEM ADDED TO CART:
 countItemsAddedToCart();

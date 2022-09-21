@@ -5,6 +5,7 @@ import {
 } from "../../../components/storage/localStorage.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 
+//FUNCTION CONFIRM USER LOGIN DETAILS:
 export async function doConfirmUserLogin(username, password) {
   const url = baseURL + "/auth/local";
 
@@ -26,7 +27,6 @@ export async function doConfirmUserLogin(username, password) {
     if (json.user) {
       saveToken(json.jwt);
       saveUser(json.user);
-      // location.href = "./edit.html";
       location.href = "../../admin/edit.html";
     }
 

@@ -1,4 +1,4 @@
-// GET SHOPPING CART FROM LOCAL STORAGE:
+//*** *** ***  GET PRODUCT FROM STORAGE *** *** ***//
 export function getShoppingCart() {
   const shoppingCart = localStorage.getItem("shoppingcart");
 
@@ -9,6 +9,8 @@ export function getShoppingCart() {
   }
 }
 
+//*** *** *** ADMIN  *** *** ***//
+
 // ADMIN VARIABLES:
 const tokenKey = "token";
 const userKey = "user";
@@ -18,13 +20,13 @@ export function saveToken(token) {
   saveToStorage(tokenKey, token);
 }
 
+// TOKEN KEY:
+export const token = getToken();
+
 // GET TOKEN:
 export function getToken() {
   return getFromStorage(tokenKey);
 }
-
-// TOKEN KEY:
-export const token = getToken();
 
 // SAVE USER:
 export function saveUser(user) {
@@ -59,6 +61,7 @@ function getFromStorage(key) {
 }
 
 // CLEAR ADMIN FUNCTION:
+//REFERENCES:https://developer.mozilla.org/en-US/docs/Web/API/Storage/removeItem
 export function clearAdmin() {
   localStorage.removeItem("user");
   localStorage.removeItem("token");

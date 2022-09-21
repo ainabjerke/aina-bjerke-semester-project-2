@@ -7,14 +7,16 @@ import doLogoutUserButton from "./components/action/doLogoutUserButton.js";
 import { form } from "./components/form/formVariables.js";
 import { doSubmitProductForm } from "./components/form/doSubmitProductForm.js";
 
-// Redirecting to homepage if they are not logged in
+// REDIRECTING TO HOMEPAGE IF USER ARE NOT LOGGED IN:
 if (!token) {
   location.href = "../admin";
 }
 
-// Display Product Menu
+// DISPLAY PRODUCT MENU:
 fetchAPI(doProductMenuUser, productsURL);
+
+//DISPLAY USER LOGOUT BUTTON:
 doLogoutUserButton();
 
-// Listen for button click
+//LISTEN FOR SUBMIT EVENT ON THE FUNCTION DOSUBMITPRODUCTFORM:
 form.addEventListener("submit", doSubmitProductForm);

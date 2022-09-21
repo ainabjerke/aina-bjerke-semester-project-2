@@ -1,11 +1,13 @@
 import { launchAllProducts } from "../html/launchAllProducts.js";
 
-//LARGE INPUT FIELD:
+//THE TWO FUNCITONS BELOW FILTERS ONLY THE PRODUCT THAT ICLUDES 
+//THE SEARCHERED TEXT (THE TITLE AND DESCRIPTION):
+
+//LARGE INPUT SEARCH FIELD:
 export function searchProductsBoxLarge(products) {
   const searchInputFieldLarge = document.querySelector(".search__input-large");
-
+  
   searchInputFieldLarge.onkeyup = function (event) {
-    // const searchValue = event.target.value;
     const searchValue = event.target.value.toLowerCase();
     const filteredProducts = products.filter(function (product) {
       if (
@@ -13,7 +15,6 @@ export function searchProductsBoxLarge(products) {
         product.description.toLowerCase().includes(searchValue)
       ) {
         return true;
-        // return product.name.toLowerCase().includes(search);
       }
     });
 
@@ -21,12 +22,11 @@ export function searchProductsBoxLarge(products) {
   };
 }
 
-//SMALL INPUT FIELD:
+//SMALL INPUT SEARCH FIELD:
 export function searchProductsBoxSmall(products) {
   const searchInputFieldSmall = document.querySelector(".search__input-small");
 
   searchInputFieldSmall.onkeyup = function (event) {
-    // const searchValue = event.target.value;
     const searchValue = event.target.value.toLowerCase();
     const filteredProducts = products.filter(function (product) {
       if (
@@ -34,7 +34,6 @@ export function searchProductsBoxSmall(products) {
         product.description.toLowerCase().includes(searchValue)
       ) {
         return true;
-        // return product.name.toLowerCase().includes(search);
       }
     });
 

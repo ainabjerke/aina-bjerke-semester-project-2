@@ -39,6 +39,7 @@ export function launchShoppingCart() {
   });
 
   /*** *** *** CALCULATE TOTAL PRODUCT PRICE: *** *** ***/
+  //REFERENCE:https://stackoverflow.com/questions/67095723/how-to-make-total-of-cart-price-in-a-shopping-cart
   const totalPriceContainer = document.querySelector(".cart__total__price");
 
   let totalPrice = 0;

@@ -4,6 +4,7 @@ import displayMessage from "../../../components/messages/displayMessage.js";
 import { fetchAPI } from "../../../components/constance/fetchApi.js";
 import { doProductMenuUser } from "../html/doProductMenuUser.js";
 
+//FUNCTION DO UPDATEPRODUCTFORM
 export async function doUpdateProductForm(
   image,
   title,
@@ -14,6 +15,7 @@ export async function doUpdateProductForm(
 ) {
   const url = baseURL + "/products/" + id;
 
+  // CREATE PRODUCT DATA:
   const data = JSON.stringify({
     image_url: image,
     title: title,

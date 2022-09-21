@@ -24,7 +24,7 @@ export function doSubmitProductForm(event) {
   }
 
   const idValue = idInput.value;
-  // if (validateForm() === false || isNaN(priceValue))
+
   if (doValidateProductForm() === false) {
     return displayMessage(
       "feedbackMessage feedbackMessage--error",

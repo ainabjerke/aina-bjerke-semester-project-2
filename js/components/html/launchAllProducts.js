@@ -1,5 +1,8 @@
 import displayMessage from "../messages/displayMessage.js";
 
+//FUNCTION THAT WILL DISPLAY ALL PRODUCT IN THE API
+//WHEN CLICKING ON THE PRODUCTCONTAINER OR BUTTON WILL GO TO DETAIL.HTML PAGE
+//WITH THE CORRECT ID
 export function launchAllProducts(products) {
   const productsContainer = document.querySelector(".products");
 
