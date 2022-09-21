@@ -168,12 +168,17 @@ h6 {
   color: rgb(12, 12, 12);
 }
 .btn--warning {
-  background: rgb(136, 8, 8);
+  background: #d2042d;
   color: #ffffff;
 }
 .btn--warning:hover {
   filter: brightness(130%);
   color: #ffffff;
+}
+.btn--xl {
+  width: 100%;
+  padding: 13px;
+  font-weight: 500;
 }
 .btn--lg {
   padding: 20px 60px;
@@ -220,18 +225,18 @@ h6 {
   padding: 15px;
 }
 .feedbackMessage--error {
-  background: red;
-  color: #ffffff;
-  font-weight: 500;
   margin: 0px 0 20px 0;
   text-align: center;
   padding: 15px;
+  background: #d2042d;
+  color: #ffffff;
+  font-weight: 500;
 }
 .feedbackMessage--warning {
-  font-weight: 500;
   margin: 20px 0 20px 0;
   text-align: center;
   padding: 15px;
+  font-weight: 500;
   color: black;
 }
 
@@ -449,8 +454,8 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .nav .container {
-    padding: 0;
     margin: 0;
+    padding: 0;
     max-width: 100%;
   }
 }
@@ -523,18 +528,18 @@ h6 {
     position: fixed;
     top: 0;
     left: -100%;
-    z-index: 888;
-    background: #262626;
     padding-top: 100px;
     height: 100%;
     transition: 0.2s linear;
+    z-index: 2;
+    background: #262626;
     width: 250px;
   }
 }
 .nav__menu-icon {
   width: 40px;
-  padding: 0;
   height: 100%;
+  padding: 0;
 }
 @media (min-width: 992px) {
   .nav__menu-icon {
@@ -607,10 +612,9 @@ h6 {
 }
 /*** *** *** NAV MENU ICON:  *** *** ***/
 .nav__menu-icon {
-  z-index: 999;
+  z-index: 3;
   max-width: 40px;
   height: 45px;
-  margin: 0;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -630,14 +634,11 @@ h6 {
   cursor: pointer;
 }
 .nav__menu-icon span {
-  display: block;
+  background-color: #ffffff;
+  left: -15px;
   position: absolute;
   height: 1px;
   width: 100%;
-  background-color: #ffffff;
-  border-radius: 9px;
-  opacity: 1;
-  left: -15px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -649,7 +650,7 @@ h6 {
 }
 @media screen and (max-width: 567px) {
   .nav__menu-icon span {
-    height: 3px;
+    height: 2px;
   }
 }
 .nav__menu-icon span:nth-child(1) {
@@ -704,7 +705,6 @@ h6 {
   text-align: center;
 }
 .search--lg {
-  padding: 0px;
   padding: 25px 0;
   max-width: 255px;
 }
@@ -714,9 +714,9 @@ h6 {
   }
 }
 .search--sm {
-  padding: 25px 20px;
   background: rgb(12, 12, 12);
   justify-content: center;
+  padding: 25px 20px;
 }
 @media (min-width: 992px) {
   .search--sm {
@@ -728,26 +728,26 @@ h6 {
   background: #ffffff;
 }
 .search__input {
-  border: 0;
-  border-radius: 0;
-  background: #ffffff;
   height: 35px;
   padding: 2px 5px;
   width: 220px;
+  border: 0;
+  border-radius: 0;
+  background: #ffffff;
 }
 .search__input:focus {
   outline: 2px solid rgb(184, 161, 136);
 }
 .search__btn {
-  text-align: center;
-  color: #ffffff;
-  height: 35px;
   width: 35px;
   border: 0;
   outline: 0;
   margin-left: 9px;
   margin-top: -13px;
   font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  height: 35px;
 }
 .search__btn:hover {
   color: rgb(184, 161, 136);
@@ -1209,15 +1209,15 @@ h6 {
 }
 @media screen and (min-width: 2000px) {
   .hero {
-    max-width: 2000px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 2000px;
   }
 }
 .hero__content {
-  max-width: 600px;
   position: absolute;
-  color: white;
+  max-width: 600px;
+  color: #ffffff;
 }
 @media screen and (min-width: 1501px) {
   .hero__content {
@@ -1309,8 +1309,8 @@ h6 {
   height: 600px;
 }
 .hero__banner--dark-overlay {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .hero__banner--dark-overlay {
@@ -1328,10 +1328,10 @@ h6 {
 }
 
 .product {
-  text-align: center;
-  max-width: 250px;
   margin: 30px 0;
   padding: 10px;
+  max-width: 250px;
+  text-align: center;
 }
 @media screen and (min-width: 568px) and (max-width: 991px) {
   .product {
@@ -1339,9 +1339,9 @@ h6 {
   }
 }
 .product__image {
+  overflow: hidden;
   margin: 0;
   width: 100%;
-  overflow: hidden;
 }
 .product__content {
   padding: 10px;
@@ -1398,12 +1398,6 @@ h6 {
     justify-content: center;
     margin: 0 0 50px 0;
   }
-}
-
-.filter {
-  margin: 0;
-  text-align: right;
-  justify-content: flex-end;
 }
 
 /*** *** *** ABOUT:  *** *** ***/
@@ -1569,14 +1563,14 @@ h6 {
   outline: 0;
 }
 .accordion__title {
-  width: 100%;
-  text-align: left;
-  border: 0;
   background: rgb(184, 161, 136);
   color: rgb(12, 12, 12);
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
+  width: 100%;
+  text-align: left;
+  border: 0;
   border-bottom: 1px solid black;
   border-style: hidden;
 }
@@ -1655,7 +1649,7 @@ h6 {
 .cart__section--summary {
   padding: 20px;
   background-color: #ffffff;
-  margin-bottom: 9px;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 991px) {
   .cart__section--summary {
@@ -1814,23 +1808,23 @@ h6 {
   color: rgb(24, 110, 117);
 }
 .cart__total {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #707070;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
 }
 .cart__total__text {
-  font-size: 13px;
+  padding: 0;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0;
+  font-size: 13px;
 }
 .cart__total__price {
   padding: 0;
-  font-size: 13px;
   font-weight: 700;
   text-align: right;
+  font-size: 13px;
 }
 .cart__checkout-btn {
   margin: 20px 0;
@@ -1838,22 +1832,20 @@ h6 {
 
 /*** *** *** THEMES/ADMIN SECTION *** *** ***/
 .admin-menu {
-  padding: 0 15px;
   display: flex;
   flex-direction: row;
+  padding: 0 15px;
   line-height: 60px;
 }
 @media screen and (min-width: 992px) {
   .admin-menu {
     width: 630px;
     margin-left: 300px;
-    display: flex;
   }
 }
 @media screen and (max-width: 991px) {
   .admin-menu {
     width: 100%;
-    margin: 0;
     background: rgb(12, 12, 12);
     padding: 0;
   }
@@ -1866,9 +1858,9 @@ h6 {
   text-decoration: none;
 }
 .admin-menu__breadcrumb--lg {
-  text-align: left;
-  margin: auto 0px;
   display: block;
+  margin: auto -30px;
+  text-align: left;
   font-size: 18px;
 }
 @media screen and (max-width: 991px) {
@@ -1879,6 +1871,7 @@ h6 {
 .admin-menu__breadcrumb--sm {
   display: block;
   padding-top: 15px;
+  margin-left: 8px;
 }
 @media screen and (min-width: 992px) {
   .admin-menu__breadcrumb--sm {
@@ -1891,7 +1884,7 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .admin-menu__go-to-add-product-btn {
-    margin: 10px 10px 10px auto;
+    margin: 9px 9px 9px auto;
   }
 }
 .admin-menu__go-to-edit-product-btn {
@@ -1900,7 +1893,7 @@ h6 {
 }
 @media screen and (max-width: 991px) {
   .admin-menu__go-to-edit-product-btn {
-    margin: 10px 10px 10px auto;
+    margin: 9px 9px 9px auto;
   }
 }
 
@@ -1930,27 +1923,19 @@ h6 {
   font-weight: 500;
 }
 .edit__form__input, .edit__form__textarea {
-  border-radius: 0;
-  outline: 0;
-  border: 0;
-  background: #ffffff;
   width: 100%;
   padding: 5px;
+  background: #ffffff;
+  border: 0;
 }
 .edit__form__input:focus, .edit__form__textarea:focus {
   outline: 2px solid rgb(184, 161, 136);
 }
 .edit__form__textarea {
-  height: 150px;
+  height: 155px;
 }
 .edit__form__featured {
   margin-bottom: 30px;
-}
-.edit__form__delete-button {
-  margin: 0;
-}
-.edit__form__button--add {
-  margin-bottom: 50px;
 }
 .edit__more-option {
   margin-bottom: 80px;
@@ -1992,40 +1977,34 @@ h6 {
 
 .form-login {
   position: relative;
-  background: #efedea;
   padding: 20px;
+  background: #efedea;
 }
 .form-login__container {
   position: absolute;
-  width: 300px;
-  padding: 0;
   top: 10%;
   left: 50%;
+  width: 310px;
+  padding: 0;
   transform: translate(-50%, -10%);
 }
 .form-login__trademark {
   width: 180px;
-  margin: 0 auto;
   margin-bottom: 40px;
+  margin: 0 auto;
 }
 .form-login__logo {
   width: 100%;
 }
 .form-login__heading {
-  text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
   color: #ffffff;
   font-size: 40px;
-}
-.form-login__content {
-  width: 100%;
-  max-width: 300px;
-  padding-right: 0;
-  padding-left: 0;
+  text-align: center;
 }
 .form-login__label {
-  padding: 0px 0px 0px 0px;
+  padding: 0px;
   max-width: 300px;
 }
 .form-login__label--password {
@@ -2034,10 +2013,10 @@ h6 {
 .form-login__input {
   width: 100%;
   max-width: 300px;
+  padding: 3px 5px;
+  height: 30px;
   border: 0;
   outline: 0;
-  padding: 2px 5px;
-  height: 30px;
 }
 .form-login__input:focus {
   outline: 2px solid rgb(184, 161, 136);
@@ -2048,20 +2027,18 @@ h6 {
 
 .product-menu {
   position: fixed;
-  top: 0;
-  background: rgb(12, 12, 12);
-  height: 100%;
   display: flex;
   flex-direction: column;
-  z-index: 888;
+  background: rgb(12, 12, 12);
+  height: 100%;
+  z-index: 2;
   transition: 0.3s linear;
 }
 @media screen and (max-width: 991px) {
   .product-menu {
     position: absolute;
-    top: 0;
-    left: -100%;
     width: 250px;
+    left: -100%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -2069,13 +2046,13 @@ h6 {
     left: 0px;
   }
 }
-.product-menu__brand {
-  width: 40%;
+.product-menu__company-logo {
   align-self: center;
-  margin: 20px;
+  width: 50%;
+  margin: 25px;
 }
 @media screen and (max-width: 991px) {
-  .product-menu__brand {
+  .product-menu__company-logo {
     display: none;
   }
 }
@@ -2084,16 +2061,15 @@ h6 {
 }
 .product-menu__list {
   list-style: none;
-  padding: 20px 50px;
+  padding: 30px 45px;
 }
 @media screen and (max-width: 576px) {
   .product-menu__list {
-    padding: 15px;
     margin-top: 60px;
   }
 }
 .product-menu__item {
-  padding: 10px 0px;
+  padding: 13px 0px;
 }
 .product-menu__link {
   color: #ffffff;
@@ -2112,7 +2088,7 @@ h6 {
 
 /*** *** *** FORM VALIDATION:  *** *** ***/
 .error {
-  color: red;
+  color: #d2042d;
   font-weight: 500;
   padding-top: 5px;
 }
@@ -2132,6 +2108,10 @@ h6 {
 .admin-icon__reset {
   margin-left: 30px;
   margin-top: 17px;
+}
+
+.admin-menu__breadcrumb--lg-reset {
+  margin-left: 0px;
 }
 
 .accordion > .card {
@@ -2167,7 +2147,15 @@ h6 {
   }
 }
 
-.product-menu__link {
-  position: relative;
-  top: 50px;
+@media screen and (min-width: 992px) {
+  .product-menu__link {
+    position: relative;
+    top: 9px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .product-menu__link {
+    position: relative;
+    top: 65px;
+  }
 }/*# sourceMappingURL=style.css.map */

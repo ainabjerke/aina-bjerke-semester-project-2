@@ -8,8 +8,8 @@
 
   & .container {
     @media screen and (max-width: 991px) {
-      padding: 0;
       margin: 0;
+      padding: 0;
       max-width: 100%;
     }
   }
@@ -88,18 +88,20 @@
       position: fixed;
       top: 0;
       left: -100%;
-      z-index: 888;
-      background: colors(primary, light);
       padding-top: 100px;
       height: 100%;
       transition: 0.2s linear;
+      z-index: 2;
+      background: colors(primary, light);
+
       width: 250px;
     }
 
     &-icon {
       width: 40px;
-      padding: 0;
+
       height: 100%;
+      padding: 0;
 
       @media (min-width: 992px) {
         display: none;

@@ -9,19 +9,20 @@
   }
 }
 .product {
-  text-align: center;
-  max-width: 250px;
   margin: 30px 0;
   padding: 10px;
-  // transition: 0.25s ease-in-out;
+  max-width: 250px;
+
+  text-align: center;
+
   @media screen and (min-width: 568px) and (max-width: 991px) {
     padding: 10px 20px;
   }
 
   &__image {
+    overflow: hidden;
     margin: 0;
     width: 100%;
-    overflow: hidden;
   }
 
   &__content {
@@ -48,7 +49,6 @@
   }
 
   &__button {
-    // margin: 0 !important;
     width: 100%;
   }
 }

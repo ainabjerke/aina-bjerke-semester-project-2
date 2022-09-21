@@ -28,12 +28,11 @@
 
     &__input,
     &__textarea {
-      border-radius: 0;
-      outline: 0;
-      border: 0;
-      background: $white-color;
       width: 100%;
       padding: 5px;
+      background: $white-color;
+
+      border: 0;
 
       &:focus {
         outline: 2px solid $secondary-color;
@@ -41,19 +40,11 @@
     }
 
     &__textarea {
-      height: 150px;
+      height: 155px;
     }
 
     &__featured {
       margin-bottom: 30px;
-    }
-
-    &__delete-button {
-      margin: 0;
-    }
-
-    &__button--add {
-      margin-bottom: 50px;
     }
   }
 

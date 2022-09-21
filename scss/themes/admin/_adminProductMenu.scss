@@ -1,18 +1,16 @@
 .product-menu {
   position: fixed;
-  top: 0;
-  background: $primary-color;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  z-index: 888;
+  background: $primary-color;
+  height: 100%;
+  z-index: 2;
   transition: 0.3s linear;
 
   @media screen and (max-width: 991px) {
     position: absolute;
-    top: 0;
-    left: -100%;
     width: 250px;
+    left: -100%;
   }
 
   &--open {
@@ -21,10 +19,10 @@
     }
   }
 
-  &__brand {
-    width: 40%;
+  &__company-logo {
     align-self: center;
-    margin: 20px;
+    width: 50%;
+    margin: 25px;
 
     @media screen and (max-width: 991px) {
       display: none;
@@ -37,16 +35,15 @@
 
   &__list {
     list-style: none;
-    padding: 20px 50px;
+    padding: 30px 45px;
 
     @media screen and (max-width: 576px) {
-      padding: 15px;
       margin-top: 60px;
     }
   }
 
   &__item {
-    padding: 10px 0px;
+    padding: 13px 0px;
   }
 
   &__link {

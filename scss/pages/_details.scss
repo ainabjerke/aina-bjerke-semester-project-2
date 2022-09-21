@@ -116,13 +116,6 @@
       font-size: 13px;
     }
   }
-
-  // &__desc {
-  //   @media screen and (min-width: 568px) and (max-width: 991px) {
-  //     margin-bottom: 20px;
-  //     padding: 0;
-  //   }
-  // }
 }
 
 //--- --- CART ACCORDION STYLE: --- ---//
@@ -148,14 +141,14 @@
   }
 
   &__title {
-    width: 100%;
-    text-align: left;
-    border: 0;
     background: $secondary-color;
     color: $primary-color;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
+    width: 100%;
+    text-align: left;
+    border: 0;
     border-bottom: 1px solid black;
     border-style: hidden;
     @media screen and (max-width: 499px) {

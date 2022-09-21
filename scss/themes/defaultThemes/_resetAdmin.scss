@@ -7,6 +7,10 @@
   margin-top: 17px;
 }
 
+.admin-menu__breadcrumb--lg-reset {
+  margin-left: 0px;
+}
+
 .accordion > .card {
   overflow: visible;
 }
@@ -33,6 +37,12 @@
 }
 
 .product-menu__link {
-  position: relative;
-  top: 50px;
+  @media screen and (min-width: 992px) {
+    position: relative;
+    top: 9px;
+  }
+  @media screen and (max-width: 991px) {
+    position: relative;
+    top: 65px;
+  }
 }

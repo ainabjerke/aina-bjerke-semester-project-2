@@ -1,21 +1,23 @@
 .form-login {
   position: relative;
-  background: $off-white-color;
   padding: 20px;
+  background: $off-white-color;
 
   &__container {
     position: absolute;
-    width: 300px;
-    padding: 0;
     top: 10%;
     left: 50%;
+    width: 310px;
+    padding: 0;
+
     transform: translate(-50%, -10%);
   }
 
   &__trademark {
     width: 180px;
-    margin: 0 auto;
+
     margin-bottom: 40px;
+    margin: 0 auto;
   }
 
   &__logo {
@@ -23,22 +25,15 @@
   }
 
   &__heading {
-    text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
     color: $white-color;
     font-size: 40px;
-  }
-
-  &__content {
-    width: 100%;
-    max-width: 300px;
-    padding-right: 0;
-    padding-left: 0;
+    text-align: center;
   }
 
   &__label {
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
     max-width: 300px;
 
     &--password {
@@ -49,10 +44,10 @@
   &__input {
     width: 100%;
     max-width: 300px;
+    padding: 3px 5px;
+    height: 30px;
     border: 0;
     outline: 0;
-    padding: 2px 5px;
-    height: 30px;
 
     &:focus {
       outline: 2px solid $secondary-color;

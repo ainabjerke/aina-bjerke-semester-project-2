@@ -26,7 +26,7 @@ export function launchProductDetails(productDetail) {
   const detailsBreadcrumb = document.querySelector(".breadcrumb__item--active");
   detailsBreadcrumb.innerHTML = productDetail.title;
 
-  // DISPLAY IMAGES TO HTML:
+  // DISPLAY IMAGES TO HTML:                                                                               
   const detailsImage = document.querySelector(".details__images img");
   detailsImage.src = productDetail.image_url;
   detailsImage.alt = productDetail.title;

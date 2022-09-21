@@ -12,19 +12,20 @@
   }
 
   &--error {
-    background: red;
-    color: $white-color;
-    font-weight: 500;
     margin: 0px 0 20px 0;
     text-align: center;
     padding: 15px;
+    background: $red-color;
+    color: $white-color;
+    font-weight: 500;
   }
 
   &--warning {
-    font-weight: 500;
     margin: 20px 0 20px 0;
     text-align: center;
     padding: 15px;
+    font-weight: 500;
+
     color: black;
   }
 }

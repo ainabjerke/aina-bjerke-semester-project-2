@@ -5,7 +5,6 @@
   text-align: center;
 
   &--lg {
-    padding: 0px;
     padding: 25px 0;
     max-width: 255px;
 
@@ -15,9 +14,9 @@
   }
 
   &--sm {
-    padding: 25px 20px;
     background: $primary-color;
     justify-content: center;
+    padding: 25px 20px;
 
     @media (min-width: 992px) {
       display: none;
@@ -30,12 +29,12 @@
   }
 
   &__input {
-    border: 0;
-    border-radius: 0;
-    background: $white-color;
     height: 35px;
     padding: 2px 5px;
     width: 220px;
+    border: 0;
+    border-radius: 0;
+    background: $white-color;
 
     &:focus {
       outline: 2px solid $secondary-color;
@@ -43,15 +42,15 @@
   }
 
   &__btn {
-    text-align: center;
-    color: $white-color;
-    height: 35px;
     width: 35px;
     border: 0;
     outline: 0;
     margin-left: 9px;
     margin-top: -13px;
     font-size: 25px;
+    text-align: center;
+    color: $white-color;
+    height: 35px;
 
     &:hover {
       color: $secondary-color;

@@ -35,7 +35,7 @@
     &--summary {
       padding: 20px;
       background-color: $white-color;
-      margin-bottom: 9px;
+      margin-bottom: 0px;
 
       @media screen and (max-width: 991px) {
         padding: 10px;
@@ -192,24 +192,24 @@
   //--- ---SHOPPING CART TOTAL PRICE STYLE: --- ---//
 
   &__total {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid colors(grey);
-    margin-bottom: 20px;
-    padding-bottom: 5px;
 
     &__text {
-      font-size: 13px;
+      padding: 0;
       font-weight: 700;
       text-transform: uppercase;
-      padding: 0;
+      font-size: 13px;
     }
 
     &__price {
       padding: 0;
-      font-size: 13px;
       font-weight: 700;
       text-align: right;
+      font-size: 13px;
     }
   }
 
