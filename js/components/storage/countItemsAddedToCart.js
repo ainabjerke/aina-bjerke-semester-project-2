@@ -6,7 +6,7 @@ export default function countItemsAddedToCart() {
   const navCartIcon = document.querySelector(".cart__icon-quantity");
   const cartPageQuantity = document.querySelector(".cart__total-quantity");
 
-  if (localStorage["shoppingcartitem"]) {
+  if (localStorage["shoppingcartitem"] && cartPageQuantity) {
     const totalitems = JSON.parse(localStorage["shoppingcartitem"]).length;
     navCartIcon.innerHTML = totalitems;
     cartPageQuantity.innerHTML = totalitems;
