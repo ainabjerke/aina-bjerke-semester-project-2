@@ -1140,6 +1140,14 @@ h6 {
   background-repeat: no-repeat;
   height: 290px;
 }
+.collage__sale--dark-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .collage__sale a:hover {
   color: rgb(184, 161, 136);
 }
@@ -1153,7 +1161,6 @@ h6 {
   color: #ffffff;
   text-align: center;
   padding-top: 30px;
-  background: transparent !important;
 }
 @media screen and (min-width: 992px) {
   .collage__sale__content {
