@@ -6,9 +6,13 @@ export default function countItemsAddedToCart() {
   const navCartIcon = document.querySelector(".cart__icon-quantity");
   const cartPageQuantity = document.querySelector(".cart__total-quantity");
 
-  if (localStorage["shoppingcartitem"] && cartPageQuantity) {
+  if (localStorage["shoppingcartitem"]) {
     const totalitems = JSON.parse(localStorage["shoppingcartitem"]).length;
     navCartIcon.innerHTML = totalitems;
+  }
+
+  if (localStorage["shoppingcartitem"] && cartPageQuantity) {
+    const totalitems = JSON.parse(localStorage["shoppingcartitem"]).length;
     cartPageQuantity.innerHTML = totalitems;
   }
 }
