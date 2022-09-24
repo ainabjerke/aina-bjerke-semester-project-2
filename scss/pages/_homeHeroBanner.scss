@@ -13,7 +13,6 @@
   &__content {
     position: absolute;
     max-width: 600px;
-
     color: $white-color;
 
     @media screen and (min-width: 1501px) {
@@ -75,10 +74,6 @@
         margin-top: 551px;
       }
     }
-  }
-
-  &__heading {
-    background-color: transparent;
   }
 
   &__text {
