@@ -3,7 +3,8 @@
 //--- --- HERO BANNER STYLE: --- ---//
 .hero {
   position: relative;
-  background-color: transparent !important;
+  background-color: black;
+
   @media screen and (min-width: 2000px) {
     margin-right: auto;
     margin-left: auto;
@@ -14,7 +15,6 @@
     position: absolute;
     max-width: 600px;
     color: $white-color;
-    background-color: transparent !important;
 
     @media screen and (min-width: 1501px) {
       position: absolute;
@@ -77,9 +77,9 @@
     }
   }
 
-  &__heading {
-    background-color: transparent !important;
-  }
+  // &__heading {
+  //   background-color: transparent !important;
+  // }
 
   &__text {
     font-size: 16px;

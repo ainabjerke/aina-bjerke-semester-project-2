@@ -1206,7 +1206,7 @@ h6 {
 /*** *** *** HOME HERO BANNER:  *** *** ***/
 .hero {
   position: relative;
-  background-color: transparent !important;
+  background-color: black;
 }
 @media screen and (min-width: 2000px) {
   .hero {
@@ -1219,7 +1219,6 @@ h6 {
   position: absolute;
   max-width: 600px;
   color: #ffffff;
-  background-color: transparent !important;
 }
 @media screen and (min-width: 1501px) {
   .hero__content {
@@ -1288,9 +1287,6 @@ h6 {
     margin-left: 3%;
     margin-top: 551px;
   }
-}
-.hero__heading {
-  background-color: transparent !important;
 }
 .hero__text {
   font-size: 16px;
