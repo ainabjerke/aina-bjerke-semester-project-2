@@ -154,7 +154,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 290px;
-
+    background: transparent !important;
     & a:hover {
       color: colors(secondary);
     }

@@ -1139,6 +1139,7 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
+  background: transparent !important;
 }
 .collage__sale a:hover {
   color: rgb(184, 161, 136);
