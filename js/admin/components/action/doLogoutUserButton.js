@@ -1,4 +1,4 @@
-import { clearAdmin } from "../../../components/storage/localStorage.js";
+import { clearAdminUser } from "../../../components/storage/localStorage.js";
 
 //FUNCTION LOGOUT USER:
 export default function doLogoutUserButton() {
