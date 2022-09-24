@@ -3,7 +3,7 @@
 //--- --- HERO BANNER STYLE: --- ---//
 .hero {
   position: relative;
-  background-color: transparent;
+  background-color: transparent !important;
   @media screen and (min-width: 2000px) {
     margin-right: auto;
     margin-left: auto;

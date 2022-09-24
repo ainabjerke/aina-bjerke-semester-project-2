@@ -1206,7 +1206,7 @@ h6 {
 /*** *** *** HOME HERO BANNER:  *** *** ***/
 .hero {
   position: relative;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 @media screen and (min-width: 2000px) {
   .hero {
