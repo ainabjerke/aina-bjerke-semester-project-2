@@ -634,6 +634,8 @@ h6 {
   cursor: pointer;
 }
 .nav__menu-icon span {
+  display: block;
+  opacity: 1;
   background-color: #ffffff;
   left: -15px;
   position: absolute;
