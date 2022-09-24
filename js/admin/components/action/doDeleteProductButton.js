@@ -6,9 +6,9 @@ export default function doDeleteProductButton(id) {
   const deleteButton = document.querySelector(".delete-button");
   //IF USER CLICKS YES ON CONFIRMATION MESSAGE:
   deleteButton.onclick = async function () {
-    const doDelete = confirm("Are you sure you want to delete this product?");
+    const doDeleteProduct = confirm("Are you sure you want to delete this product?");
 
-    if (doDelete) {
+    if (doDeleteProduct) {
       const url = baseURL + "/products/" + id;
 
       const options = {

@@ -10,7 +10,7 @@ export default function doLogoutUserButton() {
       const doLogoutUser = confirm("Are you sure you want to log out?");
 
       if (doLogoutUser) {
-        clearAdmin();
+        clearAdminUser();
         location.href = "../admin";
       }
     };

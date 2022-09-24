@@ -1,14 +1,14 @@
-import { getShoppingCart } from "../storage/localStorage.js";
+import { getShoppingCartItem } from "../storage/localStorage.js";
 import displayMessage from "../messages/displayMessage.js";
 
 export function launchShoppingCart() {
-  const shoppingCart = getShoppingCart();
+  const shoppingCartItem = getShoppingCartItem();
 
   const cartProductsContainer = document.querySelector(".cart__products");
 
   cartProductsContainer.innerHTML = "";
 
-  if (shoppingCart.length === 0) {
+  if (shoppingCartItem.length === 0) {
     displayMessage(
       "feedbackMessage feedbackMessage--warning",
       "You have no product in the shopping cart",
@@ -16,8 +16,8 @@ export function launchShoppingCart() {
     );
   }
 
-  /*** *** *** DISPLAY PRODUCT FROM LOCAL STORAGE BY const shoppingCart = getShoppingCart() *** *** ***/
-  shoppingCart.forEach(function (product) {
+  /*** *** *** DISPLAY PRODUCT FROM LOCAL STORAGE BY const shoppingCartItem = getShoppingCartItem() *** *** ***/
+  shoppingCartItem.forEach(function (product) {
     cartProductsContainer.innerHTML += `
             <div class="cart__product-card col-12 row">
                 <img src="${product.image}" alt="${product.title}" class="col cart__product-card__image">
@@ -44,8 +44,8 @@ export function launchShoppingCart() {
 
   let totalPrice = 0;
 
-  for (let i = 0; i < shoppingCart.length; i++) {
-    let price = parseFloat(shoppingCart[i].price);
+  for (let i = 0; i < shoppingCartItem.length; i++) {
+    let price = parseFloat(shoppingCartItem[i].price);
 
     totalPrice += price;
   }

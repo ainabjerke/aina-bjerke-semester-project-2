@@ -1,4 +1,4 @@
-import { getShoppingCart } from "../storage/localStorage.js";
+import { getShoppingCartItem } from "../storage/localStorage.js";
 import { productsURL } from "../constance/url.js";
 
 // LOOKING FOR ID PARAMETER:
@@ -24,7 +24,9 @@ export function launchProductDetails(productDetail) {
   document.title = `Product | ${productDetail.title}`;
 
   //DISPLAY BREADCRUMB TITLE:
-  const productDetailsBreadcrumb = document.querySelector(".breadcrumb__item--active");
+  const productDetailsBreadcrumb = document.querySelector(
+    ".breadcrumb__item--active"
+  );
   //REFERENCE:REFERENCE:hhttps://www.w3schools.com/jsref/prop_html_innerhtml.asp
   productDetailsBreadcrumb.innerHTML = productDetail.title;
 
@@ -45,10 +47,12 @@ export function launchProductDetails(productDetail) {
   productDetailsPrice.innerHTML = productDetail.price + " NOK";
 
   // DISPLAY DESCRIPTION TO HTML:
-  const productDetailsDescription = document.querySelector(".details__description");
+  const productDetailsDescription = document.querySelector(
+    ".details__description"
+  );
   productDetailsDescription.innerHTML = productDetail.description;
 
-  //DATA ATTRIBUTES THAT GETS THE API DATA AND STORED THIS IN THE DETAILSBTN:
+  //DATA ATTRIBUTES THAT GETS THE API DATA AND STORED THIS IN THE PRODUCTDETAILSBTN:
   const productDetailsBtn = document.querySelector(".details__btn");
   //REFERENCE:https://www.educba.com/dataset-javascript/
   //REFERENCE:https://www.educba.com/dataset-in-html/
@@ -60,14 +64,14 @@ export function launchProductDetails(productDetail) {
   productDetailsBtn.dataset.url = `./details.html?id=${productDetail.id}`;
   productDetailsBtn.href = `./details.html?id=${productDetail.id}`;
 
-  // ADD TO CART BUTTON AND ADDS DATA ATTRIBUTES TO LOCAL STORAGE:
+  // BUTTONADDPRODUCTTOCART ADDS DATA ATTRIBUTES TO LOCAL STORAGE BY FUNCTION ADDPRODUCTTOCART:
   const buttonAddProductToCart = document.querySelectorAll(".details__btn");
 
   buttonAddProductToCart.forEach((button) => {
     button.addEventListener("click", addProductToCart);
   });
 
-  // ADD TO CART BUTTON AND ADDS DATA ATTRIBUTES INFO TO LOCAL STORAGE:
+  // ADDPRODUCTSTOCART ADDS DATA ATTRIBUTES INFO TO LOCAL STORAGE:
   function addProductToCart() {
     const id = this.dataset.id;
     const title = this.dataset.title;
@@ -76,7 +80,7 @@ export function launchProductDetails(productDetail) {
     const description = this.dataset.description;
     const url = this.dataset.url;
 
-    const currentCart = getShoppingCart();
+    const currentCart = getShoppingCartItem();
 
     //FIND PRODUCT/ITEM IN CURRECTCART
     const productExists = currentCart.find(function (product) {
@@ -104,6 +108,6 @@ export function launchProductDetails(productDetail) {
   }
 
   function saveFavs(products) {
-    localStorage.setItem("shoppingcart", JSON.stringify(products));
+    localStorage.setItem("shoppingcartitem", JSON.stringify(products));
   }
 }

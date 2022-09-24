@@ -4,9 +4,9 @@ import displayMessage from "../messages/displayMessage.js";
 //WHEN CLICKING ON THE PRODUCTCONTAINER OR BUTTON WILL GO TO DETAIL.HTML PAGE
 //WITH THE CORRECT ID
 export function launchAllProducts(products) {
-  const productsContainer = document.querySelector(".products");
+  const productsItemContainer = document.querySelector(".products");
 
-  productsContainer.innerHTML = "";
+  productsItemContainer.innerHTML = "";
 
   if (products.length === 0) {
     displayMessage(
@@ -18,7 +18,7 @@ export function launchAllProducts(products) {
   // console.log("products ===", products);
 
   products.forEach(function (product) {
-    productsContainer.innerHTML += `
+    productsItemContainer.innerHTML += `
             <div class="product col-sm-12 col-md-6 col-lg-3">
             <a href="./details.html?id=${product.id}" class="product__content">
                 <img src="${product.image_url}" alt="${product.title}" class="product__image">

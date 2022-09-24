@@ -1,6 +1,6 @@
 /**** *** *** PRODUCT MENU *** *** ****/
 export function doProductMenuUser(item) {
-  const productMenuUserContainer = document.querySelector(".product-menu__list");
+  const productMenuUserContainer = document.querySelector(".product-menu__dynamic-list");
 
   productMenuUserContainer.innerHTML = "";
 

@@ -1,11 +1,11 @@
 //*** *** ***  GET PRODUCT FROM STORAGE *** *** ***//
-export function getShoppingCart() {
-  const shoppingCart = localStorage.getItem("shoppingcart");
+export function getShoppingCartItem() {
+  const shoppingCartItem = localStorage.getItem("shoppingcartitem");
 
-  if (shoppingCart === null) {
+  if (shoppingCartItem === null) {
     return [];
   } else {
-    return JSON.parse(shoppingCart);
+    return JSON.parse(shoppingCartItem);
   }
 }
 
@@ -62,7 +62,7 @@ function getFromStorage(key) {
 
 // CLEAR ADMIN FUNCTION:
 //REFERENCES:https://developer.mozilla.org/en-US/docs/Web/API/Storage/removeItem
-export function clearAdmin() {
+export function clearAdminUser() {
   localStorage.removeItem("user");
   localStorage.removeItem("token");
   // localStorage.clear();
