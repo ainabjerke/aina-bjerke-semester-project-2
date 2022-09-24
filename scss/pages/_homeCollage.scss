@@ -154,7 +154,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 290px;
-    background: transparent !important;
+
     & a:hover {
       color: colors(secondary);
     }
@@ -168,6 +168,7 @@
       color: $white-color;
       text-align: center;
       padding-top: 30px;
+      background: transparent !important;
       @media screen and (min-width: 992px) {
         padding-top: 209px;
         margin-left: -90px;
