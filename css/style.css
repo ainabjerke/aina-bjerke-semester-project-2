@@ -1289,7 +1289,7 @@ h6 {
   }
 }
 .hero__heading {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .hero__text {
   font-size: 16px;
