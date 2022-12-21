@@ -19,9 +19,14 @@ The website must be responsive on all devices.
 
 Building a checkout and payment system is not a part of the project.
 
+Webpage is using strapi Api and is deployed to Heroku to fetch product content.
+
 Level 1 is required.
 
 Level 2 is optional.
+
+To be able to access the admin pages.
+Please contact me
 
 # Level 1 (required)
 
