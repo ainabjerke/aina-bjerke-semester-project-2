@@ -23,9 +23,9 @@ Level 1 is required.
 
 Level 2 is optional.
 
-### Level 1 (required)
+# Level 1 (required)
 
-## Customer-facing pages
+# Customer-facing pages
 
 # Home page
 
