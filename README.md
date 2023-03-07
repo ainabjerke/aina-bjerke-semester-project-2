@@ -45,8 +45,9 @@ To get access to the admin page where new products can be added, products can be
 - [Bootstrap] (https://getbootstrap.com/)
 - [SASS](https://sass-lang.com/)
 
+## Getting Started
 
-## Getting Started using the hosted application link in Netlify
+### Getting Started using the hosted application link in Netlify
 
 URL: https://bright-genie-15a5a1.netlify.app/
 
