@@ -35,14 +35,11 @@ Some features:
 To get access to the admin page where new products can be added, products can be deleted and prices can be changed please contact me. 
 
 
-
-
-
 ## Built With
 
 - [Strapi]( https://strapi.io/)
 - [Heroku]( https://www.heroku.com/)
-- [Bootstrap] (https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [SASS](https://sass-lang.com/)
 
 ## Getting Started
