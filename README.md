@@ -31,8 +31,7 @@ Some features:
 - Toggle whether a product is featured
 
 
-
-To get access to the admin page where new products can be added, products can be deleted and prices can be changed please contact me. 
+To get access to the admin page and login credentials where new products can be added, products can be deleted and prices can be changed please contact me. 
 
 
 ## Built With
@@ -48,7 +47,7 @@ To get access to the admin page where new products can be added, products can be
 
 URL: https://bright-genie-15a5a1.netlify.app/
 
-You can now play around on the website. Viewing products and adding products to the checkout cart. The checkout cart will be updated with selected products.
+You can now play around on the website. Viewing products and adding products to the cart. The cart will be updated with selected products.
 
 
 ### How to start the project locally
@@ -60,7 +59,7 @@ You can now play around on the website. Viewing products and adding products to 
 
 ## Contributing
 
-This was made as a school project during my last years of studies. It was done independently by myself.
+This semester project was made during my last years of studies. It was done independently by myself.
 
 ## Contact
 
