@@ -38,8 +38,10 @@ To get access to the admin page and login credentials where new products can be 
 
 - [Strapi]( https://strapi.io/)
 - [Heroku]( https://www.heroku.com/)
+- [HTML](https://html.com/)
 - [Bootstrap](https://getbootstrap.com/)
 - [SASS](https://sass-lang.com/)
+- [JS](https://www.javascript.com/)
 
 ## Getting Started
 
