@@ -1,4 +1,4 @@
-# GG Optic is an e-commerce site for men and women sunglasses
+# GG Optic is an e-commerce site for sunglasses for men and women
 Semester Project 2
 
 ![image](https://i.ibb.co/4sv1V2m/GG-optic-website-img.jpg)
